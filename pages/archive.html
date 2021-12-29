@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Charlie Chapman"
+---
+
+<!-- {% if paginator.page != 1 %}
+  <div class="spacer-vertical-40"></div>
+{% endif %} -->
+
+{% for post in site.posts %}
+    <div class="post-summary">
+        <div class="post-summary-content">
+        <img src="{{ post.image }}"/>
+        <div>
+            <h3>
+            <a href="{{ post.url }}">
+                {{ post.title }}
+            </a>
+            </h3>
+            <p class="post-summary-meta">
+            {{ post.date | date: "%B %-d, %Y" }}
+            </p>
+            <p class="post-summary-description">
+            {{ post.content | strip_html | truncatewords: 25 }}
+            <p>
+        </div>
+        </div>
+    </div>
+{% endfor %}

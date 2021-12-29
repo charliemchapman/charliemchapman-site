@@ -1,5 +1,16 @@
 $content-max-width: 730px;
 
+// Colors
+
+$muted-pink: #D98F9D;
+$pink: #F299C2;
+$green: #4a6c32;
+$light-green: #D8D9CC;
+$olive: #A6A380;
+
+$dark-green: #4a6c32;
+$dark-pink: #e976ab;
+
 .spacer-vertical-40 {
     height: 60px;
 }
@@ -18,15 +29,21 @@ body {
     line-height: 1.625;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
-    background-color: #1f4373;
+    background-color: $dark-green;
     
     h1, h2, h3, h4, h5 {
         font-weight: 600;
         line-height: 1.2;
+        color: $dark-green;
+
+        a {
+            color: $dark-green;
+        }
     }
 
     a {
         text-decoration: none;
+        color: $dark-pink;
     }
 
     a:hover {
@@ -49,42 +66,54 @@ body {
 }
 
 .main-nav {
-    height: 102px;
-    background-color: #1f4373;
+    // height: 102px;
+    background-color: $dark-green;
     display: flex;
-    align-items: start;
-    justify-content: end;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 100px;
+    padding-left: 40px;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
 
     .logo {
-        margin-left: 40px;
+        font-size: 2.8rem;
+        text-decoration: none;
+        color: white;
+        // margin-top: 12px;
+        font-weight: 100;
+        margin-right: 10px;
 
-        img {
-            border-radius: 10px;
-        }
+        // img {
+        //     border-radius: 10px;
+        // }
     }
 
     .links {
         display: flex;
-        flex-wrap: wrap-reverse;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: flex-start;
-        flex-grow: 1;
-        padding-left: 20px;
-        overflow: hidden;
-        height: 100px;
+        // flex-wrap: wrap-reverse;
+        // flex-direction: row-reverse;
+        // align-items: center;
+        // justify-content: flex-start;
+        // flex-grow: 1;
+        // overflow: hidden;
+        // height: 100px;
 
         a {
             color: white;
-            padding-left: 20px;
-            padding-right: 20px;
-            height: 100px;
+            // height: 100px;
             display: flex;
             align-items: center;
+            font-weight: 400;
+            font-size: 1.1rem;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
 
             @media (max-width: 760px) {
-                padding-left: 13px;
-                padding-right: 13px;
+                padding-right: 20px;
             }
         }
     
@@ -235,10 +264,11 @@ body {
             width: 100px;
             height: 100px;
             max-width: 100%;
+            object-fit: contain;
         }
 
         a {
-            color: #1f4373;
+            color: $dark-green;
             font-size: 1.3rem;
         }
 
@@ -252,6 +282,7 @@ body {
             font-size: .8em;
             margin-top: 0;
             margin-bottom: 5px;
+            color: #777;
         }
     }
 
@@ -286,25 +317,28 @@ body {
     }
 
     a.next, a.previous {
-        background-color: #2e62a6;
+        background-color: $dark-green;
         color: white;
     }
 
     span.next, span.previous {
-        background-color: #c8daf1;
-        color: #677180;
+        background-color: #dcdfd9;
+        color: #555a51;
     }
 }
 
 .post-title {
-    margin-top: 0;
-    margin-bottom: 5px;
+    // margin-top: 0;
+    margin-bottom: 3px;
+    text-align: center;
 }
 
 .post-meta {
     font-size: .8em;
-    margin-bottom: 7px;
+    margin-bottom: 30px;
     margin-top: 0;
+    text-align: center;
+    color: #777;
 }
 
 .post-player {
@@ -333,13 +367,26 @@ body {
     }
 }
 
+.post-content {
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 40px;
+    margin-bottom: 80px;
+
+    img {
+        display: block;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .footer {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     padding: 15px 0;
-    background-color: #1f4373;
+    background-color: $dark-green;
     color: #FFFFFF77;
 
     .links {

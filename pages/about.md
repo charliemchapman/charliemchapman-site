@@ -4,14 +4,23 @@ title: About
 ---
 # About
 
-Hi 👋, I'm Charlie Chapman and Launched is my podcast where I interview app developers and other creators about their experiences releasing a creation out into the world.
+Hi, I'm Charlie Chapman. I'm an app developer, podcaster, designer, and wannabe motion graphics artist. I built an iOS app called Dark Noise and run an interview podcast called Launched.
 
-I recently went through this process myself with the launch of my iOS app Dark Noise and I found that listening to developer interviews on podcasts was extremely helpful in preparing me for what to expect and giving me ideas on how to build a marketing plan around the release. My hope is that Launched can be a resource for aspiring creators by providing a platform for people to share their experiences launching something into the world.
+You can find me on Twitter at [@_chuckyc](https://twitter.com/_chuckyc) or shoot me an email at [charliemchapman@gmail.com](mailto:charliemchapman@gmail.com)
 
-This is where I need your help. If you are an app developer or creator who has a launch story to tell (or a future launch coming up) I'd love to hear from you! I've created a form to collect applications for coming on the show here.
+Here's a list of all of my podcast guest appearances:
 
-If this podcast sounds interesting to you, give us a follow on Twitter at @LaunchedFM or my personal account at @_chuckyc. And if you have any ideas or feedback, my DMs are always open!
-
-### Official Accounts
-* Twitter: [@launchedfm](https://twitter.com/launchedfm)
-* Email: [charliemchapman@gmail.com](mailto:charliemchapman@gmail.com)
+* [**Cup of Tech** - Dark Noise with Charlie Chapman](http://cupof.tech/episode/d96644b693f24472/107-dark-noise-with-charlie-chapman) - _August 20, 2020_
+* [**Swiftly Built** - WWDC Debrief Day 4](https://www.youtube.com/watch?v=_YkzEbJ2nos) - _June 26, 2020_
+* [**iPad Pros** - WWDC 2020 and Dark Noise with Charlie Chapman](https://ipadpros.net/2020/06/24/episode-85-wwdc-2020-and-dark-noise-with-charlie-chapman/) - _June 24, 2020_
+* [**Everyday Robots** - WWDC 2020](https://everydayrobots.tech/posts/ep45/) - _June 23, 2020_
+* [**Automators** - Automating Dark Noise with Charlie Chapman](https://www.relay.fm/automators/46) - _March 27, 2020_
+* [**and you are?** - Charlie Chapman](https://podcasts.apple.com/us/podcast/charlie-chapman/id1445347880?i=1000467283227) - _March 2, 2020_
+* [**Everyday Robots** - Behind Dark Noise with Charlie Chapman](https://everydayrobots.tech/2019/11/25/13-interview-behind-dark-noise-with-charlie-chapman/) - _November 25, 2019_
+* [**Waiting for Review** - The 16" Macbook Pro Episode With Charlie Chapman](https://www.waitingforreview.com/143) - _November 17, 2019_
+* [**AppleInsider** - iOS 13 is here, iPhones are upon us](https://appleinsider.com/articles/19/09/20/ios-13-is-out-and-exactly-how-good-these-iphone-cameras-are-on-the-appleinsider-podcast) - _September 20, 2019_
+* [**The Icon Garden** - Indie Apps Then And Now with Charlie Chapman](https://www.icongardenshow.com/home/2019/9/18/episode-21-indie-apps-then-and-now-with-charlie-chapman) - _September 18, 2019_
+* [**Productivity in Tech** - Launching your "Learning Tool" App with Dark Noise Creator Charlie Chapman](https://productivityintech.transistor.fm/s1/36) - _September 10, 2019_
+* [**Waiting for Review** - Charlie Chapman and Dark Noise](https://www.waitingforreview.com/132) - _September 5, 2019_
+* [**Project Update** - Special Guest Charlie Chapman](https://project-update.com/10) - _September 3rd, 2019_
+* [**The Outpost** - 'Hot Dog Stand' with Charlie Chapman](https://podcasts.apple.com/us/podcast/3-2-hot-dog-stand-with-charlie-chapman/id1133056888?i=1000447807116) - _August 26, 2019_

@@ -1,20 +1,21 @@
 <nav>
     <div class="main-nav">
-    <a class="logo" href="/">
-      <img src="/assets/images/launched_artwork-1024.jpg" height="140" width="140" />
-    </a>
-    <div class="links">
-      {% for item in site.data.navigation reversed %}
-        <a href="{{ item.link }}" {% if page.url == item.link or (page.url == '/index.html' and item.link == '/') %}class="current"{% endif %}>{{ item.name }}</a>
-      {% endfor %}
+      <a class="logo" href="/">
+        <!-- <img src="/assets/images/profile_1024.jpg" height="140" width="140" /> -->
+        Charlie Chapman
+      </a>
+      <div class="links">
+        {% for item in site.data.navigation %}
+          <a href="{{ item.link }}" {% if page.url == item.link or (page.url == '/index.html' and item.link == '/') %}class="current"{% endif %}>{{ item.name }}</a>
+        {% endfor %}
+      </div>
+      <!-- <div class="expand-links-container">
+        <button class="expand-links" onclick="expandLinks()">
+          <img src="/assets/images/hamburger.png" height="12"/>
+        </button>
+      </div> -->
     </div>
-    <div class="expand-links-container">
-      <button class="expand-links" onclick="expandLinks()">
-        <img src="/assets/images/hamburger.png" height="12"/>
-      </button>
-    </div>
-  </div>
-  <div id="sub-nav" class="sub-nav closed">
+  <!-- <div id="sub-nav" class="sub-nav closed">
     <div class="links">
       {% for item in site.data.navigation reversed %}
           <a href="{{ item.link }}" {% if page.url == item.link or (page.url == '/index.html' and item.link == '/') %}class="current"{% endif %}>{{ item.name }}</a>
@@ -32,5 +33,5 @@
         subNav.classList.remove("closed")
       }
     }
-  </script>
+  </script> -->
 </nav>
