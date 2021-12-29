@@ -1,0 +1,417 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta data-react-helmet="true" name="apple-itunes-app" content="app-id=1491582246">
+    <title>Launched</title>
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/dqq4mih.css"> -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- generics -->
+    <link rel="icon" href="/assets/favicons/launched-favicon-32.png" sizes="32x32">
+    <link rel="icon" href="/assets/favicons/launched-favicon-128.png" sizes="128x128">
+    <link rel="icon" href="/assets/favicons/launched-favicon-192.png" sizes="192x192">
+    <link rel="icon" href="/assets/favicons/launched-favicon-228.png" sizes="228x228">
+
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="196x196" href=“/assets/favicons/launched-favicon-196.png">
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="/assets/favicons/launched-favicon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/assets/favicons/launched-favicon-180.png" sizes="180x180">
+
+    <link type="application/atom+xml" rel="alternate" href="https://v2.charliemchapman.com/feed.xml" title="Charlie Chapman" />
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Page 4 of 5 for Launched | Charlie Chapman</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Launched" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The personal blog of Charlie Chapman." />
+<meta property="og:description" content="The personal blog of Charlie Chapman." />
+<link rel="canonical" href="https://v2.charliemchapman.com/4/" />
+<meta property="og:url" content="https://v2.charliemchapman.com/4/" />
+<meta property="og:site_name" content="Charlie Chapman" />
+<meta property="og:image" content="https://v2.charliemchapman.com/assets/images/launched_artwork-1024.jpg" />
+<link rel="prev" href="https://v2.charliemchapman.com/3/" />
+<link rel="next" href="https://v2.charliemchapman.com/5/" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://v2.charliemchapman.com/assets/images/launched_artwork-1024.jpg" />
+<meta property="twitter:title" content="Launched" />
+<meta name="twitter:site" content="@_chuckyc" />
+<script type="application/ld+json">
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://v2.charliemchapman.com/assets/images/launched_artwork-1024.jpg"}},"@type":"WebPage","url":"https://v2.charliemchapman.com/4/","image":"https://v2.charliemchapman.com/assets/images/launched_artwork-1024.jpg","description":"The personal blog of Charlie Chapman.","headline":"Launched","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <nav>
+    <div class="main-nav">
+      <a class="logo" href="/">
+        <!-- <img src="/assets/images/profile_1024.jpg" height="140" width="140" /> -->
+        Charlie Chapman
+      </a>
+      <div class="links">
+        
+          <a href="/" >Home</a>
+        
+          <a href="/about.html" >About</a>
+        
+          <a href="/archive.html" >Archive</a>
+        
+          <a href="/feed.xml" >RSS</a>
+        
+      </div>
+      <!-- <div class="expand-links-container">
+        <button class="expand-links" onclick="expandLinks()">
+          <img src="/assets/images/hamburger.png" height="12"/>
+        </button>
+      </div> -->
+    </div>
+  <!-- <div id="sub-nav" class="sub-nav closed">
+    <div class="links">
+      
+          <a href="/feed.xml" >RSS</a>
+      
+          <a href="/archive.html" >Archive</a>
+      
+          <a href="/about.html" >About</a>
+      
+          <a href="/" >Home</a>
+      
+    </div>
+  </div>
+  <script>
+    function expandLinks() {
+      var subNav = document.getElementById("sub-nav");
+      if (subNav.classList.contains('opened')) {
+        subNav.classList.remove("opened")
+        subNav.classList.add("closed")
+      } else {
+        subNav.classList.add("opened")
+        subNav.classList.remove("closed")
+      }
+    }
+  </script> -->
+</nav>
+      <div class="content">
+        <div class="content-centered">
+  
+<h1 class="post-title">
+  <a href="/posts/2019/9/2/designing-dark-noise">
+    Designing Dark Noise
+  </a>
+</h1>
+<p class="post-meta">02 Sep 2019</p>
+
+<div class="post-content">
+  <p>Today I want to talk about the process I used for designing my new app <a href="https://apps.apple.com/us/app/dark-noise/id1465439395">Dark Noise</a>.  It’s an app for playing different ambient noises to help with sleep or focus.  I’m not a designer by trade, and this is the first app I’ve made for iOS, so this is more of a brain dump of everything I did and less of a proposal on how design should be done.</p>
+
+<p>Before I placed a pixel in any design tool, I first figured out what the guiding principles for the app were, and what features I wanted to include.  I detailed this step in a <a href="https://charliemchapman.com/posts/2019/8/23/principles-of-dark-noise/">separate post</a>, but the end result was:</p>
+
+<ul>
+  <li><strong>Configurability</strong>
+    <ul>
+      <li>Targeting pro users who want as many options and hooks to work the app into their workflow as possible</li>
+    </ul>
+  </li>
+  <li><strong>Speed</strong>
+    <ul>
+      <li>Opening app to playing sound should be as fast as possible with no compromise since this is the 99% use case</li>
+    </ul>
+  </li>
+  <li><strong>Keep it dark</strong> (expect fat fingers)
+    <ul>
+      <li>Most users will probably be using this in a dark environment, possibly without their glasses on or half asleep.  Keep that in mind.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>I have a little bit of experience playing around with <a href="https://www.adobe.com/products/xd.html">Adobe XD</a>, so I decided to use that to build out my mockups.  I ended up loving XD so I’d highly recommend it.  It’s even free! <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<h1 id="round-1">Round 1</h1>
+
+<p>The first thing I built was a player page based on the 3rd principle: <strong>Keep it dark</strong> (expect fat fingers)</p>
+
+<p><img src="/assets/posts/2019/09/02/dark-noise-design-v01.jpg" alt="Dark Noise design version 01" /></p>
+<p class="postCaption">In case you doubted my lack of design pedigree, this was full design, not a wireframe 😅</p>
+
+<p>Once you get passed the blandness, you can pretty much see the bones of the app from the beginning.  An easy to hit play button, a name, and a way to get to the other sounds.</p>
+
+<p>The “Create Noise” page was based on my original idea of generating the different color noises on the fly, and building a little color picker style control to let you mix your own noise.  For technical/scope reasons I ended up not going this direction at all, but I do anticipate implementing a “Create Noise” feature at some point in the future.</p>
+
+<p>I also had the main swiping gesture for minimizing the player there from the beginning.  One cool thing about Adobe XD is that you can quickly setup prototypes with swiping gestures for animations, and then demo them interactively on the phone.  So I could quickly play around with different ideas and get a sense of how they <em>felt</em>.</p>
+
+<p><img src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-design-prototyping.gif" alt="Dark Noise design version 01" /></p>
+<p class="postCaption">Recorded on my iPhone previewing the XD prototype. I toyed around with having the player minimize to the top, but the rapid prototyping with XD quickly showed me that didn't feel right</p>
+
+<p>The “Charcoal Dreams” name has an interesting back story.  From the beginning I knew I wanted to add some sort of fun whimsical feel to the app.  I thought it might be fun to give each noise an obnoxiously whimsical name, and if you 3D touched the name you’d get a silly description along the lines of “earthy notes with a hint of cinnamon” or something.</p>
+
+<p>Since I switched strategies to using audio recordings, this didn’t make as much sense, but I didn’t give up on that goal of having something fun.</p>
+
+<div class="postVideoContainer">
+    <video class="postVideo" controls="" loop="">
+    <source src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-1st-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
+</div>
+<p class="postCaption">First video I could find of a working version of the app.  This was in May, so about 4-5 months in.</p>
+
+<p>This first design wasn’t pretty, but the structural bones were pretty good.  It gave me a direction to go on as I built out the first version of the app.</p>
+
+<h1 id="round-2">Round 2</h1>
+
+<p>At this stage I actually had a functional app that had a lot of the features I wanted, but it just looked… bleh.  I am not a designer by trade, so I didn’t really know what to do to make this look better.  A designer friend at work pointed me to <a href="https://mobbin.design">Mobbin</a>.  It’s a simple website that allows you to view screenshots of hundreds of different well designed apps, with a pretty good search functionality.</p>
+
+<p><img src="/assets/posts/2019/09/02/mobbin-screenshot.jpg" alt="Mobbin" /></p>
+<p class="postCaption">Here I'm searching for "Audio Playback" patterns in apps under the "Music" category on <a href="https://mobbin.design">Mobbin</a></p>
+
+<p>Mobbin helped point me at what elements make up a good looking mobile app, and after iterating on a couple ideas in XD, I landed on a design that will start to look familiar if you’ve used the app.</p>
+
+<p><img src="/assets/posts/2019/09/02/dark-noise-design-v02.jpg" alt="Dark Noise design version 02" /></p>
+<p class="postCaption">This should look familiar.</p>
+
+<p>There are two interesting design details I’d like to call out.</p>
+
+<h4 id="select-noise-arrow">Select Noise Arrow</h4>
+
+<p>I really liked the idea of the initial view you see of the app being a super simple page with a big play button, but that meant I had to hide the other sound options behind the second screen.  I ended up with a slightly unusual design that treated the first page you see as a maximized player that you have to swipe down to reveal the rest of the app.</p>
+
+<p>I was worried it wouldn’t be immediately clear <em>how</em> you’re supposed to proceed from that page if you wanted to change your noise, so I borrowed a design element from my first MacBook Pro and gave the down arrow a little “breathing” animation.  I’m hoping the gentle bounce and opacity change will draw a new users eye enough to guide them through the app, but also not be an annoying distraction in the future.</p>
+
+<h4 id="icon-animations">Icon Animations</h4>
+
+<p>One thing I really like about some other audio apps is when it’s visually clear when audio is playing so if your speakers are muted you have an indication that sound <em>should</em> be coming out.  For example, in <a href="https://overcast.fm">Overcast</a>, a darker tint color bounces on the pause button along with the audio that’s playing to let you know that there is sound being played.</p>
+
+<p>I came up with a few ideas in After Effects, but I either couldn’t figure out how to implement it properly, or it just didn’t feel right once I implemented it into the app.</p>
+
+<div class="postVideoContainer">
+    <video class="postVideo" controls="" loop="">
+    <source src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-play-pause-ideas.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
+</div>
+<p class="postCaption">A couple play / pause ideas I tried out.</p>
+
+<p>One idea I had pretty early on was to make a looping animation for each of the static noise icons I was already building.  This sounded fun for me, but I was afraid it would take a long time and not really be worth the time it would take me.</p>
+
+<p>At one point I finally decided to try it out and see how it felt.  I made the animation for the White Noise icon and added it to the app, and it just felt awesome.</p>
+
+<div class="postVideoContainer">
+    <video class="postVideo" controls="" loop="">
+    <source src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-icons-sample.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
+</div>
+<p class="postCaption">Some of the icons I created for Dark Noise</p>
+
+<p>This solved my “playing indicator” problem, but even more importantly I found the <em>fun</em> I was looking for that I could use to stamp the app with my personality.</p>
+
+<h1 id="last-thoughts">Last Thoughts</h1>
+
+<p>There are other small touches throughout the app, but I think this touches on the biggest ones.  Like I said, I’m not a designer by trade, this is just to outline my thought process while I still remember it.  Hopefully this is helpful to somebody out there.</p>
+
+<p>If you have any other questions about my process or design choices, definitely reach out to me <a href="https://twitter.com/_chuckyc">on Twitter</a> I love talking about this stuff.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I actually do have a Creative Cloud subscription, but I believe all that gets you with XD is more storage space and access to their fonts. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<h1 class="post-title">
+  <a href="/posts/2019/8/28/im-feeling-lucky">
+    I'm feeling lucky
+  </a>
+</h1>
+<p class="post-meta">28 Aug 2019</p>
+
+<div class="post-content">
+  <p>Yesterday’s release of <a href="https://apps.apple.com/us/app/dark-noise/id1465439395">Dark Noise</a> exceeded my wildest expectations.  According to my stats from Apple, the app sold <strong>990</strong> copies which brought in <strong>$4,190</strong> in sales for a take home of <strong>$2,780</strong> after Apple’s 30% cut.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p><img src="/assets/posts/2019/08/28/dark-noise-day-1-stats.jpg" alt="Dark Noise day 1 stats" /></p>
+<p class="postCaption">Statistics from App Store Connect</p>
+
+<p>And the reaction from the community has been unbelievable.  Friends and strangers alike have said so many kind words on Twitter, personal blogs, podcasts, and even a <a href="https://www.youtube.com/watch?v=rsGnnwqbJuU">YouTube video</a>!  And to top that all off, one of my favorite websites, MacStories, wrote up <a href="https://www.macstories.net/reviews/dark-noise-review-ambient-noise-never-looked-so-good/">an amazing review</a>.</p>
+
+<p>A few people have asked me how I got the coverage that I did considering I had essentially zero following and zero connections a few months ago, and my honest <em>feeling</em> is that I didn’t do anything special and simply got lucky.  But I think that’s kind of a cop-out answer.</p>
+
+<p>In a recent podcast, Myke Hurley mentioned that he’s stopped saying he got <strong>“lucky”</strong> in achieving the success he’s had with his company <a href="https://www.relay.fm">Relay FM</a> and started using the term <strong>“fortunate”</strong> instead.  As usual, I think #MykeWasRight.</p>
+
+<p>The truth is, I did work really hard and tried <em>a lot</em> of different things.  I have no idea what really worked and what didn’t, but I can at least share what I did and explain my mindset.</p>
+
+<p>I’m going to try to write up as much as I can over the next few weeks while this is fresh on my mind, so keep your eyes on this feed if you’re curious.  If you have particular questions or topics you’d like me to cover, please reach out to me on <a href="https://twitter.com/_chuckyc">Twitter</a>.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I’m sharing this all in the spirit of openness.  I really hope this doesn’t come across as bragging and <em>please</em> let me know if it does <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<h1 class="post-title">
+  <a href="/posts/2019/8/27/dark-noise">
+    Dark Noise is in the App Store 🥳
+  </a>
+</h1>
+<p class="post-meta">27 Aug 2019</p>
+
+<div class="post-content">
+  <p>Today I released my first app to the App Store, <a href="https://apps.apple.com/us/app/dark-noise/id1465439395">Dark Noise</a>.  It’s a simple yet powerful way to play ambient noise to help you sleep, focus, or relax.</p>
+
+<p>This is the part where I’m supposed to tell you about a brilliant revelation I had that led me to solve a problem you don’t even know you have.  But I cannot, because that’s now how all of this went down.</p>
+
+<p>The truth is, Dark Noise started as a simple learning exercise and has turned into something more.  I chose to build an ambient noise app because I’m very picky, and there wasn’t one in the store that fit exactly what I wanted: simple, fast, and fun.  There are a lot of options out there, many of them quite good, but I think I’ve landed on a balance of those three attributes that is truly unique.</p>
+
+<h1 id="simple">Simple</h1>
+
+<p><img src="/assets/posts/2019/08/27/dark-noise-simple.png" alt="Player and sound picker screenshots" /></p>
+
+<p>From the beginning, Dark Noise was designed to be simple to use.  I primarily use ambient noise to help me sleep, and I wanted to make something that was really easy to use at night, half-asleep without my glasses on.</p>
+
+<p>The main player page has a simple big play button that stands out in the dark. And a quick swipe down will reveal all of the different noises that can be played with a tap.</p>
+
+<h1 id="fast">Fast</h1>
+
+<p><img src="/assets/posts/2019/08/27/dark-noise-speed.png" alt="Favorites, Siri, and widget screenshots" /></p>
+
+<p>At the end of the day, an ambient noise app’s job is to start a sound, and then get out of the way as fast as possible, so I designed Dark Noise to have multiple ways to quickly start your favorite sound.</p>
+
+<p>You can add and reorder your favorite sounds to a section that always shows at the top of the selection page.  Siri Shortcuts integrations allows you to create a shortcut to start any specific sound using only your voice, even through a HomePod!  And a customizable widget and Home screen quick actions allow you to quickly activate a noise before opening the app.</p>
+
+<h1 id="fun">Fun</h1>
+
+<p><img src="/assets/posts/2019/08/27/dark-noise-themes.png" alt="Dark Noise themes" /></p>
+
+<p>Something I learned from the wonderful weather app <a href="https://www.meetcarrot.com/weather/">Carrot</a> is that a utility app can be delightful to use.  I wanted to try to make Dark Noise something that is fun to open up and interact with.</p>
+
+<p>I loaded it up with multiple themes, and (way to many) custom app icon options, but the thing that I’m really proud of is all of the custom animations.  Each noise has a custom icon that comes to life when you start playing it.  And the buttons throughout the UI have little animations peppered throughout to make the app fun and fluid to navigate.</p>
+
+<div style="width: 100%;max-width: 560px;margin-left: auto;margin-right: auto;"><iframe style="width:100%" width="560" height="315" src="https://www.youtube.com/embed/Q7BDtu9CkAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>&lt;/iframe&gt;</div>
+
+<p>I’m really proud of how Dark Noise came together, but it wouldn’t be close to what it is today without all of the help I’ve received along the way.  First from my friends at work who’ve essentially let me leech Swifty wisdom from them over the last 8 months.  And also from the iOS developer / enthusiast community.  Over 900 people have joined the beta and provided me with countless bug reports, feature ideas, and marketing advice.  I can’t express enough how helpful this has been and it’s inspired me to try to lift others up more than I do.</p>
+
+<p>This is just the beginning and I’m excited to see where Dark Noise goes from here.  As always, I’d love to hear your thoughts and feedback on <a href="https://twitter.com/DarkNoiseApp">Twitter</a> or on the <a href="https://www.reddit.com/r/DarkNoiseApp/">Dark Noise Subreddit</a></p>
+
+</div>
+
+<h1 class="post-title">
+  <a href="/posts/2019/8/23/principles-of-dark-noise">
+    The Principles of Dark Noise
+  </a>
+</h1>
+<p class="post-meta">23 Aug 2019</p>
+
+<div class="post-content">
+  <p>At the beginning of this year I started working on my first indie app to release in the App Store called <a href="https://darknoise.app">Dark Noise</a>.  It’s an ambient noise app for iPhone and iPad.</p>
+
+<p>At first, I had a giant list of feature ideas and no idea how to distill them into a focused product. So I started by forcing myself to pick 3 principles to guide the design.</p>
+
+<p>I eventually landed on these core principles:</p>
+
+<ul>
+  <li><strong>Configurability</strong>
+    <ul>
+      <li>Targeting pro users who want as many options and hooks to work the app into their workflow as possible</li>
+    </ul>
+  </li>
+  <li><strong>Speed</strong>
+    <ul>
+      <li>Opening app to playing sound should be as fast as possible with no compromise since this is the 99% use case</li>
+    </ul>
+  </li>
+  <li><strong>Keep it dark</strong> (expect fat fingers)
+    <ul>
+      <li>Most users will probably be using this in a dark environment, possibly without their glasses on or half asleep.  Keep that in mind.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>After creating the principles, I took my list of feature ideas and tried to slot them all into one of those principles.  If they didn’t fit, I tossed them in the backlog.</p>
+
+<p><img src="/assets/posts/2019/08/23/dark-noise-principles-in-action.jpg" alt="Dark Noise Principles in Action" /></p>
+
+<p>Keeping these principles in mind as I tried to design and form an MVP was really helpful.  I have a tendency to get overly excited by an idea and drop whatever I’m doing and build it.  Often that’s a bad idea, but sometimes it’s good!</p>
+
+<p>Whenever I had the thought of adding a bunch of custom app icons referencing podcasts I like, I realized it was something that might actually resonate with the pro users I was targeting.  And seems to have done just that!</p>
+
+<p><img src="/assets/posts/2019/08/23/dark-noise-app-icons.png" alt="Dark Noise App Icons" /></p>
+
+<p>This also played into my pricing decisions as that market tends to prefer paying up front and is a little more averse to ads.  That’s not to say I won’t add a free tier in the future (in fact I probably will) but it’s something I’m always keeping in mind as I make these decisions.</p>
+
+<p>Anyway, I’m not an expert at this, heck I’m barely a beginner, but maybe you’ll find my thought process interesting nonetheless.</p>
+
+<p><i>This post is an attempt to make a more permanent record to <a href="https://twitter.com/\_chuckyc/status/1158072465739911168">this tweetstorm</a> from a few weeks ago.</i></p>
+
+</div>
+
+<h1 class="post-title">
+  <a href="/posts/2019/6/2/thinking-in-portals">
+    Thinking With Portals
+  </a>
+</h1>
+<p class="post-meta">02 Jun 2019</p>
+
+<div class="post-content">
+  <p>Being able to learn a new software language, framework, pattern, or platform has been one of the cornerstones of my career.  I’m generally pretty quick to pick something new up, and I get distracted easily so I end up doing this a lot.</p>
+
+<p>I bring this up because at the beginning of this year I moved into iOS development, a whole new ecosystem<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> where I didn’t know the language (Swift), framework (UIKit), or any of the tooling (Xcode), and in the last week I reached one of my favorite milestones of learning a new skill: <strong>thinking with portals</strong>.</p>
+
+<p>In Valve’s 2007 game <em>Portal</em>, you have to solve a series of puzzle’s using a unique “Portal” gun that allows you to arbitrarily place portals on the walls, and you can jump through them.  While simple on the surface, it’s deceptively complicated, and at first you sort of fumble your way through the mechanic to make it through the challenges.</p>
+
+<p>Eventually you will suddenly realize you’re brain automatically looks at a puzzle and starts calculating portal placements and jump trajectories, and the game’s robot narrator praises you with the phrase <em>“Now you’re thinking with portals”</em>.</p>
+
+<p>This same phenomenon occurs every time I learn a new software development skill.  I’m not talking about the part where you know you can fumble your way through any problem with enough time, though that is exciting as well.  This is the part where your brain automatically thinks within the framework or pattern you’re using in the background, and instead you’re free to focus on the actual design or engineering problem at hand.</p>
+
+<p>This over the last week, I’ve stopped spending my time figuring out <em>how</em> to do something on my iOS projects, but instead figuring out the best design that I <em>should</em> do.  It’s a subtle difference, but it’s deeply satisfying to finally cross that threshold.</p>
+
+<p>The beginning of learning a new skill is always daunting, but I know that, if I stick with it, eventually I’ll reach the <em>Thinking With Portals</em> moment and that’s one of the greatest feelings in the world.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I actually have done a bit of mobile development back in the day with Windows Phone 😂, but for the most part I’ve been up and down the web stack for my career. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+
+<!-- Pagination links -->
+<div class="pagination">
+    
+        <a href="/3/" class="previous">
+            ← Previous
+        </a>
+    
+    <div class="page_number ">
+        4 of 5
+    </div>
+    
+        <a href="/5/" class="next">Next →</a>
+    
+</div>
+</div>
+      </div>
+    <div class="footer">
+    <div class="links">
+        <a href="/subscribe">Subscribe</a>
+        <span>|</span>
+        <a href="/contact">Contact</a>
+        <span>|</span>
+        <a href="/about">About</a>
+        <span>|</span>
+        <a href="/">Home</a>
+    </div>
+    <p class="signature">Made by Charlie Chapman in St. Louis, MO</p>
+</div>
+  </body>
+</html>

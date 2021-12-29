@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://v2.charliemchapman.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://v2.charliemchapman.com/" rel="alternate" type="text/html" /><updated>2021-12-28T23:47:43-06:00</updated><id>https://v2.charliemchapman.com/feed.xml</id><title type="html">Charlie Chapman</title><subtitle>The personal blog of Charlie Chapman.</subtitle><entry><title type="html">iOS 15 Support with Dark Noise 2.6</title><link href="https://v2.charliemchapman.com/posts/2021/10/5/dark-noise-2_6-iOS-15" rel="alternate" type="text/html" title="iOS 15 Support with Dark Noise 2.6" /><published>2021-10-05T00:00:00-05:00</published><updated>2021-10-05T00:00:00-05:00</updated><id>https://v2.charliemchapman.com/posts/2021/10/5/dark-noise-2_6-iOS-15</id><content type="html" xml:base="https://v2.charliemchapman.com/posts/2021/10/5/dark-noise-2_6-iOS-15">&lt;p&gt;Dark Noise 2.6 comes to the &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;App Store today&lt;/a&gt; with full support for iOS 15!&lt;/p&gt;
+
+&lt;h2 id=&quot;extra-large-widgets&quot;&gt;Extra Large Widgets&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/10/05/dark-noise-2_6-extra-large-widgets.jpg&quot; alt=&quot;New Extra Large Widgets&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;iOS 15 introduced a new widget size exclusive to iPad and Dark Noise 2.6 adds support for these new big sizes. Now you can fill your iPad with 16 wide button noises, or a whopping 32 square button noises in a single widget!&lt;/p&gt;
+
+&lt;p&gt;And of course these widgets support all of the themes and customizations you’ve come to expect from Dark Noise widgets.&lt;/p&gt;
+
+&lt;h2 id=&quot;shortcuts&quot;&gt;Shortcuts&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/10/05/dark-noise-2_6-shortcuts.jpg&quot; alt=&quot;New Shortcuts Actions&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Due to limitations in iOS 14, Shortcuts actions with parameters could not play audio without opening the app up in the foreground. This led to a confusing array of Shortcuts actions provided by Dark Noise. Shortcuts actions &lt;strong&gt;with parameters&lt;/strong&gt; for setting up a timer or volume (began with the word “Start”) had to open the app in the foreground to start a sound, and shortcuts with &lt;strong&gt;no parameters&lt;/strong&gt; (began with the word “Play”) were limited but could play sounds in the background.&lt;/p&gt;
+
+&lt;p&gt;With iOS 15 things are dramatically simpler. New “Play [Noise]” Shortcuts actions can play noises in the background &lt;strong&gt;and&lt;/strong&gt; have parameter options for customizations.&lt;/p&gt;
+
+&lt;p&gt;There is also a new Shortcut action called “Find [Noise]” for advanced Shortcuts users. This action accepts a string parameter, searches Dark Noise for a matching noise, and outputs a Noise object that the new “Play [Noise]” action will accept as an input.&lt;/p&gt;
+
+&lt;p&gt;This allows for more advanced automations where you want to dynamically pass in a string for which noise you would like to play.  To be honest I’m not entirely sure what the main use case for this is, but I’ve recieved enough requests for it that I thought it was worth adding. I’d love to hear from anybody who uses it to see what they’ve built!&lt;/p&gt;
+
+&lt;h2 id=&quot;bug-fixes-and-improvements&quot;&gt;Bug Fixes and Improvements&lt;/h2&gt;
+
+&lt;p&gt;A new timer view using iOS 15’s new half sheet popover and some minor bug fixes round out the update. This year’s iOS beta cycle has been… busy to say the least (I moved into a new house!). Things are finally settling down and I’m getting back to work on Dark Noises next major feature!&lt;/p&gt;</content><author><name></name></author><summary type="html">Dark Noise 2.6 comes to the App Store today with full support for iOS 15!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://media.charliemchapman.com/blog/dark-noise-mac-rounded_1024.png" /><media:content medium="image" url="http://media.charliemchapman.com/blog/dark-noise-mac-rounded_1024.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Dark Noise for Mac</title><link href="https://v2.charliemchapman.com/posts/2021/5/25/dark-noise-mac" rel="alternate" type="text/html" title="Dark Noise for Mac" /><published>2021-05-25T00:00:00-05:00</published><updated>2021-05-25T00:00:00-05:00</updated><id>https://v2.charliemchapman.com/posts/2021/5/25/dark-noise-mac</id><content type="html" xml:base="https://v2.charliemchapman.com/posts/2021/5/25/dark-noise-mac">&lt;div class=&quot;postYoutube&quot;&gt;
+    &lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://www.youtube.com/embed/wsMA6Du03J8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope;  picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Dark Noise has come to the &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;Mac App Store&lt;/a&gt;! The sleek UI and large selection of ambient sounds you know and love are now easier than ever to use while you work.&lt;/p&gt;
+
+&lt;h2 id=&quot;mini-player&quot;&gt;Mini Player&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/05/25/dark-noise-mac-mini-player.png&quot; alt=&quot;Big Sounds Mini Player&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Taking advantage of the Mac platform, a new innovative “adaptive toolbar” UI allows you to shrink your window into a Mini Player to keep Dark Noise quickly accessible while taking up very little screen space. Dark Noise for Mac also features full menu support with keyboard shortcuts to feel right at home on your Mac.&lt;/p&gt;
+
+&lt;h2 id=&quot;all-your-favorite-features&quot;&gt;All your favorite features&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/05/25/dark-noise-mac-themes.png&quot; alt=&quot;Themes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All of your favorite Dark Noise features are here including timers, custom mixes, widgets, and multiple themes. And with iCloud syncing, all of your custom mixes will automatically be available on your Mac.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-it-now&quot;&gt;Get it now!&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/05/25/dark-noise-hero-2_5.png&quot; alt=&quot;Dark Noise Family&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dark Noise for Mac is now available on the App Store &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;here&lt;/a&gt; as a universal app including the iPhone and iPad versions. Existing Dark Noise customers will be able to download Dark Noise for Mac for free.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://media.charliemchapman.com/blog/dark-noise-mac-rounded_1024.png" /><media:content medium="image" url="http://media.charliemchapman.com/blog/dark-noise-mac-rounded_1024.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Overviewer Week 1</title><link href="https://v2.charliemchapman.com/posts/2021/1/14/overviewer-week-1" rel="alternate" type="text/html" title="Overviewer Week 1" /><published>2021-01-14T00:00:00-06:00</published><updated>2021-01-14T00:00:00-06:00</updated><id>https://v2.charliemchapman.com/posts/2021/1/14/overviewer-week-1</id><content type="html" xml:base="https://v2.charliemchapman.com/posts/2021/1/14/overviewer-week-1">&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/01/14/overviewer-icon-rounded-200.png&quot; alt=&quot;Overviewer app icon&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Last week, when I released my new app &lt;a href=&quot;https://charliemchapman.com/posts/2021/6/overviewer/&quot;&gt;Overviewer&lt;/a&gt;, I honestly thought it was a pretty niche product and was just hoping it would find the few other teachers out there who it could help during this wild year of virtual learning. With that in mind, I didn’t really do much in the way of marketing like I &lt;a href=&quot;https://charliemchapman.com/posts/2019/9/27/marketing-dark-noise/&quot;&gt;did with Dark Noise&lt;/a&gt;. But it turns out, there’s more interest in turning an iPhone into a document camera than I thought! 😅&lt;/p&gt;
+
+&lt;p&gt;As is tradition, I’d like to go through some quick metrics for the app launch and see if there’s anything. Let’s start with the basics:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;📈 181,000 “App Units Sold” 🤯&lt;/li&gt;
+  &lt;li&gt;📍 17,170 Sessions &lt;em&gt;(opt-in only metrics)&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;⭐️ 192 ratings avg 4.8 stars&lt;/li&gt;
+  &lt;li&gt;📝 57 reviews&lt;/li&gt;
+  &lt;li&gt;💥 0 crashes 😁 &lt;em&gt;(opt-in only metrics)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Alright, we need to address that ridiculous 181,000 “App Units Sold” number because… that’s kind of unbelievable. When something looks unbelievable there’s probably a reason.&lt;/p&gt;
+
+&lt;p&gt;The first sign something weird was happening was actually immediately after launch when the app supposedly got &lt;a href=&quot;https://twitter.com/_chuckyc/status/1346899004878106629?s=20&quot;&gt;32,000 downloads in the first hour&lt;/a&gt;. And while “sessions” metrics are only available to users who have opted in to allow developers to see their analytics, 17,170 seems way lower than what you would expect if there were truly 181,000 users.&lt;/p&gt;
+
+&lt;p&gt;It turns out, school districts have access to something called the &lt;a href=&quot;https://vpp.itunes.apple.com/?l=en&quot;&gt;Volume Purchasing Program&lt;/a&gt; (VPP) that allows them to purchase apps for distribution to all Apple devices in their districts. When an app is free, admins can “purchase” &lt;a href=&quot;https://twitter.com/timgostony/status/1347290649049980928?s=20&quot;&gt;as many licenses as they want&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/sohojoester/status/1347280847959834625?s=20&quot;&gt;some folks on Twitter&lt;/a&gt; said they would &lt;em&gt;“generally buy at least 3x the number of devices I could possible deploy to and then deploy as needed”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;So most likely these huge numbers of “purchases” are school admins grabbing way more licenses than they’ll actually use just to cover their bases. If we break down unit sales by “device” I think we can see this in the data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/01/14/overviewer-7-day-unit-sales-devices.jpg&quot; alt=&quot;7 Day Unit Sales by Device&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here you can see about 157,000 units were purchased on “Desktop” while about 24,000 were from iOS devices (and 5 on iPod touch 😆). Overviewer isn’t available on the Mac, so I think it’s safe to say those 157,000 are actually from volume licensing and only a small fraction of those ever end up downloaded to a device. But the 24,000 from iOS devices are probably mostly legitimate downloads.&lt;/p&gt;
+
+&lt;h3 id=&quot;press&quot;&gt;Press&lt;/h3&gt;
+
+&lt;p&gt;These numbers are &lt;em&gt;way&lt;/em&gt; higher than I was expecting! So what happened? Unlike with Dark Noise, I didn’t try to build up a big TestFlight group or reach out to the press beforehand, but I did make a simple &lt;a href=&quot;https://overviewer.app&quot;&gt;presskit&lt;/a&gt; and wrote up a &lt;a href=&quot;https://charliemchapman.com/posts/2021/6/overviewer/&quot;&gt;blog post&lt;/a&gt; with the story behind the app.&lt;/p&gt;
+
+&lt;p&gt;Pretty quickly after releasing my blog post, &lt;a href=&quot;https://9to5mac.com/2021/01/06/iphone-document-camera-overviewer-zoom/&quot;&gt;9to5Mac&lt;/a&gt;, &lt;a href=&quot;https://www.imore.com/overviewer-turns-your-iphone-document-camera-zoom-calls&quot;&gt;iMore&lt;/a&gt;, and &lt;a href=&quot;https://knapsack.news/overviewer-for-ios-turns-your-phone-into-a-document-camera/&quot;&gt;Knapsack&lt;/a&gt; all wrote up articles about the app. This led to a lot of follow-on articles from loads of smaller blogs around the world. Then later in the day, &lt;a href=&quot;https://www.theverge.com/2021/1/6/22217200/overviewer-app-teachers-overhead-camera-iphone-zoom&quot;&gt;The Verge&lt;/a&gt; wrote about the app! 🤯 I’m going to be honest here, seeing that pop up in my feed almost broke me. I was literally shaking.&lt;/p&gt;
+
+&lt;p&gt;I have 2 theories for how I got all this press.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;I’ve already built a little reputation with Dark Noise and some relationships that put me on some tech writers’ radar right out of the gate.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I told a compelling, relatable story that fit a broader narrative for the world we all live in right now.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you don’t already have a reputation or relationships with anybody in the press, there’s not a lot you can do for the first point. I would say making a decent press kit and cold emailing writers is probably the best you can do here.&lt;/p&gt;
+
+&lt;p&gt;Point 2 wasn’t exactly something I did on purpose, but it was pretty clear as more articles came in that the story - &lt;em&gt;“Nerdy Dev Makes App to Help Teacher Wife with Virtual Learning”&lt;/em&gt; - was the thing a lot of folks were keying in to. It fits neatly into the narrative we’re all currently living through, where we’re trying to come up with interesting solutions to our pandemic world.&lt;/p&gt;
+
+&lt;p&gt;I think telling a compelling, relatable story when announcing your app can go a long way to help you get the word out there.&lt;/p&gt;
+
+&lt;p&gt;I also made a &lt;a href=&quot;https://www.youtube.com/watch?v=fadOMMpQErg&quot;&gt;tutorial video&lt;/a&gt; to try to help explain how the app works, and I think this may have inadvertently added to the personalized story behind the app since I’m the one personally showing the app off on camera.&lt;/p&gt;
+
+&lt;h3 id=&quot;sources&quot;&gt;Sources&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/01/14/overviewer-7-day-sources-metrics.jpg&quot; alt=&quot;Overviewer Sources Metrics&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are the sources metrics from App Store Connect. As expected The Verge and 9to5 did a lot of the heavy lifting on the Web Referrer side, but the size of Facebook in the App Referrers initially surprised me. I searched around and found that a lot of people (usually teachers) were sharing The Verge article on Facebook. Presumably, since the Facebook app has a built in browser, any links from The Verge to the App Store would actually be counted as coming from the Facebook app.&lt;/p&gt;
+
+&lt;h3 id=&quot;thanks-&quot;&gt;Thanks 🙏&lt;/h3&gt;
+
+&lt;p&gt;I guess I’ll wrap up by saying thanks to everyone who shared the app with any teachers or educators they know who might find it useful. Seeing that this little app I made is &lt;a href=&quot;https://twitter.com/_chuckyc/status/1348985834897367040?s=20&quot;&gt;being used in the real world&lt;/a&gt; and helping teachers and kids learn during this wild year is extraordinarily fulfilling. I’ve also heard from some people using Overviewer for tabletop gaming with friends over Zoom which is totally awesome and not something I had considered at all.&lt;/p&gt;
+
+&lt;p&gt;If you haven’t yet can download the app for free on the App Store &lt;a href=&quot;https://itunes.apple.com/app/id1528900395&quot;&gt;here&lt;/a&gt;. And as always, if you have any suggestions for how to improve the app, or if you find another alternate use for it outside of virtual learning, let me know!&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://media.charliemchapman.com/blog/overviewer-icon-rounded.png" /><media:content medium="image" url="http://media.charliemchapman.com/blog/overviewer-icon-rounded.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Launched Year 1</title><link href="https://v2.charliemchapman.com/posts/2021/1/13/launched-year-1" rel="alternate" type="text/html" title="Launched Year 1" /><published>2021-01-13T00:00:00-06:00</published><updated>2021-01-13T00:00:00-06:00</updated><id>https://v2.charliemchapman.com/posts/2021/1/13/launched-year-1</id><content type="html" xml:base="https://v2.charliemchapman.com/posts/2021/1/13/launched-year-1">&lt;p&gt;One year ago today I released my first episode of &lt;a href=&quot;https://charliemchapman.com/posts/2020/1/13/introducing-launched/&quot;&gt;Launched&lt;/a&gt;. While January 2020 feels like a different world than January 2021, I still think 1 year in is a good time to assess how the project is going compared to my initial goals. And just as I did after &lt;a href=&quot;https://charliemchapman.com/posts/2020/1/21/launching-launched/&quot;&gt;week 1&lt;/a&gt;, I’d like to run through the metrics and see if there are any interesting findings.&lt;/p&gt;
+
+&lt;p&gt;But first, some quick vanity metrics!&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;⬇️ 53,666 Total Downloads&lt;/li&gt;
+  &lt;li&gt;⏱ 27 hours 33 minutes of total content&lt;/li&gt;
+  &lt;li&gt;🐦 1,067 &lt;a href=&quot;https://twitter.com/launchedfm&quot;&gt;Twitter&lt;/a&gt; Followers&lt;/li&gt;
+  &lt;li&gt;⭐️ 5.0 Rating on Apple Podcasts&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;great-expectations&quot;&gt;Great Expectations&lt;/h3&gt;
+
+&lt;p&gt;Let’s start with expectations. In my &lt;a href=&quot;https://charliemchapman.com/posts/2020/1/27/launching-launched/&quot;&gt;Launching Launched&lt;/a&gt; post I explained the 3 main reasons why I started the show.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Any project that’s going to require a significant investment of your time deserves to have this question answered: Why? For me, there is one “altruistic” answer and two selfish ones.&lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;p&gt;I want this to exist and genuinely think other devs and creators would find it beneficial.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;I think it could help me raise my profile in the community which would help with future app launches and all the nice benefits of having a strong network.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;I’d get to meet and talk to a bunch of interesting people whose work I really respect.&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;p&gt;My understanding is that the vast majority of podcasts fail to reach a substantial audience, so 1 and 2 may never happen. But 3 is a benefit I get either way, so in the end, I felt it was worth giving it a shot.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’m counting #3 as an unambiguous success ✅. Just look at &lt;a href=&quot;https://launchedfm.com&quot;&gt;this guest list&lt;/a&gt;! I still can’t believe I got to talk to all of these people. Not only with huge inspirations for me in the iOS developer community but also internet creator heroes I’ve been looking up to for years and years like &lt;a href=&quot;https://launchedfm.com/episodes/12-SethWorley/&quot;&gt;Seth Worley&lt;/a&gt; and &lt;a href=&quot;https://launchedfm.com/episodes/5-MykeHurley/&quot;&gt;Myke Hurley&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For #1, I’m giving myself a pass as well. The show exists ✅ and I’ve heard from more than one listener that they find it beneficial ✅.&lt;/p&gt;
+
+&lt;p&gt;#2 is a bit trickier to measure. Based only on listener metrics I’m not sure how much the show has “raised my profile” as we’ll see in the next section, but I think there’s no doubt it’s helped benefit my network within the iOS community. In a year devoid of networking events, I’ve been able to have regular long conversations with developers I admire every other week.&lt;/p&gt;
+
+&lt;h3 id=&quot;metrics&quot;&gt;Metrics&lt;/h3&gt;
+
+&lt;p&gt;Because Launched is an interview show my expectation for downloads was a lot of variation in each episode (since each guest brings different sized audiences along) but hopefully slow growth over time since each guest’s audience would hopefully bring a few new subscribers.&lt;/p&gt;
+
+&lt;p&gt;Something like this:
+&lt;img src=&quot;/assets/posts/2021/01/13/launched-expectations.jpg&quot; alt=&quot;Launched Expectations&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Instead, here are the downloads for every episode in year 1. It’s separated by day 1 of release to day 90 of release since the most recent episodes haven’t been out as long and it wouldn’t be accurate to compare total downloads. So you can compare all of the “7 Days” download numbers (green) for each episode for example.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/01/13/launched-year-1-metrics.jpg&quot; alt=&quot;Launched Year 1 Metrics&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This wasn’t at all what I was expecting 😅. After the spikyness of the first 5 episodes (which was unique in that I released an episode every day), it pretty much completely leveled off into a nearly flat line. Very few spikes and almost no valleys.&lt;/p&gt;
+
+&lt;p&gt;I have to admit that, despite all my lip service about my goals not being about audience size, this was a little disappointing. Admittedly I didn’t do much in the way of marketing after the initial launch, nor do I really know what options I even have (feel free to reach out if you have any ideas 😁). I think I just incorrectly internalized that if I could bring on interesting guests and keep at it regularly that I would probably grow, despite intellectually knowing that the vast majority of podcasts don’t reach that big of an audience.&lt;/p&gt;
+
+&lt;p&gt;There is some hope, however! Episode 20 with &lt;a href=&quot;https://launchedfm.com/episodes/20-CARROTWeather-BrianMueller/&quot;&gt;Brian Mueller&lt;/a&gt; was the first episode after an extended “Back to School Break” and it saw a pretty big bump in downloads (I don’t have 90 day numbers for it yet though). And it looks like each episode after has sustained a larger average than before the break.&lt;/p&gt;
+
+&lt;p&gt;Time will tell if this is a trend or a fluke, but it does feel nice to see a little boost in the audience size.&lt;/p&gt;
+
+&lt;p&gt;And here’s the user agent and location metrics:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/01/13/launched-listener-data.jpg&quot; alt=&quot;Launched Listener Data&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I don’t have much commentary to add here other than pointing out that Overcast having a bigger percentage than Apple Podcasts is, I think, evidence of the nerdy, iOS centric profile of my listenership 😅.&lt;/p&gt;
+
+&lt;p&gt;Also, as someone who lives in a small midwestern American city, it’s very cool to see how many countries people are listening from!&lt;/p&gt;
+
+&lt;h3 id=&quot;diversity&quot;&gt;Diversity&lt;/h3&gt;
+
+&lt;p&gt;One of the areas where I’ve failed my original ambitions is ensuring a diverse list of guests. Of the first 24 episodes, 14 are white men, and only 3 episodes have women guests.&lt;/p&gt;
+
+&lt;p&gt;I think my failure here comes &lt;em&gt;before&lt;/em&gt; scheduling and booking. My problem is I don’t know or follow enough diverse indie developers.&lt;/p&gt;
+
+&lt;p&gt;Everybody I bring on the show is someone whose work I genuinely admire and look up to. And I really don’t think the right thing to do is to bring on token diverse people, so I need to expand my network to find the folks doing interesting work who come from different backgrounds than me. I don’t know what the best method for addressing this is though, so if you’ve read this far and you have any ideas &lt;em&gt;please&lt;/em&gt; let me know!&lt;/p&gt;
+
+&lt;h3 id=&quot;wrap-up&quot;&gt;Wrap Up&lt;/h3&gt;
+
+&lt;p&gt;Overall I’m really proud of Launched. I think I’ve produced a high-quality show featuring interesting guests filled with fun and educational conversations. It’s honestly a lot of work, but for now, it’s worth all of the effort.&lt;/p&gt;
+
+&lt;p&gt;2020 threw a curveball at everybody’s life and for me Launched helped get through it. It provided the excuse to connect with a lot of developers I was really hoping to get to meet at conferences and meetups that no longer happened this year.&lt;/p&gt;
+
+&lt;p&gt;To all of you who listen, I can’t thank you enough.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;In the US. I don’t know how to aggregate international Apple Podcast reviews &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">One year ago today I released my first episode of Launched. While January 2020 feels like a different world than January 2021, I still think 1 year in is a good time to assess how the project is going compared to my initial goals. And just as I did after week 1, I’d like to run through the metrics and see if there are any interesting findings.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/launched_artwork-1024.jpg" /><media:content medium="image" url="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/launched_artwork-1024.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Meet Overviewer</title><link href="https://v2.charliemchapman.com/posts/2021/1/6/overviewer" rel="alternate" type="text/html" title="Meet Overviewer" /><published>2021-01-06T00:00:00-06:00</published><updated>2021-01-06T00:00:00-06:00</updated><id>https://v2.charliemchapman.com/posts/2021/1/6/overviewer</id><content type="html" xml:base="https://v2.charliemchapman.com/posts/2021/1/6/overviewer">&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/01/06/overviewer-icon-rounded-200.png&quot; alt=&quot;Overviewer app icon&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Today I’m releasing &lt;a href=&quot;https://itunes.apple.com/app/id1528900395&quot;&gt;Overviewer&lt;/a&gt;, a totally free new iOS app for teachers that can turn your iPhone into a document camera on Zoom or other video conferencing apps. It’s proven difficult to explain what the app is actually for if you don’t already know what that is, so let’s start with a quick explanation of a document camera (or visualiser for our UK friends).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/01/06/iOCHOW-S1-Document-Scanner-500.jpg&quot; alt=&quot;Document Scanner&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;postCaption&quot;&gt;&lt;a href=&quot;https://iochow.com/product/iochow-s1-document-scanner/&quot;&gt;iOCHOW S1 Document Scanner&lt;/a&gt; - $219&lt;/p&gt;
+
+&lt;p&gt;A document scanner is essentially a mounted webcam pointed straight down on a desk that can project or stream a top-down video of anything the presenter wants to physically show on their desk. Many teachers use these now instead of the old overhead projectors for showing worksheets, working through math problems, ect while teaching.&lt;/p&gt;
+
+&lt;p&gt;My wife is a Kindergarten teacher and when COVID hit she had to figure out how to teach a bunch of 5 and 6 year olds how to draw letters over Zoom. Initially she made her own document camera using her iPhone and the default camera app. Zoom has a wonderful feature where you can share your iPhone’s screen by plugging into your laptop with a lightning cable or even wirelessly over AirPlay but when you open the camera app there are two issues.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;There’s a bunch of buttons and chrome around camera view so it looks clunky&lt;/li&gt;
+  &lt;li&gt;The camera app doesn’t actually rotate when you turn it sideways (just some of the labels) so you can only share your phone in portrait mode which means huge black bars on each side of the zoom call and a &lt;em&gt;tiny&lt;/em&gt; video stream of what you want to share.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So being the dorky husband that I am, I quickly built an app that does nothing other than show what the phone camera sees with zero chrome, and properly rotates the whole app so that you can share it in landscape on zoom. This did the trick and she actually used it! But over time she’d point out little annoyances and I’d add a feature here and there to make it a smoother experience like a button to turn on the flashlight to light the desk, and one for forcing a rotation change. I also went ahead and fully supported streaming it over AirPlay as a sort of learning experience and before I knew it I had an interesting little app on my hands.&lt;/p&gt;
+
+&lt;p&gt;I figured this may be useful for other teachers out there so I gave it a fresh coat of paint, a fun icon (with alternates of course 😄) and put it on the store for free. To be honest, I’m not really sure how many people will find this useful. It’s pretty tailor made for exactly my wife’s use case but I would think that would be a pretty common one for teachers to be in right now in our current virtual teaching world.&lt;/p&gt;
+
+&lt;p&gt;So if you’ve made it this far, here’s what I’m asking of you. I know most of you probably wouldn’t use this yourselves, but if you know of any teachers or educators in your life that this may help, tell them about the app. It’s totally free for a reason! If getting this into the store makes one teacher’s life easier this year I’ll consider this whole side-project a success 😁.&lt;/p&gt;
+
+&lt;p&gt;I also made a little video tutorial to show how it works. This video is specifically for use with Zoom, but the same principle should apply to any video conferencing app that lets you share an iPhone screen.&lt;/p&gt;
+
+&lt;div class=&quot;postYoutube&quot;&gt;
+    &lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://www.youtube.com/embed/fadOMMpQErg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope;  picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p class=&quot;postCaption&quot;&gt;There&apos;s also a link to this video inside of the app as well.&lt;/p&gt;
+
+&lt;p&gt;You can download the app on the App Store &lt;a href=&quot;https://itunes.apple.com/app/id1528900395&quot;&gt;here&lt;/a&gt;. If you have any suggestions for how to improve the app, or if you find an alternate use for it outside of virtual learning, let me know!&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://media.charliemchapman.com/blog/overviewer-icon-rounded.png" /><media:content medium="image" url="http://media.charliemchapman.com/blog/overviewer-icon-rounded.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">First Sale</title><link href="https://v2.charliemchapman.com/posts/2021/1/1/first-sale" rel="alternate" type="text/html" title="First Sale" /><published>2021-01-01T00:00:00-06:00</published><updated>2021-01-01T00:00:00-06:00</updated><id>https://v2.charliemchapman.com/posts/2021/1/1/first-sale</id><content type="html" xml:base="https://v2.charliemchapman.com/posts/2021/1/1/first-sale">&lt;p&gt;&lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;Dark Noise&lt;/a&gt; has been in the App Store for over a year, yet I’ve never actually run a sale before. In fact, the only price change I’ve made at all is increasing the price by a few dollars when I shipped my 2.0 update.&lt;/p&gt;
+
+&lt;p&gt;This was due partially to laziness, but also a slight sense of feeling gross about sales for some reason? Truth be told I don’t have a good reason for this, but I had this generic (and quite frankly silly) notion in the back of my mind that it feels slightly desperate and devalues the product somehow.&lt;/p&gt;
+
+&lt;p&gt;So when &lt;a href=&quot;https://twitter.com/frboulais?s=21&quot;&gt;François&lt;/a&gt; reached out about joining his &lt;a href=&quot;https://twitter.com/indieappsanta&quot;&gt;Indie App Santa&lt;/a&gt; project and putting Dark Noise on sale for 50% for 1 day I was weirdly hesitant. But I figured “what’s the worst that could happen?” and agreed.&lt;/p&gt;
+
+&lt;p&gt;Based on literally no data I kinda figured that I’d probably get around double the sales from the Indie App Santa Twitter account promotion and me tweeting about it from my account. At 50% off this would mean I’d pretty much be breaking even on revenue. Since Dark Noise is paid up front with no subscription or in app purchases, this would basically be a wash with a &lt;em&gt;slight&lt;/em&gt; bump in users.&lt;/p&gt;
+
+&lt;p&gt;I was wrong.&lt;/p&gt;
+
+&lt;p&gt;Here’s my sales for the month of december. See if you can spot what day the sale took place! 😅&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/01/01/dark-noise-dec-sales.jpg&quot; alt=&quot;Dark Noise December Sales&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;postCaption&quot;&gt;Note: This is sales, not units so the 50% off is already taken into account.&lt;/p&gt;
+
+&lt;p&gt;This was a &lt;strong&gt;way&lt;/strong&gt; bigger bump than I was expecting, easily making up for the price difference. It’s worth noting it did trail off pretty quickly after the sale ended. It’s a bit hard to tell exactly how quickly because sales bumped again a few days later on Christmas when the app was mentioned in a few “Best apps for your new phone” articles.&lt;/p&gt;
+
+&lt;p&gt;One thing I’m curious about is what’s driving the sales spike. Indie App Santa has almost 5,000 followers on Twitter who are actively looking for app deals, so I’m curious how much is driven by them and how much is the sale itself.&lt;/p&gt;
+
+&lt;p&gt;Lets look at the &lt;strong&gt;Sources&lt;/strong&gt; data provided by App Store Connect.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/01/01/dark-noise-dec-sources.jpg&quot; alt=&quot;Dark Noise Sales Sources&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As expected Web Referrers and App Store Search have big spikes, but curiously so is App Store Browse (customers who found the app through general App Store browsing vs direct link or specifically searching my app). Possibly this is because the price is lower so more people who saw the app converted to sales? My conversion rate for the day was up 59.3% (though still very low) but there’s so much noise from all the direct sales that this is hard to really tease out what’s really going on here.&lt;/p&gt;
+
+&lt;p&gt;Let’s dig into where the web referrers are coming from.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/01/01/dark-noise-dec-web-referrers.jpg&quot; alt=&quot;Dark Noise Web Referrers&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;postCaption&quot;&gt;The actual numbers here are much lower than the numbers on the aggregated &quot;Sources&quot; page in App Store Connect. Not sure what to make of that?&lt;/p&gt;
+
+&lt;p&gt;“t.co” is traffic coming from Twitter (I think that’s something to do with their url shortener or analytics or something?) so that definitely lines up with what I was expecting. And most other referrers are probably from people doing some research on the app through my website or reviews written about it after they saw the app on sale on Twitter. Somebody also made a &lt;a href=&quot;https://www.reddit.com/r/AppHookup/comments/khyrg6/iosdark_noise599_299/&quot;&gt;Reddit post&lt;/a&gt; on a subreddit that promotes app sales that drove some sales as well.&lt;/p&gt;
+
+&lt;p&gt;App Referrers also has a few interesting tidbits.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021/01/01/dark-noise-dec-app-referrers.jpg&quot; alt=&quot;Dark Noise Web Referrers&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;postCaption&quot;&gt;Here again actual numbers are lower than the aggregated &quot;Sources&quot; page.&lt;/p&gt;
+
+&lt;p&gt;The excellent app &lt;a href=&quot;https://apps.apple.com/dk/app/scriptable/id1405459188&quot;&gt;Scriptable&lt;/a&gt; at the top is, I believe, a result of their &lt;a href=&quot;https://twitter.com/scriptableapp/status/1334849125544841216&quot;&gt;partnership with Indie App Santa&lt;/a&gt; where you could make a widget for what app is on sale each day using Scriptable. Tweetbot and Reddit apps make sense for the same reasons as the web traffic (I believe the official Twitter app will always show through Web Referrers because it routes you through Safari when you click links?).&lt;/p&gt;
+
+&lt;p&gt;The interesting bit here is that there appears to be some apps out there still that track apps with price drops that can drive at least a some sales. I’ll have to experiment at some point by lowering the price with zero promotion and see how that impacts sales for the day.&lt;/p&gt;
+
+&lt;p&gt;Overall I think this experience shows me I should definitely be experimenting with pricing and sales more (duh!). I think I still want to keep them relatively infrequent for now, but in 2021 I think I’ll probably do some more experiments to see what I can do when promoting them on my own.&lt;/p&gt;</content><author><name></name></author><summary type="html">Dark Noise has been in the App Store for over a year, yet I’ve never actually run a sale before. In fact, the only price change I’ve made at all is increasing the price by a few dollars when I shipped my 2.0 update.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://media.charliemchapman.com/charlie-profile.jpg" /><media:content medium="image" url="http://media.charliemchapman.com/charlie-profile.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">iOS 14 Support With Dark Noise 2.1</title><link href="https://v2.charliemchapman.com/posts/2020/9/17/dark-noise-2_1" rel="alternate" type="text/html" title="iOS 14 Support With Dark Noise 2.1" /><published>2020-09-17T00:00:00-05:00</published><updated>2020-09-17T00:00:00-05:00</updated><id>https://v2.charliemchapman.com/posts/2020/9/17/dark-noise-2_1</id><content type="html" xml:base="https://v2.charliemchapman.com/posts/2020/9/17/dark-noise-2_1">&lt;p&gt;With Apple’s release of iOS 14 I’m releasing Dark Noise 2.1 with support for many of the new iOS 14 features. And it’s available in the &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;App Store today&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;widgets-widgets-widgets&quot;&gt;Widgets Widgets Widgets&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/09/16/dn-big-widgets.png&quot; alt=&quot;Large Widgets&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The biggest new feature of Dark Noise 2.1 is multiple new widgets that act as a shortcut to quickly start playing your favorite sounds. There are 3 new widget types to choose from and you can create as many as you want and place them anywhere on your iPhone home screen&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Each of the new widgets allow you to customize the theme and select a noise for each button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/09/16/dn-single-widgets.png&quot; alt=&quot;Single Widgets&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The “Single Sound” widget has a few more features. You can configure each one to start your sound with a different timer and even automatically set the volume to your prefered level, perfect for a nighttime routine.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-features&quot;&gt;Other features&lt;/h2&gt;
+
+&lt;p&gt;Along with the new widgets there are numerous enhancements included in Dark Noise 2.1&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/09/16/dn-timer-popup.png&quot; alt=&quot;New Timer View&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New Timer View&lt;/strong&gt; • The timer view has been rewritten to make setting a timer more streamlined.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/09/16/dn-siri-more.png&quot; alt=&quot;Siri Enhancements&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Improved Siri Support&lt;/strong&gt; • When asking Siri to play a sound on Dark Noise that has multiple options, Siri will show you the alternatives and you can select a different sound to play.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/09/16/dn-icon-picker.png&quot; alt=&quot;New Icon Picker&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New App Icon Selection Page&lt;/strong&gt; • The app icon selection page has been rebuilt to show off the alternate app icons a little bit better.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wind Down&lt;/strong&gt; • Dark Noise will now show up in the new iOS Wind Down feature.&lt;/p&gt;
+
+&lt;p&gt;Dark Noise 2.1 is available on for iPhone and iPad on the App Store &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;promo-video&quot;&gt;Promo Video&lt;/h2&gt;
+
+&lt;div class=&quot;postYoutube&quot;&gt;
+    &lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://www.youtube.com/embed/YEXRx5wZ-cw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope;  picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;For context read &lt;a href=&quot;https://twitter.com/_chuckyc/status/1306004068201123841?s=21&quot;&gt;this Twitter thread&lt;/a&gt; on the long windy road to getting this through to the store&lt;/em&gt; 😅&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;On the iPad they are currently still limited to the “Today View” to the left of your home screens.. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">With Apple’s release of iOS 14 I’m releasing Dark Noise 2.1 with support for many of the new iOS 14 features. And it’s available in the App Store today!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://media.charliemchapman.com/dark-noise/dark-noise-app-icon-cropped.png" /><media:content medium="image" url="http://media.charliemchapman.com/dark-noise/dark-noise-app-icon-cropped.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Dark Noise 2</title><link href="https://v2.charliemchapman.com/posts/2020/7/20/dark-noise-2" rel="alternate" type="text/html" title="Dark Noise 2" /><published>2020-07-20T00:00:00-05:00</published><updated>2020-07-20T00:00:00-05:00</updated><id>https://v2.charliemchapman.com/posts/2020/7/20/dark-noise-2</id><content type="html" xml:base="https://v2.charliemchapman.com/posts/2020/7/20/dark-noise-2">&lt;div class=&quot;postYoutube&quot;&gt;
+    &lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://www.youtube.com/embed/D4dbuYqoHmA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope;  picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Today I’m finally releasing the biggest update of Dark Noise to date to the &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;App Store&lt;/a&gt;! Dark Noise 2 is the next major evolution of the best ambient noise app on iOS. Mixing sounds has been the most requested feature since launch and I’m excited to announce it’s finally here! A lot of work went in to maintaining the simplicity and tight iOS integration Dark Noise is known for and I’m very proud of the results. Along with iCloud syncing, new sounds, new icons, and loads of bug fixes this is the biggest update to date.&lt;/p&gt;
+
+&lt;h2 id=&quot;new-features&quot;&gt;New Features&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/07/20/create-mix-examples.PNG&quot; alt=&quot;Create Mix Examples&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Create Mix&lt;/strong&gt; • Build your own custom mix from any number of sounds. Mix multiple of the same sound for even more variety! Animated icons can be built using the new icon creator or images or animated GIFs can be imported from the Photo Library.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;iCloud Syncing&lt;/strong&gt; • Custom mixes and favorites will now sync to all of your devices using iCloud! No need to sign in or configure anything, your data will simply follow you to all of your Apple devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/07/20/dark-noise-2-new-sounds.PNG&quot; alt=&quot;New Sounds&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8 New Sounds&lt;/strong&gt; • New sounds have been added to the Dark Noise catalogue for playing on their own or added to mixes including:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Rain on Tent&lt;/li&gt;
+  &lt;li&gt;Wind Chimes&lt;/li&gt;
+  &lt;li&gt;Windy Trees&lt;/li&gt;
+  &lt;li&gt;Seagulls&lt;/li&gt;
+  &lt;li&gt;Lake&lt;/li&gt;
+  &lt;li&gt;Ship Deck&lt;/li&gt;
+  &lt;li&gt;Flag&lt;/li&gt;
+  &lt;li&gt;Lullaby&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;iPad Pointer Support&lt;/strong&gt; • Navigate Dark Noise 2 using a trackpad or mouse with full pointer support on the iPad.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/07/20/dark-noise-2-new-icons.png&quot; alt=&quot;New Icons&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New Icons&lt;/strong&gt; • Inspired by the new design of macOS Big Sur a skeuomorphic icon was added to the list of custom icons. And the new Launched icon is in honor of &lt;a href=&quot;https://launchedfm.com/&quot;&gt;my new(ish) podcast of the same name&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;And More!&lt;/strong&gt; • Bug fixes, improved shortcuts support, and a rewritten audio engine, and even a new “Auto Volume” experimental feature round out the biggest update yet.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-next&quot;&gt;What’s Next&lt;/h2&gt;
+
+&lt;p&gt;There’s still so much more I have planned for the future of Dark Noise. First is getting ready for iOS 14. Some &lt;a href=&quot;https://twitter.com/_chuckyc/status/1284552561278832645&quot;&gt;early tests&lt;/a&gt; with the new Widgets look really promising, and improvements to Siri and Shortcuts look to unlock even more automation possibilities. After that I want to expand on the customization abilities I’ve added with the create mix feature.&lt;/p&gt;
+
+&lt;p&gt;Thank you so much for all of your support and kind words over the last year. I’m so excited to see where Dark Noise can go in the future!&lt;/p&gt;
+
+&lt;p&gt;Dark Noise 2 is available on for iPhone and iPad on the App Store &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://media.charliemchapman.com/dark-noise/dark-noise-app-icon-cropped.png" /><media:content medium="image" url="http://media.charliemchapman.com/dark-noise/dark-noise-app-icon-cropped.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Tutorial: Creating Sketch Style App Icons with Procreate on iPad</title><link href="https://v2.charliemchapman.com/posts/2020/5/1/launched-icon-tutorial" rel="alternate" type="text/html" title="Tutorial: Creating Sketch Style App Icons with Procreate on iPad" /><published>2020-05-01T00:00:00-05:00</published><updated>2020-05-01T00:00:00-05:00</updated><id>https://v2.charliemchapman.com/posts/2020/5/1/launched-icon-tutorial</id><content type="html" xml:base="https://v2.charliemchapman.com/posts/2020/5/1/launched-icon-tutorial">&lt;div class=&quot;postYoutube&quot;&gt;
+    &lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://www.youtube.com/embed/SE4IGY8wSrc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope;  picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For each episode of &lt;a href=&quot;https://launchedfm.com&quot;&gt;Launched&lt;/a&gt; I create a custom version of the podcast artwork where I replace the paper airplane with a “sketchified” version of the guests app icon (or something else representing the guest if they aren’t an app dev or can’t give me permission to use their icon).&lt;/p&gt;
+
+&lt;p&gt;This has eventually led to a few developers adding that icon into their app as an optional custom app icon, which delights me to no end ☺️. I &lt;a href=&quot;https://twitter.com/_chuckyc/status/1255872065711804416?s=21&quot;&gt;tweeted as much&lt;/a&gt; and there was a lot of questions asking how I make them.  It’s pretty straight forward so I made a little tutorial showing how I make these sketch style app icons using Procreate on my iPad Pro.&lt;/p&gt;
+
+&lt;p&gt;I’ve also created 2 files that I use when creating these icons that you can download here:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://charliemchapman.com/launched-icon-template/launched-icon-template-background.png&quot;&gt;launched-icon-template-background.png&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://charliemchapman.com/launched-icon-template/launched-icon-template-mask.png&quot;&gt;launched-icon-template-mask.png&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As always, feedback is appreciated. If I said anything dumb (likely) or if you end up using this technique for a project yourself I’d love to hear about it on &lt;a href=&quot;https://twitter.com/_chuckyc/&quot;&gt;Twitter&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://charliemchapman.com/launched-icon-template/launched_artwork-1024.jpg" /><media:content medium="image" url="https://charliemchapman.com/launched-icon-template/launched_artwork-1024.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Launching Launched</title><link href="https://v2.charliemchapman.com/posts/2020/1/27/launching-launched" rel="alternate" type="text/html" title="Launching Launched" /><published>2020-01-27T00:00:00-06:00</published><updated>2020-01-27T00:00:00-06:00</updated><id>https://v2.charliemchapman.com/posts/2020/1/27/launching-launched</id><content type="html" xml:base="https://v2.charliemchapman.com/posts/2020/1/27/launching-launched">&lt;p&gt;After launching my new podcast &lt;a href=&quot;https://charliemchapman.com/posts/2020/1/13/introducing-launched/&quot;&gt;Launched&lt;/a&gt; last week, I’d like to share basically everything I did to design, structure, and plan the launch of the podcast. This will probably be overly long so, uh, buckle up.&lt;/p&gt;
+
+&lt;p&gt;I’m not pretending to be an expert at this. I just want to share everything I tried with the hope that it may help others in the future (and so I don’t forget 😅). Check out my previous post outlining the &lt;a href=&quot;https://charliemchapman.com/posts/2020/1/21/launching-launched/&quot;&gt;week 1 stats&lt;/a&gt; to get a sense of what kind of results I ended up achieving with my approach.&lt;/p&gt;
+
+&lt;p&gt;I’m also not going to be talking about the technical aspects of recording a podcast. The purpose of this post is to talk about designing and launching the podcast, but I &lt;em&gt;would&lt;/em&gt; really like to write about my recording set up and editing workflow at some point. If that sounds interesting to you let me know &lt;a href=&quot;https://twitter.com/_chuckyc&quot;&gt;on Twitter&lt;/a&gt; and I may bump that up on my priority list.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-idea&quot;&gt;The Idea&lt;/h3&gt;
+
+&lt;p&gt;Let’s start at the beginning. Last year while building my first app &lt;a href=&quot;https://charliemchapman.com/posts/2019/8/27/dark-noise/&quot;&gt;Dark Noise&lt;/a&gt; I ran across a series of interviews that &lt;a href=&quot;https://twitter.com/heidi_helen&quot;&gt;Heidi Helen Pilypas&lt;/a&gt; did after launching her app &lt;a href=&quot;https://apps.apple.com/us/app/when-did-i/id1463692593?ls=1&quot;&gt;When Did I?&lt;/a&gt; that I found extremely useful in preparing my own launch.&lt;/p&gt;
+
+&lt;p&gt;A few months later, this four Tweet thread pretty much kicked off the show in my mind.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/01/27/launched-beginning-tweet-thread.jpg&quot; alt=&quot;Launched Beginning Tweet Thread&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The idea of an interview show that could feed off of the constant stream of interesting new apps coming out was really intriguing. I wanted this to exist, and I thought I might be able to actually pull it off.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-tho&quot;&gt;Why tho?&lt;/h3&gt;
+
+&lt;p&gt;Any project that’s going to require a significant investment of your time deserves to have this question answered: Why? For me, there is one “altruistic” answer and two selfish ones.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;I want this to exist and genuinely think other devs and creators would find it beneficial.&lt;/li&gt;
+  &lt;li&gt;I think it could help me raise my profile in the community which would help with future app launches and all the nice benefits of having a strong network.&lt;/li&gt;
+  &lt;li&gt;I’d get to meet and talk to a bunch of interesting people who’s work I really respect.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;My understanding is that the vast majority of podcasts fail to reach a substantial audience, so 1 and 2 may never happen.  But 3 is a benefit I get either way, so in the end I felt it was worth giving it a shot.&lt;/p&gt;
+
+&lt;h3 id=&quot;choosing-a-name&quot;&gt;Choosing a Name&lt;/h3&gt;
+
+&lt;p&gt;Naming is hard. I think this is a truism in basically every discipline (except Sony game consoles 😉).&lt;/p&gt;
+
+&lt;p&gt;For this show, I wanted a very simple word that conveyed the idea releasing an app. I knew early on that I didn’t want it restricted to only app developers, so I wanted to keep it a little more vague while still conveying that idea. Here’s my note with the names I was considering:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/01/27/launched-name-ideas.jpg&quot; alt=&quot;Launched Name Ideas&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Launched&lt;/strong&gt; fulfilled all of my checkboxes. It was one word, vague enough to allow for interviews with people in all sorts of industries and disciplines, and it wasn’t already taken in Apple Podcasts (though “Launch” was). It also just sounded &lt;em&gt;cool&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;logo&quot;&gt;Logo&lt;/h3&gt;
+
+&lt;p&gt;Once I had a name, I needed a logo. I think the logo for a podcast is actually really important. It’s basically your one shot at convincing someone to try out the show, and it’s your only real visual connection you get to make with most of your audience once they subscribe. It also gives me something tangible to hold on to while developing the project that makes everything feel more real.&lt;/p&gt;
+
+&lt;p&gt;A name like launched immediately conjured up images of rockets but I felt like that wouldn’t stand out as much as there are a lot of space podcasts with rocket logos that seem to overlap audience with the technology category. I also toyed with the idea of a shipping container but couldn’t find something I liked.&lt;/p&gt;
+
+&lt;p&gt;I landed on the idea of a paper airplane. I liked the idea of it being a smaller, handcrafted item as I knew most of my guests (and audience) would be indies. And while there are a million email apps that use a paper airplane icon, I didn’t see any other podcasts using it as their icon.&lt;/p&gt;
+
+&lt;p&gt;I started by sketching some ideas in the wonderful &lt;a href=&quot;https://linea-app.com/sketch&quot;&gt;Linea Sketch&lt;/a&gt; app by The Iconfactory.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/01/27/launched-sketches.jpg&quot; alt=&quot;Icon Sketches&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;postCaption&quot;&gt;Early artwork concept sketches made in Linea Sketch.&lt;/p&gt;
+
+&lt;p&gt;After asking for feedback on Twitter I got an unexpectedly strong positive reaction to the “sketch” look. I was originally thinking of going with a cleaner style, but I thought a rougher look would actually fit with the theme of the show being about people creating something new.&lt;/p&gt;
+
+&lt;p&gt;I also really liked encasing the icon in the &lt;a href=&quot;https://applypixels.com/blog/the-hunt-for-the-squircle&quot;&gt;iOS squircle&lt;/a&gt;. I knew I was going to want to make custom artwork for each episode (we’ll get to that later) so I figured this would give me an easy spot to place custom assets.&lt;/p&gt;
+
+&lt;p&gt;I wanted a strong color rather than black and white sketches, so I started playing around with a blueprint look. This would still fit the rough sketch style but also give me a strong pop of color to hopefully stand out in podcast apps.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/01/27/launched-icon-drafts.jpg&quot; alt=&quot;Icon Drafts&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;postCaption&quot;&gt;Different variations I tried of the paper airplane artwork design.&lt;/p&gt;
+
+&lt;p&gt;I ended up going with the simple clean outline with various sketch marks on it (top right). I don’t really have a good reason other than it &lt;em&gt;felt&lt;/em&gt; the nicest.&lt;/p&gt;
+
+&lt;h4 id=&quot;custom-episode-artwork&quot;&gt;Custom Episode Artwork&lt;/h4&gt;
+
+&lt;p&gt;I love shows that make custom artwork for each episode so I wanted to do the same for Launched, but I knew I’d need to come up with a system that allowed me build them quickly. If it was cumbersome to make, I knew I’d be angry at myself in 4-6 months when the novelty of the show had worn off and it started getting overwhelming.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/01/27/launched-custom-icon-grid.jpg&quot; alt=&quot;Custom Icons&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;postCaption&quot;&gt;Some of the custom icons I created for Launched episodes. The &quot;Beta&quot; artwork is used for the draft episodes I send to guests to let them listen and ask for edits if they want. The glass of ice is used for the &quot;Ice Breaker&quot; chapter in each episode.&lt;/p&gt;
+
+&lt;p&gt;The iOS icon provides a nice frame that I can swap in a hand drawn style of an app icon or symbol that represents the guest of that week. It’s also extremely fast for me to create these using &lt;a href=&quot;https://www.adobe.com/products/photoshop/ipad.html&quot;&gt;Photoshop&lt;/a&gt; on my iPad Pro and Apple Pencil. I can just duplicated my existing Photoshop psd file, grab an image of the icon from the internet, and trace over it with the pencil.&lt;/p&gt;
+
+&lt;div class=&quot;postVideoContainer&quot;&gt;
+    &lt;video class=&quot;postVideo&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/launched-icon-speedrun.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    Your browser does not support the video tag.
+    &lt;/video&gt;
+&lt;/div&gt;
+&lt;p class=&quot;postCaption&quot;&gt;Timelapse of my process creating the custom artwork for each episode using Photoshop for iPad.&lt;/p&gt;
+
+&lt;p&gt;It only takes a few minutes to put most of them together and I think the style looks really interesting and fits the whole theme of the show. It also &lt;em&gt;could&lt;/em&gt; make for an interesting custom app icon if any developers that I interview wanted to sneak it in their app. 😉&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; It’s important to point out that I’m asking everyone if it’s ok to use their logo. Most people have been fine with this, but there are cases where people aren’t comfortable or even legally can’t for trademark reasons so keep that in mind if you ever want to try something similar.&lt;/p&gt;
+
+&lt;h3 id=&quot;structure&quot;&gt;Structure&lt;/h3&gt;
+
+&lt;p&gt;With a name and logo out of the way, I was ready to start putting together the structure of the show. Starting at the highest level, I needed to pick a schedule. While I might be able to sustain weekly for a short amount of time, the complexity of scheduling new guests in different timezones every episode is too much for me to attempt weekly. So I landed on a &lt;strong&gt;target&lt;/strong&gt; of every other week.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Side Note:&lt;/strong&gt; The app &lt;a href=&quot;https://david-smith.org/blog/2019/04/17/introducing-calzones-a-timezone-savvy-calendar/&quot;&gt;CalZones&lt;/a&gt; by David Smith has proven to be extremely useful scheduling all of these interviews across many different timezones. I’ve also been told &lt;a href=&quot;https://calendly.com&quot;&gt;Calendly&lt;/a&gt; is very good for this as well but I have not tried it yet.&lt;/p&gt;
+
+&lt;p&gt;I don’t actually listen to a lot of interview shows so I wasn’t sure what the best approach would be to structure the episodes themselves. I knew that I wanted them to be conversational in tone but I wasn’t sure how to keep things from feeling too &lt;em&gt;stiff&lt;/em&gt; since most of the time I would be speaking to people for the first time.&lt;/p&gt;
+
+&lt;p&gt;I happened to be chewing on this problem while listening to an episode of &lt;a href=&quot;https://www.relay.fm/upgrade&quot;&gt;Upgrade&lt;/a&gt; where they start each show by asking one of the hosts, Jason Snell, a random question given by the audience. They’re often off the wall questions like “When putting in AirPods which ear do you put in first?” This often leads to a funny conversation that get’s the episode going with a fun energetic vibe.&lt;/p&gt;
+
+&lt;p&gt;I decided to co-opt that idea as an ice breaker question and so far (5 episodes in) I feel like it’s succeeded in building a little rapport with the guests before getting into the episode.&lt;/p&gt;
+
+&lt;p&gt;The bulk of the episode is outlined on a per episode basis using research on the particular guest and letting the natural flow of the conversation guide me from section to section.&lt;/p&gt;
+
+&lt;p&gt;At the end I’m asking each guest for a person who’s been an inspiration for them that they want to shout out and recommend others follow. This serves two purposes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;I want to use this podcast as a way to elevate people making cool things and this is a way to add to that.&lt;/li&gt;
+  &lt;li&gt;I selfishly want to find more cool people to follow and potentially try to get on the show. 😏&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So this leaves the general show template like so:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Intro&lt;/li&gt;
+  &lt;li&gt;Ice Breaker&lt;/li&gt;
+  &lt;li&gt;Guest specific stuff&lt;/li&gt;
+  &lt;li&gt;Guest’s inspiration&lt;/li&gt;
+  &lt;li&gt;Where to find guest (Twitter/website/ect)&lt;/li&gt;
+  &lt;li&gt;Outro&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;It’ll be interesting to see how this changes over time, but so far I’ve been happy with the balance of structure and loose conversation.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-launch&quot;&gt;The Launch&lt;/h3&gt;
+
+&lt;p&gt;My understanding with podcasting is that consistent output is the best way to grow an audience. If you don’t have a big pre-existing following (which I did not) launch day is not really that important. Despite this, I figured I’d try to come up with something to make as big as a splash as I could at launch hoping this would help boost numbers which would make it easier to occasionally book bigger guests, which in turn would help boost numbers… ect. ect.&lt;/p&gt;
+
+&lt;p&gt;A few years ago, a motion designer named &lt;a href=&quot;https://twitter.com/jkorenman&quot;&gt;Joey Korenman&lt;/a&gt; started a series of After Effects tutorials called &lt;a href=&quot;https://www.schoolofmotion.com/collection/30-days-of-after-effects&quot;&gt;30 Days of After Effects&lt;/a&gt; where he posted a brand new After Effects tutorial every day for 30 days straight. Tutorials are really difficult to put together so this wasn’t something that I had ever seen before and it’s always stuck with me how quickly that intense burst of output catapulted his brand, &lt;a href=&quot;https://www.schoolofmotion.com&quot;&gt;School of Motion&lt;/a&gt;, into the limelight.&lt;/p&gt;
+
+&lt;p&gt;I decided to try a similar approach with Launched but at a smaller scale. Not only was 30 episodes in a row way more work than I could manage, but I don’t think most people would actually want 30 episodes clogging up their podcast queue that quickly. So I settled on 1 business week of 1 episode a day to kick off the show. This would hopefully generate some buzz as well as give listeners multiple episodes to hear in a row to decide if they liked the show, rather than one and done.&lt;/p&gt;
+
+&lt;p&gt;On the advice of &lt;a href=&quot;https://twitter.com/mattcassinelli/status/1199107531311726593?s=21&quot;&gt;Matthew Cassinelli&lt;/a&gt; I also created a short teaser episode and released it a month before launching the show. This ensured the podcast was properly set up in all of the major podcast directories and players, and also gave me a small list of subscribers who would get the first episode immediately after release.&lt;/p&gt;
+
+&lt;p&gt;I also Tweeted a lot about the journey leading up to the launch of the show as has apparently become my &lt;em&gt;thing&lt;/em&gt;. 😅 This may not be broadly applicable advice but I do think it helped build up a sense of excitement around the launch, and helped make more people invested in its success.&lt;/p&gt;
+
+&lt;h3 id=&quot;wrap-up&quot;&gt;Wrap Up&lt;/h3&gt;
+
+&lt;p&gt;I’m really happy with how the launch of the show turned out.  I’m proud of the episodes released so far and I’m so excited to keep making more and develop the show over time.  Hopeful this post was helpful or at least interesting for you. If you’d like to talk about anything related to this you can find me on Twitter at &lt;a href=&quot;https://twitter.com/_chuckyc&quot;&gt;@_chuckyc&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">After launching my new podcast Launched last week, I’d like to share basically everything I did to design, structure, and plan the launch of the podcast. This will probably be overly long so, uh, buckle up.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://charliemchapman.com/launched-icon-template/launched_artwork-1024.jpg" /><media:content medium="image" url="https://charliemchapman.com/launched-icon-template/launched_artwork-1024.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
