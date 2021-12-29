@@ -1,0 +1,47 @@
+url: "https://v2.charliemchapman.com"
+paginate: 20
+paginate_path: "/:num/"
+
+title: "Charlie Chapman"
+description: "The personal blog of Charlie Chapman."
+
+logo: /assets/images/launched_artwork-1024.jpg
+
+twitter:
+  username: _chuckyc
+  card: summary
+
+social:
+  name: Charlie Chapman
+  links:
+    - https://twitter.com/_chuckyc
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /posts/:year/:i_month/:i_day/:title
+  - scope:
+      path: "bucket"
+    values:
+      permalink: /b/:basename:output_ext
+  - scope:
+      path: "pages"
+    values:
+      permalink: /:basename:output_ext
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      image: /assets/images/launched_artwork-1024.jpg
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
