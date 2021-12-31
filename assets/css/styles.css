@@ -44,6 +44,8 @@ body .content .content-centered { padding-top: 60px; margin-left: auto; margin-r
 
 .post-summary-content { max-width: 730px; margin-left: 20px; margin-right: 20px; }
 
+.post-summary-content img { border-radius: 5px; }
+
 .post-summary-hero { background-color: #2e62a6; color: white; display: flex; justify-content: center; }
 
 .post-summary-hero .post-summary-content { flex-grow: 1; padding-top: 60px; padding-bottom: 20px; }
@@ -104,7 +106,7 @@ body .content .content-centered { padding-top: 60px; margin-left: auto; margin-r
 
 .post-content { border-bottom: 1px #ccc solid; padding-bottom: 40px; margin-bottom: 80px; }
 
-.post-content img { display: block; max-width: 100%; margin-left: auto; margin-right: auto; }
+.post-content img { display: block; max-width: 100%; margin-left: auto; margin-right: auto; margin-bottom: 30px; }
 
 .footer { display: flex; flex-direction: column; align-content: center; justify-content: center; padding: 15px 0; background-color: #4a6c32; color: #FFFFFF77; }
 
@@ -115,5 +117,31 @@ body .content .content-centered { padding-top: 60px; margin-left: auto; margin-r
 .footer p { font-size: 0.7rem; text-align: center; }
 
 .page-not-found { text-align: center; padding-bottom: 20px; }
+
+.about-img { text-align: center; }
+
+.about-img img { max-width: 200px; border-radius: 10px; box-shadow: 3px 3px 10px #00000077; }
+
+.footnotes { font-size: .8rem; color: #777; }
+
+.footnotes li p { display: inline; }
+
+blockquote.twitter-tweet { display: inline-block; font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif; font-size: 12px; font-weight: bold; line-height: 16px; border-color: #eee #ddd #bbb; border-radius: 5px; border-style: solid; border-width: 1px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); margin: 10px 0; margin-bottom: 40px; padding: 16px; max-width: 468px; }
+
+blockquote.twitter-tweet p { font-size: 16px; font-weight: normal; line-height: 20px; }
+
+blockquote.twitter-tweet a { color: inherit; font-weight: normal; text-decoration: none; outline: 0 none; }
+
+blockquote.twitter-tweet a:hover, blockquote.twitter-tweet a:focus { text-decoration: underline; border-bottom: none; }
+
+.postCaption { text-align: center; font-size: .75em; font-style: italic; font-weight: bold; margin-bottom: 30px; }
+
+.postVideoContainer { width: 100%; display: flex; justify-content: center; }
+
+.postVideo { max-height: 400px; max-width: 100%; }
+
+.postYoutube { position: relative; padding-bottom: 56%; /* 16:9 */ padding-top: 25px; height: 0; margin-bottom: 30px; }
+
+.postYoutube iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
