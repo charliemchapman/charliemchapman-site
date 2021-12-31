@@ -1,7 +1,7 @@
 ---
 title: "The Principles of Dark Noise"
 date: "2019-08-23"
-image: "http://media.charliemchapman.com/charlie_and_jack.JPG"
+image: "/assets/images/charlie-profile_1024.jpg"
 ---
 
 At the beginning of this year I started working on my first indie app to release in the App Store called [Dark Noise](https://darknoise.app).  It's an ambient noise app for iPhone and iPad.

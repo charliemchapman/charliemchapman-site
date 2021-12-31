@@ -1,7 +1,7 @@
 ---
 title: "Launched Year 1"
 date: "2021-01-13"
-image: "https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/launched_artwork-1024.jpg"
+image: "/assets/images/launched_artwork-1024.jpg"
 ---
 
 One year ago today I released my first episode of [Launched](https://charliemchapman.com/posts/2020/1/13/introducing-launched/). While January 2020 feels like a different world than January 2021, I still think 1 year in is a good time to assess how the project is going compared to my initial goals. And just as I did after [week 1](https://charliemchapman.com/posts/2020/1/21/launching-launched/), I'd like to run through the metrics and see if there are any interesting findings.

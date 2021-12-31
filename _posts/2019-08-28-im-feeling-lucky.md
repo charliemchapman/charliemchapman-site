@@ -1,7 +1,7 @@
 ---
 title: "I'm feeling lucky"
 date: "2019-08-28"
-image: "http://media.charliemchapman.com/charlie_and_jack.JPG"
+image: "/assets/images/charlie-profile_1024.jpg"
 ---
 
 Yesterday's release of [Dark Noise](https://apps.apple.com/us/app/dark-noise/id1465439395) exceeded my wildest expectations.  According to my stats from Apple, the app sold **990** copies which brought in **$4,190** in sales for a take home of **$2,780** after Apple's 30% cut.[^1]

@@ -1,7 +1,7 @@
 ---
 title: "Designing Dark Noise"
 date: "2019-09-02"
-image: "http://media.charliemchapman.com/charlie_and_jack.JPG"
+image: "/assets/images/charlie-profile_1024.jpg"
 ---
 
 Today I want to talk about the process I used for designing my new app [Dark Noise](https://apps.apple.com/us/app/dark-noise/id1465439395).  It's an app for playing different ambient noises to help with sleep or focus.  I'm not a designer by trade, and this is the first app I've made for iOS, so this is more of a brain dump of everything I did and less of a proposal on how design should be done.

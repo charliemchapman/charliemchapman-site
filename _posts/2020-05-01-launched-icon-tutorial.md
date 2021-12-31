@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Creating Sketch Style App Icons with Procreate on iPad"
 date: "2020-05-01"
-image: "https://charliemchapman.com/launched-icon-template/launched_artwork-1024.jpg"
+image: "/assets/posts/2020/05/01/launched-icon-template-background.png"
 ---
 
 <div class="postYoutube">
@@ -13,7 +13,7 @@ For each episode of [Launched](https://launchedfm.com) I create a custom version
 This has eventually led to a few developers adding that icon into their app as an optional custom app icon, which delights me to no end ☺️. I [tweeted as much](https://twitter.com/_chuckyc/status/1255872065711804416?s=21) and there was a lot of questions asking how I make them.  It's pretty straight forward so I made a little tutorial showing how I make these sketch style app icons using Procreate on my iPad Pro.
 
 I've also created 2 files that I use when creating these icons that you can download here:
-- [launched-icon-template-background.png](https://charliemchapman.com/launched-icon-template/launched-icon-template-background.png)
-- [launched-icon-template-mask.png](https://charliemchapman.com/launched-icon-template/launched-icon-template-mask.png)
+- [launched-icon-template-background.png](/assets/posts/2020/05/01/launched-icon-template-background.png)
+- [launched-icon-template-mask.png](/assets/posts/2020/05/01/launched-icon-template-mask.png)
 
 As always, feedback is appreciated. If I said anything dumb (likely) or if you end up using this technique for a project yourself I'd love to hear about it on [Twitter](https://twitter.com/_chuckyc/)!

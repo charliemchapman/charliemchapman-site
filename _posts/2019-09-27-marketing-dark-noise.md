@@ -1,7 +1,7 @@
 ---
 title: "Marketing Dark Noise"
 date: "2019-09-30"
-image: "http://media.charliemchapman.com/charlie_and_jack.JPG"
+image: "/assets/images/charlie-profile_1024.jpg"
 ---
 
 It's been 1 month since I released my app [Dark Noise](https://apps.apple.com/app/dark-noise/id1465439395) in the App Store.  The release went [very well](https://charliemchapman.com/posts/2019/9/4/dark-noise-week-1/), and I've had quite a few people ask how I marketed the app.  I wanted to post this right away, but first I wanted to let the launch stats settle down so you can get a better picture of what the actual results are.

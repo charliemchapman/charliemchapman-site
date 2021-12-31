@@ -1,7 +1,7 @@
 ---
 title: "First Sale"
 date: "2021-01-01"
-image: "http://media.charliemchapman.com/charlie-profile.jpg"
+image: "assets/images/charlie-profile_1024.jpg"
 ---
 
 [Dark Noise](https://apps.apple.com/us/app/dark-noise/id1465439395) has been in the App Store for over a year, yet I’ve never actually run a sale before. In fact, the only price change I’ve made at all is increasing the price by a few dollars when I shipped my 2.0 update.

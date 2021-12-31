@@ -1,7 +1,7 @@
 ---
 title: "Week 1 Stats for Dark Noise"
 date: "2019-09-04"
-image: "http://media.charliemchapman.com/charlie_and_jack.JPG"
+image: "/assets/images/charlie-profile_1024.jpg"
 ---
 
 Week 1 of [Dark Noise](https://apps.apple.com/app/dark-noise/id1465439395) is in the bag!  Here's some quick stats of how the week went:

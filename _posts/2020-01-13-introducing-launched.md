@@ -1,7 +1,7 @@
 ---
 title: "Introducing Launched"
 date: "2020-01-13"
-image: "https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/launched_artwork-1024.jpg"
+image: "/assets/images/launched_artwork-1024.jpg"
 ---
 
 ![Launched Thumbnail](/assets/posts/2020/01/13/launched_artwork-1024.jpg)

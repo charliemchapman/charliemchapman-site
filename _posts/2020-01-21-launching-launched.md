@@ -1,7 +1,7 @@
 ---
 title: "Launched Week 1 Stats"
 date: "2020-01-21"
-image: "https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/launched_artwork-1024.jpg"
+image: "/assets/images/launched_artwork-1024.jpg"
 ---
 
 Last week I launched my new podcast [Launched](https://charliemchapman.com/posts/2020/1/13/introducing-launched/) and I wanted to share a little bit about how I went about creating the show similar to what I did with my posts about [designing](https://charliemchapman.com/posts/2019/9/2/designing-dark-noise/) and [marketing](https://charliemchapman.com/posts/2019/9/27/marketing-dark-noise/) my app [Dark Noise](https://apps.apple.com/us/app/dark-noise/id1465439395).

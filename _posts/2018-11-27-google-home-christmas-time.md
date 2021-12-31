@@ -1,7 +1,7 @@
 ---
 title: "Control Your Christmas Tree Lights with Google Home"
 date: "2018-11-27"
-image: "http://localhost:8000/static/google-home-hero-01-5029c3ba407be6be298a83671f8b1d50-882d9.jpg"
+image: "/assets/posts/2018/11/27/google-home-hero-01.jpg"
 ---
 
 ![Google Home](/assets/posts/2018/11/27/google-home-hero-01.jpg)

@@ -1,7 +1,7 @@
 ---
 title: "Thinking With Portals"
 date: "2019-06-02"
-image: "http://media.charliemchapman.com/charlie_and_jack.JPG"
+image: "/assets/images/charlie-profile_1024.jpg"
 ---
 
 Being able to learn a new software language, framework, pattern, or platform has been one of the cornerstones of my career.  I'm generally pretty quick to pick something new up, and I get distracted easily so I end up doing this a lot.

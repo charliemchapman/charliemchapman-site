@@ -1,7 +1,7 @@
 ---
 title: "First Post"
 date: "2018-09-02"
-image: "http://media.charliemchapman.com/charlie_and_jack.JPG"
+image: "assets/images/charlie-profile_1024.jpg"
 ---
 
 It's been a while since I wrote a blog.  A quick look at my old Blogger account shows my last post was August 5, 2012.  That was 2 jobs, 2 kids, and 1 house ago!
