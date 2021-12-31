@@ -4,15 +4,15 @@ date: "2020-01-27"
 image: "http://localhost:4000/assets/images/launched_artwork-1024.jpg"
 ---
 
-After launching my new podcast [Launched](https://charliemchapman.com/posts/2020/1/13/introducing-launched/) last week, I'd like to share basically everything I did to design, structure, and plan the launch of the podcast. This will probably be overly long so, uh, buckle up.
+After launching my new podcast [Launched](/posts/2020/1/13/introducing-launched) last week, I'd like to share basically everything I did to design, structure, and plan the launch of the podcast. This will probably be overly long so, uh, buckle up.
 
-I'm not pretending to be an expert at this. I just want to share everything I tried with the hope that it may help others in the future (and so I don't forget 😅). Check out my previous post outlining the [week 1 stats](https://charliemchapman.com/posts/2020/1/21/launching-launched/) to get a sense of what kind of results I ended up achieving with my approach.
+I'm not pretending to be an expert at this. I just want to share everything I tried with the hope that it may help others in the future (and so I don't forget 😅). Check out my previous post outlining the [week 1 stats](/posts/2020/1/21/launching-launched) to get a sense of what kind of results I ended up achieving with my approach.
 
 I'm also not going to be talking about the technical aspects of recording a podcast. The purpose of this post is to talk about designing and launching the podcast, but I _would_ really like to write about my recording set up and editing workflow at some point. If that sounds interesting to you let me know [on Twitter](https://twitter.com/_chuckyc) and I may bump that up on my priority list.
 
 ### The Idea
 
-Let's start at the beginning. Last year while building my first app [Dark Noise](https://charliemchapman.com/posts/2019/8/27/dark-noise/) I ran across a series of interviews that [Heidi Helen Pilypas](https://twitter.com/heidi_helen) did after launching her app [When Did I?](https://apps.apple.com/us/app/when-did-i/id1463692593?ls=1) that I found extremely useful in preparing my own launch.
+Let's start at the beginning. Last year while building my first app [Dark Noise](/posts/2019/8/27/dark-noise) I ran across a series of interviews that [Heidi Helen Pilypas](https://twitter.com/heidi_helen) did after launching her app [When Did I?](https://apps.apple.com/us/app/when-did-i/id1463692593?ls=1) that I found extremely useful in preparing my own launch.
 
 A few months later, this four Tweet thread pretty much kicked off the show in my mind.
 

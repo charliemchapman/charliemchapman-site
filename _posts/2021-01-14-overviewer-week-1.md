@@ -6,7 +6,7 @@ image: "http://media.charliemchapman.com/blog/overviewer-icon-rounded.png"
 
 ![Overviewer app icon](/assets/posts/2021/01/14/overviewer-icon-rounded-200.png)
 
-Last week, when I released my new app [Overviewer](https://charliemchapman.com/posts/2021/6/overviewer/), I honestly thought it was a pretty niche product and was just hoping it would find the few other teachers out there who it could help during this wild year of virtual learning. With that in mind, I didn't really do much in the way of marketing like I [did with Dark Noise](https://charliemchapman.com/posts/2019/9/27/marketing-dark-noise/). But it turns out, there's more interest in turning an iPhone into a document camera than I thought! 😅
+Last week, when I released my new app [Overviewer](/posts/2021/1/6/overviewer), I honestly thought it was a pretty niche product and was just hoping it would find the few other teachers out there who it could help during this wild year of virtual learning. With that in mind, I didn't really do much in the way of marketing like I [did with Dark Noise](/posts/2019/9/27/marketing-dark-noise). But it turns out, there's more interest in turning an iPhone into a document camera than I thought! 😅
 
 As is tradition, I'd like to go through some quick metrics for the app launch and see if there's anything. Let's start with the basics:
 
@@ -30,7 +30,7 @@ Here you can see about 157,000 units were purchased on "Desktop" while about 24,
 
 ### Press
 
-These numbers are _way_ higher than I was expecting! So what happened? Unlike with Dark Noise, I didn't try to build up a big TestFlight group or reach out to the press beforehand, but I did make a simple [presskit](https://overviewer.app) and wrote up a [blog post](https://charliemchapman.com/posts/2021/6/overviewer/) with the story behind the app.
+These numbers are _way_ higher than I was expecting! So what happened? Unlike with Dark Noise, I didn't try to build up a big TestFlight group or reach out to the press beforehand, but I did make a simple [presskit](https://overviewer.app) and wrote up a [blog post](/posts/2021/1/6/overviewer) with the story behind the app.
 
 Pretty quickly after releasing my blog post, [9to5Mac](https://9to5mac.com/2021/01/06/iphone-document-camera-overviewer-zoom/), [iMore](https://www.imore.com/overviewer-turns-your-iphone-document-camera-zoom-calls), and [Knapsack](https://knapsack.news/overviewer-for-ios-turns-your-phone-into-a-document-camera/) all wrote up articles about the app. This led to a lot of follow-on articles from loads of smaller blogs around the world. Then later in the day, [The Verge](https://www.theverge.com/2021/1/6/22217200/overviewer-app-teachers-overhead-camera-iphone-zoom) wrote about the app! 🤯 I'm going to be honest here, seeing that pop up in my feed almost broke me. I was literally shaking.
 

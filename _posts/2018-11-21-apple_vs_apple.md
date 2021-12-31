@@ -1,7 +1,7 @@
 ---
 title: "Apple vs Apple: The New OS War"
 date: "2018-11-21"
-image: "https://charliemchapman.com/static/apple-vs-apple-d09257bd6ecf6c7f5ecf028372bdc7f4-9fd1e.jpg"
+image: "/assets/posts/2018/11/21/apple-vs-apple.jpg"
 ---
 
 ![Apple vs Apple](/assets/posts/2018/11/21/apple-vs-apple.jpg)

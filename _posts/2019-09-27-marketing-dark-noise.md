@@ -1,10 +1,10 @@
 ---
 title: "Marketing Dark Noise"
-date: "2019-09-30"
+date: "2019-09-27"
 image: "/assets/images/charlie-profile_1024.jpg"
 ---
 
-It's been 1 month since I released my app [Dark Noise](https://apps.apple.com/app/dark-noise/id1465439395) in the App Store.  The release went [very well](https://charliemchapman.com/posts/2019/9/4/dark-noise-week-1/), and I've had quite a few people ask how I marketed the app.  I wanted to post this right away, but first I wanted to let the launch stats settle down so you can get a better picture of what the actual results are.
+It's been 1 month since I released my app [Dark Noise](https://apps.apple.com/app/dark-noise/id1465439395) in the App Store.  The release went [very well](/posts/2019/9/4/dark-noise-week-1), and I've had quite a few people ask how I marketed the app.  I wanted to post this right away, but first I wanted to let the launch stats settle down so you can get a better picture of what the actual results are.
 
 Let's start with some quick 1st month stats.
 
@@ -107,7 +107,7 @@ One interesting thing to note about pre-orders is that they release around midni
 
 This may sound cheesy, but launch day for Dark Noise is a day I'll never forget.  It was kind of a whirlwind but so much fun.  I took the day off of work not really sure what to expect, and I'm really glad I did.  
 
-First thing in the morning I posted an [article on my blog](https://charliemchapman.com/posts/2019/8/27/dark-noise/) about the release and made announcement posts on Twitter and Facebook.  Once the press coverage started coming in user feedback and questions on Twitter really picked up.  I spent the majority of the day retweeting positive comments and answering questions on Twitter.  I tried to do my best to make it feel like a big splash, so anybody who followed the app account or me would see a lot of activity on that one day.
+First thing in the morning I posted an [article on my blog](/posts/2019/8/27/dark-noise) about the release and made announcement posts on Twitter and Facebook.  Once the press coverage started coming in user feedback and questions on Twitter really picked up.  I spent the majority of the day retweeting positive comments and answering questions on Twitter.  I tried to do my best to make it feel like a big splash, so anybody who followed the app account or me would see a lot of activity on that one day.
 
 Aside from responding to people and generally trying to make the launch as noisy as possible, launch day was mostly just watching.  I kept waiting for some embarrassing bug to come up that I'd have to scramble to put a release out for, but it never came.  And since Dark Noise is currently completely offline, I didn't need to watch over any servers. 
 

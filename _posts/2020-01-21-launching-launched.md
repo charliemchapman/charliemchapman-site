@@ -4,7 +4,7 @@ date: "2020-01-21"
 image: "/assets/images/launched_artwork-1024.jpg"
 ---
 
-Last week I launched my new podcast [Launched](https://charliemchapman.com/posts/2020/1/13/introducing-launched/) and I wanted to share a little bit about how I went about creating the show similar to what I did with my posts about [designing](https://charliemchapman.com/posts/2019/9/2/designing-dark-noise/) and [marketing](https://charliemchapman.com/posts/2019/9/27/marketing-dark-noise/) my app [Dark Noise](https://apps.apple.com/us/app/dark-noise/id1465439395).
+Last week I launched my new podcast [Launched](/posts/2020/1/13/introducing-launched) and I wanted to share a little bit about how I went about creating the show similar to what I did with my posts about [designing](/posts/2019/9/2/designing-dark-noise) and [marketing](/posts/2019/9/27/marketing-dark-noise) my app [Dark Noise](https://apps.apple.com/us/app/dark-noise/id1465439395).
 
 But before I write that up I want to share some stats about how week 1 went. I'm very happy with how it's been received so far, but honestly I don't know the podcast world enough to tell you if these numbers are _good_ or not (though they are significantly better than _my_ previous podcasting efforts 😅).
 

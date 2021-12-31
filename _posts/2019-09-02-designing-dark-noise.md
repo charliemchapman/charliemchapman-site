@@ -6,7 +6,7 @@ image: "/assets/images/charlie-profile_1024.jpg"
 
 Today I want to talk about the process I used for designing my new app [Dark Noise](https://apps.apple.com/us/app/dark-noise/id1465439395).  It's an app for playing different ambient noises to help with sleep or focus.  I'm not a designer by trade, and this is the first app I've made for iOS, so this is more of a brain dump of everything I did and less of a proposal on how design should be done.
 
-Before I placed a pixel in any design tool, I first figured out what the guiding principles for the app were, and what features I wanted to include.  I detailed this step in a [separate post](https://charliemchapman.com/posts/2019/8/23/principles-of-dark-noise/), but the end result was:
+Before I placed a pixel in any design tool, I first figured out what the guiding principles for the app were, and what features I wanted to include.  I detailed this step in a [separate post](/posts/2019/8/23/principles-of-dark-noise), but the end result was:
 
 - **Configurability**
   - Targeting pro users who want as many options and hooks to work the app into their workflow as possible
