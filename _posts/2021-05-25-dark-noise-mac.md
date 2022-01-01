@@ -1,7 +1,7 @@
 ---
 title: "Dark Noise for Mac"
 date: "2021-05-25"
-image: "http://media.charliemchapman.com/blog/dark-noise-mac-rounded_1024.png"
+image: "/assets/images/dark-noise-mac-rounded_1024.png"
 ---
 
 <div class="postYoutube">

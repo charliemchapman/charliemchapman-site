@@ -1,7 +1,7 @@
 ---
 title: "Launching Launched"
 date: "2020-01-27"
-image: "http://localhost:4000/assets/images/launched_artwork-1024.jpg"
+image: "/assets/images/launched_artwork-1024.jpg"
 ---
 
 After launching my new podcast [Launched](/posts/2020/1/13/introducing-launched) last week, I'd like to share basically everything I did to design, structure, and plan the launch of the podcast. This will probably be overly long so, uh, buckle up.

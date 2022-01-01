@@ -1,7 +1,7 @@
 ---
 title: "Overviewer Week 1"
 date: "2021-01-14"
-image: "http://media.charliemchapman.com/blog/overviewer-icon-rounded.png"
+image: "/assets/images/overviewer-icon-rounded.png"
 ---
 
 ![Overviewer app icon](/assets/posts/2021/01/14/overviewer-icon-rounded-200.png)
