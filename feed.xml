@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://charliemchapman.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://charliemchapman.com/" rel="alternate" type="text/html" /><updated>2022-11-17T20:12:00-06:00</updated><id>https://charliemchapman.com/feed.xml</id><title type="html">Charlie Chapman</title><subtitle>The personal blog of Charlie Chapman.</subtitle><entry><title type="html">iOS 15 Support with Dark Noise 2.6</title><link href="https://charliemchapman.com/posts/2021/10/5/dark-noise-2_6-iOS-15" rel="alternate" type="text/html" title="iOS 15 Support with Dark Noise 2.6" /><published>2021-10-05T00:00:00-05:00</published><updated>2021-10-05T00:00:00-05:00</updated><id>https://charliemchapman.com/posts/2021/10/5/dark-noise-2_6-iOS-15</id><content type="html" xml:base="https://charliemchapman.com/posts/2021/10/5/dark-noise-2_6-iOS-15">&lt;p&gt;Dark Noise 2.6 comes to the &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;App Store today&lt;/a&gt; with full support for iOS 15!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://charliemchapman.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://charliemchapman.com/" rel="alternate" type="text/html" /><updated>2022-12-31T15:39:52-06:00</updated><id>https://charliemchapman.com/feed.xml</id><title type="html">Charlie Chapman</title><subtitle>The personal blog of Charlie Chapman.</subtitle><entry><title type="html">2022: A Break, a Breakthrough, and a Breakdown?</title><link href="https://charliemchapman.com/posts/2022/12/31/2022-break-breakthrough-breakdown" rel="alternate" type="text/html" title="2022: A Break, a Breakthrough, and a Breakdown?" /><published>2022-12-31T00:00:00-06:00</published><updated>2022-12-31T00:00:00-06:00</updated><id>https://charliemchapman.com/posts/2022/12/31/2022-break-breakthrough-breakdown</id><content type="html" xml:base="https://charliemchapman.com/posts/2022/12/31/2022-break-breakthrough-breakdown">&lt;p&gt;2022 was a bit of a weird year for me that I think kinda breaks down into 3 distinct parts.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A break&lt;/li&gt;
+  &lt;li&gt;A breakthrough&lt;/li&gt;
+  &lt;li&gt;And… a breakdown?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;a-break&quot;&gt;A Break&lt;/h2&gt;
+
+&lt;p&gt;Since switching to iOS development and launching &lt;a href=&quot;https://darknoise.app/&quot;&gt;Dark Noise&lt;/a&gt; in 2019, I’ve been working pretty consistently hard on side project work. I wanted to establish myself in this platform and this community so I could avoid getting pulled back into web development like previously always ended up happening. Dark Noise and my podcast &lt;a href=&quot;https://launchedfm.com/&quot;&gt;Launched&lt;/a&gt; were both mechanisms to keep pushing on both the technical/product side and the community side of things. This was especially important when the pandemic showed up and made connecting with the community much more difficult.&lt;/p&gt;
+
+&lt;p&gt;But 2022 was different. I was finally able to travel. We had just bought a new house at the end of 2021. And &lt;em&gt;maybe&lt;/em&gt; I was a little burnt out? I’m not quite sure the full alchemy of reasons, but from the beginning of the year to the end of the summer my side projects really took a back seat.&lt;/p&gt;
+
+&lt;p&gt;I did keep producing Launched thanks to a schedule that pulled me along and a lineup of guests I was, quite frankly, extremely proud to have on. But Dark Noise development slowed to a crawl. I spun up a couple &lt;a href=&quot;https://twitter.com/_chuckyc/status/1504267868241862656&quot;&gt;new app ideas&lt;/a&gt; that I ran out of steam on and never released.&lt;/p&gt;
+
+&lt;p&gt;And it had an impact! Dark Noise sales were down pretty significantly the first half of the year. I had no major releases in that period and being a paid up front app meant that really hurt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2022/12/31/dark-noise-yearly-proceeds.jpg&quot; alt=&quot;Dark Noise yearly sales graph&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;postCaption&quot;&gt;Dark Noise yearly proceeds (released in August 2019)&lt;/p&gt;
+
+&lt;p&gt;This might all sound negative but I took advantage of this break and honestly I think I needed it.&lt;/p&gt;
+
+&lt;p&gt;I finally got to travel! I finally met coworkers for the first time in San Diego, vacationed with my wife without kids for the first time since the pandemic, went to Europe for the very first time (with the kids!), and &lt;em&gt;finally&lt;/em&gt; got to meet folks in the iOS community &lt;strong&gt;in person&lt;/strong&gt; at WWDC 😱.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2022/12/31/2022-flighty-passport.jpeg&quot; alt=&quot;Flighty Passport showing all flights I took in 2022&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;postCaption&quot;&gt;My &lt;a href=&quot;https://flighty.app/&quot;&gt;Flighty&lt;/a&gt; Passport showing all of my 2022 flights&lt;/p&gt;
+
+&lt;p&gt;Also in between traveling, Apple reached out asking for a demo version of the Dark Noise Mac app. And now &lt;a href=&quot;https://twitter.com/_chuckyc/status/1585347257737818113&quot;&gt;every Apple retail store in the world has a demo of Dark Noise pre-installed on all of their display Macs&lt;/a&gt;! 😱&lt;/p&gt;
+
+&lt;h2 id=&quot;a-breakthrough&quot;&gt;A Breakthrough&lt;/h2&gt;
+
+&lt;p&gt;Two things happened at the end of summer that changed my side project trajectory.&lt;/p&gt;
+
+&lt;h4 id=&quot;dark-noise-returns&quot;&gt;Dark Noise Returns&lt;/h4&gt;
+
+&lt;p&gt;The first is simply Apple’s OS release cadence. The nice thing about Apple’s release cadence is it sort of forces me to get a release pulled together by a certain date. This year, that meant I needed Dark Noise to be ready with iOS 16 support and features like the &lt;a href=&quot;https://twitter.com/DarkNoiseApp/status/1569328284923486211&quot;&gt;new Lock Screen widgets&lt;/a&gt; in September with a follow up release in October to support the &lt;a href=&quot;https://twitter.com/DarkNoiseApp/status/1584549536269148162&quot;&gt;new Dynamic Island and Live Activities&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This release kind of woke me up from the side project blues and got the gears going again with regards to Dark Noise development. This was partially fueled by extra time I now had because of the &lt;em&gt;other&lt;/em&gt; breakthrough I had at the end of summer.&lt;/p&gt;
+
+&lt;h4 id=&quot;launched-with-help&quot;&gt;Launched With Help&lt;/h4&gt;
+
+&lt;p&gt;In August I decided I needed some help with Launched. Editing the show was simply taking too much of my limited side project time. I wanted to hire an editor, which meant I needed money. I didn’t want to take on selling sponsorships myself given I was already stretched too thin so I started putting together a pitch deck to see if I could find a network that would let Launched join.&lt;/p&gt;
+
+&lt;p&gt;Looking over the pitch deck stats I basically chickened out thinking the numbers were probably too low for anyone to consider and never even reached out to anyone. Instead I simply &lt;a href=&quot;https://twitter.com/_chuckyc/status/1561695800656379904&quot;&gt;tweeted them out&lt;/a&gt; and moved on.&lt;/p&gt;
+
+&lt;p&gt;Surprisingly, this ended up paying off! &lt;a href=&quot;https://mastodon.social/@refactoredd@mastodon.online&quot;&gt;Jonathan Ruiz&lt;/a&gt; had recently ended his show, &lt;a href=&quot;https://twitter.com/_everydayrobots&quot;&gt;Everyday Robots&lt;/a&gt;, and reached out to offer to edit the Launched. I took him up on the offer and every episode since has been edited by Jonathan.&lt;/p&gt;
+
+&lt;p&gt;I cannot express how big of an impact this has had. I am pretty precious with the edit of that show, but Jonathan has been outstanding. And the time it’s freed up has allowed me to pour more time into growing both the podcast (I’m gearing up to start taking on sponsorships) &lt;strong&gt;and&lt;/strong&gt; turning Dark Noise into a potentially fully viable business into it’s own.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-breakdown&quot;&gt;A Breakdown&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Note: ok this headline is a pretty hyperbolic for the sake of keeping the “break” theme but you have to admit it’s pretty catchy yeah?&lt;/em&gt; 😅&lt;/p&gt;
+
+&lt;p&gt;The end of 2022 has been… turbulent to say the least. The tech industry has suddenly gotten a little unstable. And Twitter, the platform that the hosts the community I’d invested so much in, was imploding. There are also some personal career things I can’t discuss here that put me, an extremely risk averse personality, into hardcore de-risking mode.&lt;/p&gt;
+
+&lt;p&gt;I started putting together action plans. What do I do if I get laid off? How much runway do I have to find another job? Can I grow that runway if my side projects are making more money? Could my side projects &lt;em&gt;be&lt;/em&gt; the other job?&lt;/p&gt;
+
+&lt;p&gt;This brewed a pretty weird concoction of excitement mixed with anxiety that’s launching me into 2023 with a pretty clearly defined set of short term goals.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Switch Dark Noise to a subscription model.&lt;/li&gt;
+  &lt;li&gt;Monetize Launched with a combination of sponsorships and membership/Patreon.&lt;/li&gt;
+  &lt;li&gt;Invest in the local (St. Louis) iOS community by starting some kind of meetup.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I feel like my goals have usually been more high-minded and &lt;em&gt;“personal growth”&lt;/em&gt; focused in years past. It feels a little crass for a major theme to essentially be &lt;em&gt;“make more money”&lt;/em&gt; but this is where I am. We’ll see where 2023 takes me, but either way I’m at least coming into it with a side-eye towards handling uncertainty.&lt;/p&gt;</content><author><name></name></author><summary type="html">2022 was a bit of a weird year for me that I think kinda breaks down into 3 distinct parts. A break A breakthrough And… a breakdown?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://charliemchapman.com/assets/images/charlie-profile_1024.jpg" /><media:content medium="image" url="https://charliemchapman.com/assets/images/charlie-profile_1024.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">iOS 15 Support with Dark Noise 2.6</title><link href="https://charliemchapman.com/posts/2021/10/5/dark-noise-2_6-iOS-15" rel="alternate" type="text/html" title="iOS 15 Support with Dark Noise 2.6" /><published>2021-10-05T00:00:00-05:00</published><updated>2021-10-05T00:00:00-05:00</updated><id>https://charliemchapman.com/posts/2021/10/5/dark-noise-2_6-iOS-15</id><content type="html" xml:base="https://charliemchapman.com/posts/2021/10/5/dark-noise-2_6-iOS-15">&lt;p&gt;Dark Noise 2.6 comes to the &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;App Store today&lt;/a&gt; with full support for iOS 15!&lt;/p&gt;
 
 &lt;h2 id=&quot;extra-large-widgets&quot;&gt;Extra Large Widgets&lt;/h2&gt;
 
@@ -352,18 +417,4 @@
     &lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://www.youtube.com/embed/rORrX_piSKY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope;  picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;This year one of my goals was to try to get into confrence speaking. That… uh… isn’t exactly working out thanks to our good friend COVID-19. But I was given the opportunity to do a quick talk for a remote &lt;a href=&quot;https://www.nscoder-chicago.com&quot;&gt;NSCoder Chicago&lt;/a&gt; meetup and I talked about an experiment I’ve been doing using  UIInterpolatingMotionEffect to create some parallax effects in UIKit. This is a raw screen recording with only my audio.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://charliemchapman.com/assets/images/charlie-profile_1024.jpg" /><media:content medium="image" url="https://charliemchapman.com/assets/images/charlie-profile_1024.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Tutorial: Creating Sketch Style App Icons with Procreate on iPad</title><link href="https://charliemchapman.com/posts/2020/5/1/launched-icon-tutorial" rel="alternate" type="text/html" title="Tutorial: Creating Sketch Style App Icons with Procreate on iPad" /><published>2020-05-01T00:00:00-05:00</published><updated>2020-05-01T00:00:00-05:00</updated><id>https://charliemchapman.com/posts/2020/5/1/launched-icon-tutorial</id><content type="html" xml:base="https://charliemchapman.com/posts/2020/5/1/launched-icon-tutorial">&lt;div class=&quot;postYoutube&quot;&gt;
-    &lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://www.youtube.com/embed/SE4IGY8wSrc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope;  picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;For each episode of &lt;a href=&quot;https://launchedfm.com&quot;&gt;Launched&lt;/a&gt; I create a custom version of the podcast artwork where I replace the paper airplane with a “sketchified” version of the guests app icon (or something else representing the guest if they aren’t an app dev or can’t give me permission to use their icon).&lt;/p&gt;
-
-&lt;p&gt;This has eventually led to a few developers adding that icon into their app as an optional custom app icon, which delights me to no end ☺️. I &lt;a href=&quot;https://twitter.com/_chuckyc/status/1255872065711804416?s=21&quot;&gt;tweeted as much&lt;/a&gt; and there was a lot of questions asking how I make them.  It’s pretty straight forward so I made a little tutorial showing how I make these sketch style app icons using Procreate on my iPad Pro.&lt;/p&gt;
-
-&lt;p&gt;I’ve also created 2 files that I use when creating these icons that you can download here:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/posts/2020/05/01/launched-icon-template-background.png&quot;&gt;launched-icon-template-background.png&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/posts/2020/05/01/launched-icon-template-mask.png&quot;&gt;launched-icon-template-mask.png&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As always, feedback is appreciated. If I said anything dumb (likely) or if you end up using this technique for a project yourself I’d love to hear about it on &lt;a href=&quot;https://twitter.com/_chuckyc/&quot;&gt;Twitter&lt;/a&gt;!&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://charliemchapman.com/assets/posts/2020/05/01/launched-icon-template-background.png" /><media:content medium="image" url="https://charliemchapman.com/assets/posts/2020/05/01/launched-icon-template-background.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;This year one of my goals was to try to get into confrence speaking. That… uh… isn’t exactly working out thanks to our good friend COVID-19. But I was given the opportunity to do a quick talk for a remote &lt;a href=&quot;https://www.nscoder-chicago.com&quot;&gt;NSCoder Chicago&lt;/a&gt; meetup and I talked about an experiment I’ve been doing using  UIInterpolatingMotionEffect to create some parallax effects in UIKit. This is a raw screen recording with only my audio.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://charliemchapman.com/assets/images/charlie-profile_1024.jpg" /><media:content medium="image" url="https://charliemchapman.com/assets/images/charlie-profile_1024.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
