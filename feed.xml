@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://charliemchapman.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://charliemchapman.com/" rel="alternate" type="text/html" /><updated>2023-03-01T09:53:30-06:00</updated><id>https://charliemchapman.com/feed.xml</id><title type="html">Charlie Chapman</title><subtitle>The personal blog of Charlie Chapman.</subtitle><entry><title type="html">Dark Noise Analytics: March 2023</title><link href="https://charliemchapman.com/posts/2023/3/1/2023-dark-noise-stats" rel="alternate" type="text/html" title="Dark Noise Analytics: March 2023" /><published>2023-03-01T00:00:00-06:00</published><updated>2023-03-01T00:00:00-06:00</updated><id>https://charliemchapman.com/posts/2023/3/1/2023-dark-noise-stats</id><content type="html" xml:base="https://charliemchapman.com/posts/2023/3/1/2023-dark-noise-stats">&lt;p&gt;I recently added some analytics into &lt;a href=&quot;https://darknoise.app/&quot;&gt;Dark Noise&lt;/a&gt; using the new(ish) privacy-focused analytics tool &lt;a href=&quot;https://telemetrydeck.com/&quot;&gt;TelemetryDeck&lt;/a&gt; in preparation for my big update that will be adding a free tier. I want to get an understanding of how many users I might be dealing with going forward and some of my future plans lead me to want to understand what features, and sounds users are using most within the app.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://charliemchapman.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://charliemchapman.com/" rel="alternate" type="text/html" /><updated>2023-04-03T07:10:10-05:00</updated><id>https://charliemchapman.com/feed.xml</id><title type="html">Charlie Chapman</title><subtitle>The personal blog of Charlie Chapman.</subtitle><entry><title type="html">Dark Noise 3.0: White noise, freed</title><link href="https://charliemchapman.com/posts/2023/4/2/dark-noise-3" rel="alternate" type="text/html" title="Dark Noise 3.0: White noise, freed" /><published>2023-04-02T00:00:00-05:00</published><updated>2023-04-02T00:00:00-05:00</updated><id>https://charliemchapman.com/posts/2023/4/2/dark-noise-3</id><content type="html" xml:base="https://charliemchapman.com/posts/2023/4/2/dark-noise-3">&lt;p&gt;Today &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;Dark Noise 3.0&lt;/a&gt; is &lt;em&gt;finally&lt;/em&gt; released on the App Store.&lt;/p&gt;
+
+&lt;p&gt;The biggest change in Dark Noise 3.0 is the introduction of a new free tier. This free tier includes access to 8 free sounds, as well as full support for infinitely looping sounds, Shortcuts, Siri integration, the Timer, and all the deep Apple integrations you’ve come to expect from Dark Noise. This makes the app more accessible than it’s ever been before!&lt;/p&gt;
+
+&lt;p&gt;For those who want more features and sounds, there is &lt;strong&gt;Dark Noise Pro&lt;/strong&gt;. This optional subscription or lifetime in-app purchase unlocks over 50 sounds, the ability to create custom mixes, alternate app icons, and alternate premium themes. With Dark Noise Pro, you can customize your white noise experience to your liking.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2023/04/02/dark-noise-pro-compare.jpg&quot; alt=&quot;Dark Noise Tier Comparisons&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve been working on this update for quite a while, and a significant portion of that time was spent ensuring existing customers are taken care of. Customers who purchased Dark Noise before this update are called &lt;strong&gt;Dark Originals&lt;/strong&gt;. At launch, they will have all Dark Noise Pro features unlocked automatically. There &lt;em&gt;may&lt;/em&gt; be features introduced in the future that require a Dark Noise Pro subscription, but for now Dark Originals will receive all of the same features as Dark Noise Pro.&lt;/p&gt;
+
+&lt;p&gt;Dark Noise 3.0 also begins the process of improving the experience of Dark Noise with headphones or nicer speakers. This update includes &lt;strong&gt;4 high quality stereo remasters&lt;/strong&gt; of existing sounds: Rain, Thunderstorm, Beach, and Airplane Interior. Future updates will include more remasters as well as a new focus on increasing the variety of sounds in Dark Noise.&lt;/p&gt;
+
+&lt;p&gt;As always, this update includes a plethora of small enhancements and bug fixes including:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Newly updated App Icon&lt;/li&gt;
+  &lt;li&gt;Rewritten theme picker&lt;/li&gt;
+  &lt;li&gt;New Aurora premium theme&lt;/li&gt;
+  &lt;li&gt;New Aurora alternate app icon&lt;/li&gt;
+  &lt;li&gt;Mac window size restores from previous session&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dark Noise 3.0 is available &lt;strong&gt;now&lt;/strong&gt; on the App Store to &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;download for free&lt;/a&gt;! I can’t wait to hear what you all think. If you’re press you can find an extensive &lt;a href=&quot;https://darknoise.app/press&quot;&gt;press-kit&lt;/a&gt; and &lt;a href=&quot;https://darknoise.app/posts/dark-noise-3&quot;&gt;more details&lt;/a&gt; on the release on &lt;a href=&quot;https://darknoise.app/&quot;&gt;darknoise.app&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Today Dark Noise 3.0 is finally released on the App Store.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://charliemchapman.com/assets/images/dark-noise-icon-v2-cropped.png" /><media:content medium="image" url="https://charliemchapman.com/assets/images/dark-noise-icon-v2-cropped.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Dark Noise Analytics: March 2023</title><link href="https://charliemchapman.com/posts/2023/3/1/2023-dark-noise-stats" rel="alternate" type="text/html" title="Dark Noise Analytics: March 2023" /><published>2023-03-01T00:00:00-06:00</published><updated>2023-03-01T00:00:00-06:00</updated><id>https://charliemchapman.com/posts/2023/3/1/2023-dark-noise-stats</id><content type="html" xml:base="https://charliemchapman.com/posts/2023/3/1/2023-dark-noise-stats">&lt;p&gt;I recently added some analytics into &lt;a href=&quot;https://darknoise.app/&quot;&gt;Dark Noise&lt;/a&gt; using the new(ish) privacy-focused analytics tool &lt;a href=&quot;https://telemetrydeck.com/&quot;&gt;TelemetryDeck&lt;/a&gt; in preparation for my big update that will be adding a free tier. I want to get an understanding of how many users I might be dealing with going forward and some of my future plans lead me to want to understand what features, and sounds users are using most within the app.&lt;/p&gt;
 
 &lt;p&gt;It’s been a couple of months now so I have enough data to share some metrics with you all. I think it might be fun to see what changes when I switch to a subscription business model with a free tier. As always, this is meant to be helpful! I don’t know if these numbers are higher than average, or lower than average. This is just one data point that’s hopefully helpful to see, especially for other indie developers.&lt;/p&gt;
 
@@ -415,46 +436,4 @@
       &lt;p&gt;On the iPad they are currently still limited to the “Today View” to the left of your home screens.. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">With Apple’s release of iOS 14 I’m releasing Dark Noise 2.1 with support for many of the new iOS 14 features. And it’s available in the App Store today!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://charliemchapman.com/assets/images/dark-noise-app-icon-cropped.png" /><media:content medium="image" url="https://charliemchapman.com/assets/images/dark-noise-app-icon-cropped.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Dark Noise 2</title><link href="https://charliemchapman.com/posts/2020/7/20/dark-noise-2" rel="alternate" type="text/html" title="Dark Noise 2" /><published>2020-07-20T00:00:00-05:00</published><updated>2020-07-20T00:00:00-05:00</updated><id>https://charliemchapman.com/posts/2020/7/20/dark-noise-2</id><content type="html" xml:base="https://charliemchapman.com/posts/2020/7/20/dark-noise-2">&lt;div class=&quot;postYoutube&quot;&gt;
-    &lt;iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://www.youtube.com/embed/D4dbuYqoHmA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope;  picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Today I’m finally releasing the biggest update of Dark Noise to date to the &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;App Store&lt;/a&gt;! Dark Noise 2 is the next major evolution of the best ambient noise app on iOS. Mixing sounds has been the most requested feature since launch and I’m excited to announce it’s finally here! A lot of work went in to maintaining the simplicity and tight iOS integration Dark Noise is known for and I’m very proud of the results. Along with iCloud syncing, new sounds, new icons, and loads of bug fixes this is the biggest update to date.&lt;/p&gt;
-
-&lt;h2 id=&quot;new-features&quot;&gt;New Features&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/07/20/create-mix-examples.PNG&quot; alt=&quot;Create Mix Examples&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Create Mix&lt;/strong&gt; • Build your own custom mix from any number of sounds. Mix multiple of the same sound for even more variety! Animated icons can be built using the new icon creator or images or animated GIFs can be imported from the Photo Library.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;iCloud Syncing&lt;/strong&gt; • Custom mixes and favorites will now sync to all of your devices using iCloud! No need to sign in or configure anything, your data will simply follow you to all of your Apple devices.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/07/20/dark-noise-2-new-sounds.PNG&quot; alt=&quot;New Sounds&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;8 New Sounds&lt;/strong&gt; • New sounds have been added to the Dark Noise catalogue for playing on their own or added to mixes including:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Rain on Tent&lt;/li&gt;
-  &lt;li&gt;Wind Chimes&lt;/li&gt;
-  &lt;li&gt;Windy Trees&lt;/li&gt;
-  &lt;li&gt;Seagulls&lt;/li&gt;
-  &lt;li&gt;Lake&lt;/li&gt;
-  &lt;li&gt;Ship Deck&lt;/li&gt;
-  &lt;li&gt;Flag&lt;/li&gt;
-  &lt;li&gt;Lullaby&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;iPad Pointer Support&lt;/strong&gt; • Navigate Dark Noise 2 using a trackpad or mouse with full pointer support on the iPad.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/2020/07/20/dark-noise-2-new-icons.png&quot; alt=&quot;New Icons&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;New Icons&lt;/strong&gt; • Inspired by the new design of macOS Big Sur a skeuomorphic icon was added to the list of custom icons. And the new Launched icon is in honor of &lt;a href=&quot;https://launchedfm.com/&quot;&gt;my new(ish) podcast of the same name&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;And More!&lt;/strong&gt; • Bug fixes, improved shortcuts support, and a rewritten audio engine, and even a new “Auto Volume” experimental feature round out the biggest update yet.&lt;/p&gt;
-
-&lt;h2 id=&quot;whats-next&quot;&gt;What’s Next&lt;/h2&gt;
-
-&lt;p&gt;There’s still so much more I have planned for the future of Dark Noise. First is getting ready for iOS 14. Some &lt;a href=&quot;https://twitter.com/_chuckyc/status/1284552561278832645&quot;&gt;early tests&lt;/a&gt; with the new Widgets look really promising, and improvements to Siri and Shortcuts look to unlock even more automation possibilities. After that I want to expand on the customization abilities I’ve added with the create mix feature.&lt;/p&gt;
-
-&lt;p&gt;Thank you so much for all of your support and kind words over the last year. I’m so excited to see where Dark Noise can go in the future!&lt;/p&gt;
-
-&lt;p&gt;Dark Noise 2 is available on for iPhone and iPad on the App Store &lt;a href=&quot;https://apps.apple.com/us/app/dark-noise/id1465439395&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://charliemchapman.com/assets/images/dark-noise-app-icon-cropped.png" /><media:content medium="image" url="https://charliemchapman.com/assets/images/dark-noise-app-icon-cropped.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><summary type="html">With Apple’s release of iOS 14 I’m releasing Dark Noise 2.1 with support for many of the new iOS 14 features. And it’s available in the App Store today!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://charliemchapman.com/assets/images/dark-noise-app-icon-cropped.png" /><media:content medium="image" url="https://charliemchapman.com/assets/images/dark-noise-app-icon-cropped.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
