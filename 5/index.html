@@ -99,6 +99,132 @@
         <div class="content-centered">
   
 <h1 class="post-title">
+  <a href="/posts/2019/9/2/designing-dark-noise">
+    Designing Dark Noise
+  </a>
+</h1>
+<p class="post-meta">02 Sep 2019</p>
+
+<div class="post-content">
+  <p>Today I want to talk about the process I used for designing my new app <a href="https://apps.apple.com/us/app/dark-noise/id1465439395">Dark Noise</a>.  It’s an app for playing different ambient noises to help with sleep or focus.  I’m not a designer by trade, and this is the first app I’ve made for iOS, so this is more of a brain dump of everything I did and less of a proposal on how design should be done.</p>
+
+<p>Before I placed a pixel in any design tool, I first figured out what the guiding principles for the app were, and what features I wanted to include.  I detailed this step in a <a href="/posts/2019/8/23/principles-of-dark-noise">separate post</a>, but the end result was:</p>
+
+<ul>
+  <li><strong>Configurability</strong>
+    <ul>
+      <li>Targeting pro users who want as many options and hooks to work the app into their workflow as possible</li>
+    </ul>
+  </li>
+  <li><strong>Speed</strong>
+    <ul>
+      <li>Opening app to playing sound should be as fast as possible with no compromise since this is the 99% use case</li>
+    </ul>
+  </li>
+  <li><strong>Keep it dark</strong> (expect fat fingers)
+    <ul>
+      <li>Most users will probably be using this in a dark environment, possibly without their glasses on or half asleep.  Keep that in mind.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>I have a little bit of experience playing around with <a href="https://www.adobe.com/products/xd.html">Adobe XD</a>, so I decided to use that to build out my mockups.  I ended up loving XD so I’d highly recommend it.  It’s even free! <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<h1 id="round-1">Round 1</h1>
+
+<p>The first thing I built was a player page based on the 3rd principle: <strong>Keep it dark</strong> (expect fat fingers)</p>
+
+<p><img src="/assets/posts/2019/09/02/dark-noise-design-v01.jpg" alt="Dark Noise design version 01" /></p>
+<p class="postCaption">In case you doubted my lack of design pedigree, this was full design, not a wireframe 😅</p>
+
+<p>Once you get passed the blandness, you can pretty much see the bones of the app from the beginning.  An easy to hit play button, a name, and a way to get to the other sounds.</p>
+
+<p>The “Create Noise” page was based on my original idea of generating the different color noises on the fly, and building a little color picker style control to let you mix your own noise.  For technical/scope reasons I ended up not going this direction at all, but I do anticipate implementing a “Create Noise” feature at some point in the future.</p>
+
+<p>I also had the main swiping gesture for minimizing the player there from the beginning.  One cool thing about Adobe XD is that you can quickly setup prototypes with swiping gestures for animations, and then demo them interactively on the phone.  So I could quickly play around with different ideas and get a sense of how they <em>felt</em>.</p>
+
+<p><img src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-design-prototyping.gif" alt="Dark Noise design version 01" /></p>
+<p class="postCaption">Recorded on my iPhone previewing the XD prototype. I toyed around with having the player minimize to the top, but the rapid prototyping with XD quickly showed me that didn't feel right</p>
+
+<p>The “Charcoal Dreams” name has an interesting back story.  From the beginning I knew I wanted to add some sort of fun whimsical feel to the app.  I thought it might be fun to give each noise an obnoxiously whimsical name, and if you 3D touched the name you’d get a silly description along the lines of “earthy notes with a hint of cinnamon” or something.</p>
+
+<p>Since I switched strategies to using audio recordings, this didn’t make as much sense, but I didn’t give up on that goal of having something fun.</p>
+
+<div class="postVideoContainer">
+    <video class="postVideo" controls="" loop="">
+    <source src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-1st-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
+</div>
+<p class="postCaption">First video I could find of a working version of the app.  This was in May, so about 4-5 months in.</p>
+
+<p>This first design wasn’t pretty, but the structural bones were pretty good.  It gave me a direction to go on as I built out the first version of the app.</p>
+
+<h1 id="round-2">Round 2</h1>
+
+<p>At this stage I actually had a functional app that had a lot of the features I wanted, but it just looked… bleh.  I am not a designer by trade, so I didn’t really know what to do to make this look better.  A designer friend at work pointed me to <a href="https://mobbin.design">Mobbin</a>.  It’s a simple website that allows you to view screenshots of hundreds of different well designed apps, with a pretty good search functionality.</p>
+
+<p><img src="/assets/posts/2019/09/02/mobbin-screenshot.jpg" alt="Mobbin" /></p>
+<p class="postCaption">Here I'm searching for "Audio Playback" patterns in apps under the "Music" category on <a href="https://mobbin.design">Mobbin</a></p>
+
+<p>Mobbin helped point me at what elements make up a good looking mobile app, and after iterating on a couple ideas in XD, I landed on a design that will start to look familiar if you’ve used the app.</p>
+
+<p><img src="/assets/posts/2019/09/02/dark-noise-design-v02.jpg" alt="Dark Noise design version 02" /></p>
+<p class="postCaption">This should look familiar.</p>
+
+<p>There are two interesting design details I’d like to call out.</p>
+
+<h4 id="select-noise-arrow">Select Noise Arrow</h4>
+
+<p>I really liked the idea of the initial view you see of the app being a super simple page with a big play button, but that meant I had to hide the other sound options behind the second screen.  I ended up with a slightly unusual design that treated the first page you see as a maximized player that you have to swipe down to reveal the rest of the app.</p>
+
+<p>I was worried it wouldn’t be immediately clear <em>how</em> you’re supposed to proceed from that page if you wanted to change your noise, so I borrowed a design element from my first MacBook Pro and gave the down arrow a little “breathing” animation.  I’m hoping the gentle bounce and opacity change will draw a new users eye enough to guide them through the app, but also not be an annoying distraction in the future.</p>
+
+<h4 id="icon-animations">Icon Animations</h4>
+
+<p>One thing I really like about some other audio apps is when it’s visually clear when audio is playing so if your speakers are muted you have an indication that sound <em>should</em> be coming out.  For example, in <a href="https://overcast.fm">Overcast</a>, a darker tint color bounces on the pause button along with the audio that’s playing to let you know that there is sound being played.</p>
+
+<p>I came up with a few ideas in After Effects, but I either couldn’t figure out how to implement it properly, or it just didn’t feel right once I implemented it into the app.</p>
+
+<div class="postVideoContainer">
+    <video class="postVideo" controls="" loop="">
+    <source src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-play-pause-ideas.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
+</div>
+<p class="postCaption">A couple play / pause ideas I tried out.</p>
+
+<p>One idea I had pretty early on was to make a looping animation for each of the static noise icons I was already building.  This sounded fun for me, but I was afraid it would take a long time and not really be worth the time it would take me.</p>
+
+<p>At one point I finally decided to try it out and see how it felt.  I made the animation for the White Noise icon and added it to the app, and it just felt awesome.</p>
+
+<div class="postVideoContainer">
+    <video class="postVideo" controls="" loop="">
+    <source src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-icons-sample.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
+</div>
+<p class="postCaption">Some of the icons I created for Dark Noise</p>
+
+<p>This solved my “playing indicator” problem, but even more importantly I found the <em>fun</em> I was looking for that I could use to stamp the app with my personality.</p>
+
+<h1 id="last-thoughts">Last Thoughts</h1>
+
+<p>There are other small touches throughout the app, but I think this touches on the biggest ones.  Like I said, I’m not a designer by trade, this is just to outline my thought process while I still remember it.  Hopefully this is helpful to somebody out there.</p>
+
+<p>If you have any other questions about my process or design choices, definitely reach out to me <a href="https://twitter.com/_chuckyc">on Twitter</a> I love talking about this stuff.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I actually do have a Creative Cloud subscription, but I believe all that gets you with XD is more storage space and access to their fonts. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+<h1 class="post-title">
   <a href="/posts/2019/8/28/im-feeling-lucky">
     I'm feeling lucky
   </a>
@@ -256,147 +382,6 @@
     </li>
   </ol>
 </div>
-
-</div>
-
-<h1 class="post-title">
-  <a href="/posts/2018/11/27/google-home-christmas-time">
-    Control Your Christmas Tree Lights with Google Home
-  </a>
-</h1>
-<p class="post-meta">27 Nov 2018</p>
-
-<div class="post-content">
-  <p><img src="/assets/posts/2018/11/27/google-home-hero-01.jpg" alt="Google Home" /></p>
-
-<p>A couple of years ago when we set up our Christmas tree, we bought a cheap little <a href="https://www.amazon.com/Westek-RFK1600LC-Indoor-Wireless-Switch-x/dp/B000HJBE68/ref=sr_1_10?s=lamps-light&amp;ie=UTF8&amp;qid=1543371600&amp;sr=1-10&amp;keywords=remote+light+switch">RF light switch</a> to plug our tree into so we didn’t have to climb underneath the tree to turn on and off the lights.  In the last year, we acquired a Google Home Mini, and I decided we could try to make our Christmas tree experience a little smarter.</p>
-
-<p>After a bit of experimentation, I can now say “Hey Google, It’s Christmas Time” and my tree lights up, Christmas music starts playing, and my TV turns on and starts playing a fireplace.  Check it out!</p>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Hey Google, It&#39;s Christmas Time&quot; 🧙‍♂️✨🎄🎶🔥<a href="https://twitter.com/hashtag/GoogleHome?src=hash&amp;ref_src=twsrc%5Etfw">#GoogleHome</a> <a href="https://twitter.com/hashtag/Automation?src=hash&amp;ref_src=twsrc%5Etfw">#Automation</a> <a href="https://twitter.com/hashtag/GoogleAssistant?src=hash&amp;ref_src=twsrc%5Etfw">#GoogleAssistant</a> <a href="https://t.co/G1X0c5d06o">pic.twitter.com/G1X0c5d06o</a></p>&mdash; Charlie Chapman (@_chuckyc) <a href="https://twitter.com/_chuckyc/status/1066803500686946309?ref_src=twsrc%5Etfw">November 25, 2018</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p>So, let’s talk about how I set this up.</p>
-
-<h2 id="control-the-lights">Control the Lights</h2>
-
-<p>To start, I want to control the lights through my Google Home, and to do that, I need something that will connect my dumb tree lights to my WiFi, and ultimately Google Assistant.  There are hundreds of smart plugs on Amazon, but you want to make sure you get one that’s compatible with Google Assistant.  I got <a href="https://www.amazon.com/gp/product/B072ZX8RTZ/ref=oh_aui_detailpage_o05_s00?ie=UTF8&amp;psc=1">this one from Gosuna</a>, but I think the same instructions will apply with any smart plug.</p>
-
-<p>To set it up, I just plugged my tree lights into the smart plug, and the smart plug into the wall.  I followed the instructions that came with my plug to get it hooked up to Google Home (which included downloading their app) but ultimately you need your smart plug to show up in the Google Home app page like below (I’ve nicknamed mine “Decoration Lights”).</p>
-
-<p><img src="/assets/posts/2018/11/27/google-home-app.PNG" alt="Google Home App Screenshot" /></p>
-
-<p>Now you should be able to tap the “On” / “Off” buttons in the Google Home app and see that your Christmas tree lights turn on and off correctly.  You should also be able to say “Ok Google, Turn on the Decoration Lights” and it should control the lights as well.</p>
-
-<h2 id="set-up-a-routine">Set Up a Routine</h2>
-
-<p>So you can now control the tree with your voice, but “Turn on the Decoration Lights” is pretty boring and hard to remember.  So let’s make this a bit easier using something Google calls <a href="https://support.google.com/assistant/answer/7672035?co=GENIE.Platform%3DAndroid&amp;hl=en">Routines</a>.</p>
-
-<p>Fair warning, Google has frequently moved things around the Google Home app, and I’m using an iPhone, so these directions might not be exactly the same for your app (let me know if not and I’ll try to update this post).</p>
-
-<ol>
-  <li>From the Google Home main page, tap on the avatar icon on the bottom right of the screen</li>
-  <li>In the “Google Assistant” section, tap on “… More Settings”</li>
-  <li>Tap on the “Assistant” Tab</li>
-  <li>Tap “Routines”</li>
-</ol>
-
-<p>Phew, ok, so hopefully you’re now on a screen that looks something like this.</p>
-
-<p><img src="/assets/posts/2018/11/27/google-home-routines-blank.PNG" alt="Google Home Routines" /></p>
-
-<p>Now, let’s create a new custom routine.</p>
-
-<ol>
-  <li>Tap the blue “+” floating action button on the bottom right</li>
-  <li>Tap the “Add commands” button</li>
-</ol>
-
-<p>This is where you pick the command you want to say to your Google Home to trigger this routine.  So here you can type “It’s Christmas Time” and tap save.</p>
-
-<p><em>NOTE: You can add multiple phrases to trigger the same routine.  Simply tap the “Add commands” button again and tap the blue “+” floating action button to create another phrase.</em></p>
-
-<p>Now, to tell your Google Home what to do when you say this command:</p>
-
-<ol>
-  <li>Tap ADD ACTION</li>
-  <li>Tap popular actions</li>
-  <li>Check the box next to “Adjust lights, plugs, and more”</li>
-  <li>Tap the settings gear next to “Adjust lights, plugs, and more”
-    <ul>
-      <li>Your smart plug should show here</li>
-    </ul>
-  </li>
-  <li>Tap on your smart plug</li>
-  <li>Select “Turn on” from the popup menu</li>
-  <li>Tap back</li>
-  <li>Tap “ADD” in the top right corner (I constantly forget this one)</li>
-  <li>Now tap “Save” in the top right corner</li>
-</ol>
-
-<p>You should now be back on the Routines page, but with your new Routine at the top of the list.</p>
-
-<p><img src="/assets/posts/2018/11/27/google-home-routines-new.PNG" alt="Google Home Routines With New" /></p>
-
-<p>You should be able to use this on your Google Home now.  Just say “Ok Google, It’s Christmas Time” and your lights should turn on.</p>
-
-<h2 id="add-some-music">Add Some Music</h2>
-
-<p>Alright, now you have a custom routine, but it’s only doing one action.  Let’s make things more interesting by playing some Christmas music as well as turning on the lights.</p>
-
-<ol>
-  <li>Tap on your custom routine</li>
-  <li>Tap “ADD MEDIA”</li>
-  <li>Check the “Music” radio button</li>
-  <li>Tap the gear icon next to “Music”</li>
-  <li>And type into the text box “<code class="language-plaintext highlighter-rouge">Christmas Radio</code>” (or whatever command you would use to trigger a custom playlist or album)
-    <ul>
-      <li>This will use whatever music service you’ve set up as the default.</li>
-    </ul>
-  </li>
-</ol>
-
-<p>Give it a shot.  Say “Ok Google, It’s Christmas Time” and your lights should turn on, and Christmas music should start playing out of your speaker.</p>
-
-<h2 id="put-a-fire-on-the-tv">Put a Fire on the TV</h2>
-
-<p>Ok, this is probably the trickiest one, and may not work for many of you.  Let’s start by explaining how I have my TV setup.</p>
-
-<p>I have a Chromecast (1st generation) plugged in to an HDMI port on my TV, but powered by plugging into the wall, not the TV’s usb port (this is important).  My TV supports <a href="https://en.wikipedia.org/wiki/Consumer_Electronics_Control">HDMI-CEC</a>, which is a spec that allows devices like BluRay players, video game consoles, and Chromecasts control your TV over HDMI.</p>
-
-<p>In my case, my TV will allow my Chromecast to turn on the TV and switch to the input my Chromecast is connected too.  But it will not allow my Chromecast to turn off my TV for reasons unknown.</p>
-
-<p>If your TV does not support HDMI-CEC then you will have to manually turn on your TV and switch it to the Chromecast’s input.</p>
-
-<p>Alright, with that aside, here’s how I set up the fireplace within my new Routine.</p>
-
-<ol>
-  <li>Open your custom routine</li>
-  <li>Tap “ADD ACTION”</li>
-  <li>Type into the text field “<code class="language-plaintext highlighter-rouge">Play https://www.youtube.com/watch?v=L_LUpnjgPso on TV</code>”</li>
-  <li>Tap “ADD” on the top right</li>
-  <li>Tap “Save” on the top right</li>
-</ol>
-
-<p>Typing into that text box let’s you arbitrarily type any command you can say to your Google Home.  So you could type “Play Fireplace on TV” here and Google will search Youtube and find a fireplace to put on your TV.</p>
-
-<p>But what if you want to play a specific video?  Since we’re typing into this command instead of talking out loud to our Google Home, we can actually clarify a specific Youtube video URL to play instead of just doing a search.</p>
-
-<p>To do that you first need to get the URL for that video by tapping “share” in the Youtube app or just copying the url from the browser.  Then you can just paste that URL into the command “<code class="language-plaintext highlighter-rouge">Play [insert-url-here] on TV</code>”.</p>
-
-<p><em>If you have multiple TVs in the house, you might also have to specify which TV such as “Play Fireplace on living room TV”.</em></p>
-
-<p>Now when you say “Ok Google, It’s Christmas Time”, your tree lights should turn on, music should start playing from your speaker, and your TV should turn into a fireplace!</p>
-
-<h2 id="keep-tinkering">Keep Tinkering</h2>
-
-<p>So now that you have the basic building blocks, you should be able to expand on this idea quiet a bit.</p>
-
-<p>You could create a new routine called “Cancel Christmas” that turns off the lights, fireplace, and music.  Or you could add an action to ask Google Home to tell you how many days till Christmas.</p>
-
-<p>Routines are a bit confusing, and the current Google Home app certainly doesn’t make that process easier, but it can be really powerful.  Even with just a couple pieces of smart hardware you can build up some impressive workflows pretty quickly.</p>
-
-<p>Hopefully this was helpful!  Please let me know if any of these directions don’t work or you have any other ideas.  Best place to reach me is on Twitter at <a href="https://twitter.com/_chuckyc">@_chuckyc</a>.</p>
 
 </div>
 
