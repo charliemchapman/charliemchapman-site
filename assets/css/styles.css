@@ -82,6 +82,26 @@ body .content .content-centered { padding-top: 60px; margin-left: auto; margin-r
 
 .about-img img { max-width: 200px; border-radius: 10px; box-shadow: 3px 3px 10px #00000077; }
 
+body { background-color: #fff; }
+
+.me-page .me-header { background-color: #4a6c32; padding-left: 16px; padding-right: 16px; margin-bottom: 50px; }
+
+.me-page .me-image { text-align: left; }
+
+.me-page .me-image img { max-width: 100px; border-radius: 15px; border: #fff solid 4px; margin-bottom: -54px; margin-top: 40px; }
+
+.me-page .me-content { padding-left: 16px; padding-right: 16px; margin-top: 60px; }
+
+.me-page .me-content h1 { margin-bottom: 0px; }
+
+.me-page .me-content .me-bio { margin-top: 7px; color: #333333; }
+
+.me-page .me-content .me-link { margin-bottom: 16px; }
+
+.me-page .me-content .me-link h3 { margin: 0; }
+
+.me-page .me-content .me-link p { margin: 0; }
+
 .post-summary-content { max-width: 730px; margin-left: 20px; margin-right: 20px; }
 
 .post-summary-content img { border-radius: 3px; }
