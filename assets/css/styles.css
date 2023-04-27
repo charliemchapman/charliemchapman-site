@@ -96,13 +96,33 @@ body { background-color: #fff; }
 
 .me-page .me-content h1 { margin-bottom: 0px; }
 
+.me-page .me-content h2 { margin-top: 44px; margin-bottom: 12px; border-bottom: #b9d5a6 solid 1px; }
+
 .me-page .me-content .me-bio { margin-top: 7px; color: #333333; }
 
-.me-page .me-content .me-link { margin-bottom: 16px; }
+.me-page .me-content .me-link { margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
 
-.me-page .me-content .me-link h3 { margin: 0; }
+.me-page .me-content .me-link h1, .me-page .me-content .me-link h2, .me-page .me-content .me-link h3, .me-page .me-content .me-link h4, .me-page .me-content .me-link h5, .me-page .me-content .me-link h6 { margin: 0; margin-right: 16px; }
 
-.me-page .me-content .me-link p { margin: 0; }
+.me-page .me-content .me-link p { margin: 0; font-size: 0.9rem; }
+
+.me-page .me-content .me-link a { text-decoration: underline; }
+
+.me-page .me-content .me-link .me-link-header { display: flex; align-items: center; }
+
+.me-page .me-content .me-link .me-link-header img { height: 18px; margin-right: 12px; }
+
+.me-page .me-content button { display: inline; font-size: 0.7rem; padding: 0.3rem 0.4rem; border-radius: 0.3rem; min-width: 50px; margin-left: 6px; }
+
+.me-page .me-content .bottom-spacer { height: 24px; }
+
+.me-page button { display: inline-block; border: none; padding: 1rem 2rem; margin: 0; text-decoration: none; background: #ececec; color: #606060; font-family: sans-serif; font-size: 1rem; cursor: pointer; text-align: center; transition: background 250ms ease-in-out,  transform 150ms ease; -webkit-appearance: none; -moz-appearance: none; }
+
+.me-page button:hover, .me-page button:focus { background: #cecece; color: #323232; }
+
+.me-page button:focus { outline: 1px solid #606060; outline-offset: -1px; }
+
+.me-page button:active { transform: scale(0.99); }
 
 .post-summary-content { max-width: 730px; margin-left: 20px; margin-right: 20px; }
 
