@@ -1,0 +1,131 @@
+body {
+    background-color: #fff;
+}
+
+.me-page {
+
+    .me-header {
+        background-color: #4a6c32;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 50px;
+
+        .me-header-content {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+        }
+    }
+
+    .me-image {
+        text-align: left;
+        img {
+            max-width: 100px;
+            border-radius: 15px;
+            border: #fff solid 4px;
+            margin-bottom: -54px;
+            margin-top: 40px;
+        }
+    }
+
+    .me-content {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 60px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        h2 {
+            margin-top: 44px;
+            margin-bottom: 12px;
+            border-bottom: #b9d5a6 solid 1px;
+        }
+
+        .me-bio {
+            margin-top: 7px;
+            color: #333333;
+        }
+
+        .me-link {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1, h2, h3, h4, h5, h6 {
+                margin: 0;
+                margin-right: 16px;
+            }
+
+            p {
+                margin: 0;
+                font-size: 0.9rem;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+
+            .me-link-header {
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 18px;
+                    margin-right: 12px;
+                }
+            }
+        }
+
+        button {
+            display: inline;
+            font-size: 0.7rem;
+            padding: 0.3rem 0.4rem;
+            border-radius: 0.3rem;
+            min-width: 50px;
+            margin-left: 6px;
+        }
+
+        .bottom-spacer {
+            height: 24px;
+        }
+    }
+
+    button {
+        display: inline-block;
+        border: none;
+        padding: 1rem 2rem;
+        margin: 0;
+        text-decoration: none;
+        background: #ececec;
+        color: #606060;
+        font-family: sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, 
+                    transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    button:hover,
+    button:focus {
+        background: #cecece;
+        color: #323232;
+    }
+    
+    button:focus {
+        outline: 1px solid #606060;
+        outline-offset: -1px;
+    }
+    
+    button:active {
+        transform: scale(0.99);
+    }
+}

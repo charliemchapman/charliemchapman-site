@@ -1,6 +1,11 @@
 ---
 layout: main
 ---
-<div class="content-centered">
-  {{ content }}
-</div>
+
+{% include navigation.html %}
+  <div class="content">
+    <div class="content-centered">
+      {{ content }}
+    </div>
+  </div>
+{% include footer.html %}
