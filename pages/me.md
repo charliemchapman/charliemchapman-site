@@ -1,7 +1,7 @@
 ---
 layout: me
 title: Me
-image: "/assets/images/charlie-profile_1024.jpg"
+image: "/assets/images/charlie-profile-2023.jpg"
 ---
 
 <script>
@@ -23,7 +23,7 @@ image: "/assets/images/charlie-profile_1024.jpg"
 <div class="me-header">
     <div class="me-header-content">
         <div class="me-image">
-            <img src="/assets/images/charlie-profile_1024.jpg" />
+            <img src="/assets/images/charlie-profile-2023.jpg" />
         </div>
     </div>
 </div>
