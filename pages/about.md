@@ -1,11 +1,11 @@
 ---
 layout: default
 title: About
-image: "/assets/images/charlie-profile_1024.jpg"
+image: "/assets/images/charlie-profile-2023.jpg"
 ---
 
 <div class="about-img">
-    <img src="/assets/images/charlie-profile_1024.jpg" />
+    <img src="/assets/images/charlie-profile-2023.jpg" />
 </div>
 
 Hi, I'm Charlie Chapman. I'm an app developer, podcaster, designer, and wannabe motion graphics artist. I built an iOS app called Dark Noise and run an interview podcast called Launched.

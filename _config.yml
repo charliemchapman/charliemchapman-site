@@ -5,7 +5,7 @@ paginate_path: "/:num/"
 title: "Charlie Chapman"
 description: "The personal blog of Charlie Chapman."
 
-logo: /assets/images/charlie-profile_1024.jpg
+logo: /assets/images/charlie-profile-2023.jpg
 
 twitter:
   username: _chuckyc
@@ -31,7 +31,7 @@ defaults:
       path: ""
     values:
       layout: "default"
-      image: /assets/images/charlie-profile_1024.jpg
+      image: /assets/images/charlie-profile-2023.jpg
 
 plugins:
   - jekyll-feed
