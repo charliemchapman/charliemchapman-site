@@ -24,7 +24,7 @@
 
     <link type="application/atom+xml" rel="alternate" href="https://charliemchapman.com/feed.xml" title="Charlie Chapman" />
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page 5 of 6 for Charlie Chapman | The personal blog of Charlie Chapman.</title>
+<title>Page 5 of 7 for Charlie Chapman | The personal blog of Charlie Chapman.</title>
 <meta name="generator" content="Jekyll v4.2.1" />
 <meta property="og:title" content="Charlie Chapman" />
 <meta property="og:locale" content="en_US" />
@@ -100,6 +100,69 @@
   <div class="content">
     <div class="content-centered">
       
+<h1 class="post-title">
+  <a href="/posts/2019/10/16/dark-noise-1-2">
+    Dark Noise 1.2
+  </a>
+</h1>
+<p class="post-meta">16 Oct 2019</p>
+
+<div class="post-content">
+  <p>Today I’m releasing the first update to Dark Noise bringing new iOS 13 features and adding a few new sounds.  With Dark Noise 1.2 I’ve brought 3 main feature improvements:</p>
+
+<h2 id="dark-mode">Dark Mode</h2>
+
+<p>Dark Noise already has multiple themes, including a pure black mode, but I still wanted to take advantage of the new system-wide dark mode in iOS 13.  In Dark Noise 1.2 you can now select a separate theme to use for the system dark and light modes.</p>
+
+<p><img src="/assets/posts/2019/10/16/dark-mode-theme-settings.png" alt="Dark Mode Theme Settings" /></p>
+
+<p>This will allow you to quickly switch to a darker theme by hitting the switch in control center, or automatically switch themes based on the time of day using the new system appearance scheduler.</p>
+
+<h2 id="parameterized-shortcuts">Parameterized Shortcuts</h2>
+
+<p>In iOS 13 Apple added a new feature to Shortcuts that allows users to set parameters for actions provided by apps.  For Dark Noise, this means that you can now create a shortcut action that sets a timer with a user specified time set directly in the shortcuts app.</p>
+
+<p><img src="/assets/posts/2019/10/16/dark-noise-shortcuts-sample.png" alt="Dark Mode Parameterized Shortcuts" /></p>
+
+<p>There’s a few unfortunate caveats that I need to address however.  Shortcuts with parameters cannot run audio without opening up the app first (unless you’re Apple Music 😒) so any of the new shortcuts will not be able to run in the background.</p>
+
+<p>For this reason, I’m also including the old style shortcuts that will allow you to run the audio in the background.  The old style shortcuts all begin with the word “Play” and have a toggle for “Show When Run”.  Unfortunately there is a new bug (feature?) in iOS 13 that only allows me to add 10 of these so you will see the <em>most recently played</em> noises as options in the shortcuts app.</p>
+
+<p>On top of this there is also now a “Play Pause Noise” shortcut that will pause the currently playing noise.  This will work even if the “Mix Audio” setting is turned on which prevents the system level “Play/Pause” action from working.</p>
+
+<h2 id="siri">Siri</h2>
+
+<p>Dark Noise is now integrated with Siri in iOS 13!  This means that without setting anything up ahead of time you can say “Hey Siri, play distant thunder in Dark Noise” and Siri will start the sound.</p>
+
+<p><img src="/assets/posts/2019/10/16/dark-noise-siri.png" alt="Dark Noise Siri" /></p>
+
+<p>In the current version of iOS 13, Siri integration is still a bit rough around the edges.  It frequently gets the noise name wrong and will fail to play.  It’s also not currently working on the HomePod since, as of the time of this writing, the HomePod software still hasn’t updated from iOS 12.  These issues should improve as Apple releases updates throughout the year, but I wanted to make sure I called them out.</p>
+
+<h2 id="new-sounds">New Sounds</h2>
+
+<p>Last but not least, Dark Noise 1.2 has 4 new sounds, each with custom animated icons of course!  This first batch was based on the most highly requested sounds since launch, but I’ve been collecting all of your suggestions and will keep adding more over time so don’t worry if your request isn’t included.</p>
+
+<p>Here’s the new sounds for Dark Noise 1.2:</p>
+
+<ol>
+  <li>Cat Purring</li>
+  <li>Spaceship Engine</li>
+  <li>Frogs</li>
+  <li>Distant Thunder</li>
+</ol>
+
+<p><img src="/assets/posts/2019/10/16/new-sounds.png" alt="New Sounds" /></p>
+
+<h2 id="whats-next">What’s Next?</h2>
+
+<p>By far the most highly requested feature since launch is the ability to mix multiple sounds together to create your own personal soundscape.  Now that my iOS 13 update is out of the way, this is my top priority.</p>
+
+<p>I’m a slow, deliberate developer and this is not my full time job (currently 😏) so it will take some time to do this right.  I’ve already started <a href="https://twitter.com/_chuckyc/status/1170390447660949514?s=20">playing around with the design</a> and I would love to hear any feedback or ideas from you all through <a href="https://twitter.com/_chuckyc">Twitter</a>, <a href="https://www.reddit.com/r/DarkNoiseApp/">Reddit</a>, or <a href="mailto:dev.charliemchapman@gmail.com">Email</a>.</p>
+
+<p>You can find the app (as well as a spiffy new app video preview) on the <a href="https://apps.apple.com/app/dark-noise/id1465439395">App Store</a> today!</p>
+
+</div>
+
 <h1 class="post-title">
   <a href="/posts/2019/9/27/marketing-dark-noise">
     Marketing Dark Noise
@@ -470,52 +533,6 @@
 
 </div>
 
-<h1 class="post-title">
-  <a href="/posts/2019/8/27/dark-noise">
-    Dark Noise is in the App Store 🥳
-  </a>
-</h1>
-<p class="post-meta">27 Aug 2019</p>
-
-<div class="post-content">
-  <p>Today I released my first app to the App Store, <a href="https://apps.apple.com/us/app/dark-noise/id1465439395">Dark Noise</a>.  It’s a simple yet powerful way to play ambient noise to help you sleep, focus, or relax.</p>
-
-<p>This is the part where I’m supposed to tell you about a brilliant revelation I had that led me to solve a problem you don’t even know you have.  But I cannot, because that’s now how all of this went down.</p>
-
-<p>The truth is, Dark Noise started as a simple learning exercise and has turned into something more.  I chose to build an ambient noise app because I’m very picky, and there wasn’t one in the store that fit exactly what I wanted: simple, fast, and fun.  There are a lot of options out there, many of them quite good, but I think I’ve landed on a balance of those three attributes that is truly unique.</p>
-
-<h1 id="simple">Simple</h1>
-
-<p><img src="/assets/posts/2019/08/27/dark-noise-simple.png" alt="Player and sound picker screenshots" /></p>
-
-<p>From the beginning, Dark Noise was designed to be simple to use.  I primarily use ambient noise to help me sleep, and I wanted to make something that was really easy to use at night, half-asleep without my glasses on.</p>
-
-<p>The main player page has a simple big play button that stands out in the dark. And a quick swipe down will reveal all of the different noises that can be played with a tap.</p>
-
-<h1 id="fast">Fast</h1>
-
-<p><img src="/assets/posts/2019/08/27/dark-noise-speed.png" alt="Favorites, Siri, and widget screenshots" /></p>
-
-<p>At the end of the day, an ambient noise app’s job is to start a sound, and then get out of the way as fast as possible, so I designed Dark Noise to have multiple ways to quickly start your favorite sound.</p>
-
-<p>You can add and reorder your favorite sounds to a section that always shows at the top of the selection page.  Siri Shortcuts integrations allows you to create a shortcut to start any specific sound using only your voice, even through a HomePod!  And a customizable widget and Home screen quick actions allow you to quickly activate a noise before opening the app.</p>
-
-<h1 id="fun">Fun</h1>
-
-<p><img src="/assets/posts/2019/08/27/dark-noise-themes.png" alt="Dark Noise themes" /></p>
-
-<p>Something I learned from the wonderful weather app <a href="https://www.meetcarrot.com/weather/">Carrot</a> is that a utility app can be delightful to use.  I wanted to try to make Dark Noise something that is fun to open up and interact with.</p>
-
-<p>I loaded it up with multiple themes, and (way to many) custom app icon options, but the thing that I’m really proud of is all of the custom animations.  Each noise has a custom icon that comes to life when you start playing it.  And the buttons throughout the UI have little animations peppered throughout to make the app fun and fluid to navigate.</p>
-
-<div style="width: 100%;max-width: 560px;margin-left: auto;margin-right: auto;"><iframe style="width:100%" width="560" height="315" src="https://www.youtube.com/embed/Q7BDtu9CkAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>&lt;/iframe&gt;</div>
-
-<p>I’m really proud of how Dark Noise came together, but it wouldn’t be close to what it is today without all of the help I’ve received along the way.  First from my friends at work who’ve essentially let me leech Swifty wisdom from them over the last 8 months.  And also from the iOS developer / enthusiast community.  Over 900 people have joined the beta and provided me with countless bug reports, feature ideas, and marketing advice.  I can’t express enough how helpful this has been and it’s inspired me to try to lift others up more than I do.</p>
-
-<p>This is just the beginning and I’m excited to see where Dark Noise goes from here.  As always, I’d love to hear your thoughts and feedback on <a href="https://twitter.com/DarkNoiseApp">Twitter</a> or on the <a href="https://www.reddit.com/r/DarkNoiseApp/">Dark Noise Subreddit</a></p>
-
-</div>
-
 
 <!-- Pagination links -->
 <div class="pagination">
@@ -525,7 +542,7 @@
         </a>
     
     <div class="page_number ">
-        5 of 6
+        5 of 7
     </div>
     
         <a href="/6/" class="next">Next →</a>
