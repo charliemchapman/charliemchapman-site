@@ -37,6 +37,22 @@ image: "/assets/images/charlie-profile-2023.jpg"
     <div class="me-link">
         <div>
             <div class="me-link-header">
+                <img src="/assets/images/bluesky-icon.svg">
+                <h3>BlueSky</h3>
+            </div>
+            <p>
+                <a href="https://bsky.app/profile/charliemchapman.com">
+                    @charliemchapman.com
+                </a>
+                <button id="bluesky-handle-button" onclick="copyHandle('@charliemchapman.com', 'bluesky-handle-button')">
+                    Copy
+                </button>
+            </p>
+        </div>
+    </div>
+    <div class="me-link">
+        <div>
+            <div class="me-link-header">
                 <img src="/assets/images/twitter-logo.png">
                 <h3>Twitter</h3>
             </div>
@@ -77,22 +93,6 @@ image: "/assets/images/charlie-profile-2023.jpg"
                     @charliemchapman
                 </a>
                 <button id="threads-handle-button" onclick="copyHandle('@charliemchapman', 'threads-handle-button')">
-                    Copy
-                </button>
-            </p>
-        </div>
-    </div>
-    <div class="me-link">
-        <div>
-            <div class="me-link-header">
-                <img src="/assets/images/bluesky-icon.png">
-                <h3>BlueSky</h3>
-            </div>
-            <p>
-                <a href="https://bsky.app/profile/charliemchapman.com">
-                    @charliemchapman.com
-                </a>
-                <button id="bluesky-handle-button" onclick="copyHandle('@charliemchapman.com', 'bluesky-handle-button')">
                     Copy
                 </button>
             </p>
