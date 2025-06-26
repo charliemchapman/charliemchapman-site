@@ -31,7 +31,7 @@ image: "/assets/images/charlie-profile-2023.jpg"
 <div class="me-content">
     <h1>Charlie Chapman</h1>
     <p class="me-bio">
-        iOS dev building <a href="https://darknoise.app/">@DarkNoise</a>, and host of the <a href="https://launchedfm.com/">@Launched</a> podcast.
+        Developer Advocate at <a href="https://revenuecat.com">@RevenueCat</a>, indie iOS developer building <a href="https://darknoise.app">@DarkNoise</a>, host of the <a href="https://launchedfm.com">@Launched</a> podcast.
     </p>
     <h2>Social</h2>
     <div class="me-link">
@@ -98,6 +98,18 @@ image: "/assets/images/charlie-profile-2023.jpg"
             </p>
         </div>
     </div>
+    <div class="me-link">
+        <div>
+            <div class="me-link-header">
+                <h3>LinkedIn</h3>
+            </div>
+            <p>
+                <a href="https://www.linkedin.com/in/charliemchapman/">
+                    linkedin.com/in/charliemchapman
+                </a>
+            </p>
+        </div>
+    </div>
     <h2>Projects</h2>
     <div class="me-link">
         <div>
@@ -105,7 +117,7 @@ image: "/assets/images/charlie-profile-2023.jpg"
                 <h3>Dark Noise (App)</h3>
             </div>
             <p>
-                <a href="https://darknoise.app/">
+                <a href="https://darknoise.app">
                     darknoise.app
                 </a>
             </p>
@@ -117,7 +129,7 @@ image: "/assets/images/charlie-profile-2023.jpg"
                 <h3>Launched (Podcast)</h3>
             </div>
             <p>
-                <a href="https://launchedfm.com/">
+                <a href="https://launchedfm.com">
                     launchedfm.com
                 </a>
             </p>
