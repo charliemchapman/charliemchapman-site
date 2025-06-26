@@ -31,22 +31,19 @@ image: "/assets/images/charlie-profile-2023.jpg"
 <div class="me-content">
     <h1>Charlie Chapman</h1>
     <p class="me-bio">
-        iOS dev building <a href="https://darknoise.app/">@DarkNoise</a>, and host of the <a href="https://launchedfm.com/">@Launched</a> podcast.
+        Developer Advocate at <a href="https://revenuecat.com">@RevenueCat</a>, indie iOS developer building <a href="https://darknoise.app">@DarkNoise</a>, host of the <a href="https://launchedfm.com">@Launched</a> podcast, and organizer of <a href="https://stlswift.com/">@STLSwift</a>.
     </p>
     <h2>Social</h2>
     <div class="me-link">
         <div>
             <div class="me-link-header">
-                <img src="/assets/images/bluesky-icon.svg">
-                <h3>BlueSky</h3>
+                <img src="/assets/images/linkedin-icon.svg">
+                <h3>LinkedIn</h3>
             </div>
             <p>
-                <a href="https://bsky.app/profile/charliemchapman.com">
-                    @charliemchapman.com
+                <a href="https://www.linkedin.com/in/charliemchapman/">
+                    linkedin.com/in/charliemchapman
                 </a>
-                <button id="bluesky-handle-button" onclick="copyHandle('@charliemchapman.com', 'bluesky-handle-button')">
-                    Copy
-                </button>
             </p>
         </div>
     </div>
@@ -61,6 +58,22 @@ image: "/assets/images/charlie-profile-2023.jpg"
                     @_chuckyc
                 </a>
                 <button id="twitter-handle-button" onclick="copyHandle('@_chuckyc', 'twitter-handle-button')">
+                    Copy
+                </button>
+            </p>
+        </div>
+    </div>
+    <div class="me-link">
+        <div>
+            <div class="me-link-header">
+                <img src="/assets/images/bluesky-icon.svg">
+                <h3>BlueSky</h3>
+            </div>
+            <p>
+                <a href="https://bsky.app/profile/charliemchapman.com">
+                    @charliemchapman.com
+                </a>
+                <button id="bluesky-handle-button" onclick="copyHandle('@charliemchapman.com', 'bluesky-handle-button')">
                     Copy
                 </button>
             </p>
@@ -105,8 +118,20 @@ image: "/assets/images/charlie-profile-2023.jpg"
                 <h3>Dark Noise (App)</h3>
             </div>
             <p>
-                <a href="https://darknoise.app/">
+                <a href="https://darknoise.app">
                     darknoise.app
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="me-link">
+        <div>
+            <div class="me-link-header">
+                <h3>Framous (App)</h3>
+            </div>
+            <p>
+                <a href="https://darknoise.app">
+                    framous.app
                 </a>
             </p>
         </div>
@@ -117,8 +142,20 @@ image: "/assets/images/charlie-profile-2023.jpg"
                 <h3>Launched (Podcast)</h3>
             </div>
             <p>
-                <a href="https://launchedfm.com/">
+                <a href="https://launchedfm.com">
                     launchedfm.com
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="me-link">
+        <div>
+            <div class="me-link-header">
+                <h3>Organizer of STL Swift (Meetup)</h3>
+            </div>
+            <p>
+                <a href="https://stlswift.com/">
+                    https://stlswift.com/
                 </a>
             </p>
         </div>
