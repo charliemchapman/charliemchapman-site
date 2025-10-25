@@ -74,7 +74,7 @@ img {
 }
 
 .site-container {
-  width: min(1080px, 92vw);
+  width: min(67.5vw, 92vw);
   margin: 0 auto;
 }
 
@@ -242,7 +242,7 @@ img {
 }
 
 .hero__title {
-  font-size: clamp(2.2rem, 3vw + 1rem, 3.6rem);
+  font-size: clamp(2.2rem, calc(3vw + 1rem), 3.6rem);
   line-height: 1.1;
   margin-bottom: 1.2rem;
   color: white;
@@ -386,7 +386,7 @@ img {
   text-align: center;
 
   &__title {
-    font-size: clamp(2rem, 2vw + 1.5rem, 3rem);
+    font-size: clamp(2rem, calc(2vw + 1.5rem), 3rem);
     margin-bottom: 0.5rem;
   }
 
@@ -462,7 +462,7 @@ img {
   padding: 4rem 0;
 
   h1 {
-    font-size: clamp(2rem, 2vw + 1.5rem, 2.6rem);
+    font-size: clamp(2rem, calc(2vw + 1.5rem), 2.6rem);
     color: white;
   }
 }
@@ -492,7 +492,7 @@ img {
     top: calc(100% + 0.75rem);
     left: 50%;
     transform: translate(-50%, -12px);
-    width: min(92vw, 420px);
+    width: min(92vw, 26.25vw);
     background: rgba(15, 23, 42, 0.96);
     border: 1px solid rgba(148, 163, 184, 0.3);
     border-radius: 1.4rem;

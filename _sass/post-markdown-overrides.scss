@@ -20,7 +20,7 @@
 }
 
 .post-article__title {
-  font-size: clamp(2.2rem, 2vw + 1.8rem, 3rem);
+  font-size: clamp(2.2rem, calc(2vw + 1.8rem), 3rem);
   margin-bottom: 0.8rem;
 }
 
@@ -45,11 +45,11 @@
   }
 
   h2 {
-    font-size: clamp(1.8rem, 1.6vw + 1.5rem, 2.3rem);
+    font-size: clamp(1.8rem, calc(1.6vw + 1.5rem), 2.3rem);
   }
 
   h3 {
-    font-size: clamp(1.4rem, 1vw + 1.1rem, 1.8rem);
+    font-size: clamp(1.4rem, calc(1vw + 1.1rem), 1.8rem);
   }
 
   h4 {

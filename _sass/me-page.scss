@@ -41,7 +41,7 @@
 }
 
 .me-content h1 {
-  font-size: clamp(2rem, 2vw + 1.3rem, 2.8rem);
+  font-size: clamp(2rem, calc(2vw + 1.3rem), 2.8rem);
   margin-bottom: 0.4rem;
 }
 
