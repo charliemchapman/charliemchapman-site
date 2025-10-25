@@ -1,8 +1,40 @@
-.about-img {
-    text-align: center;
+.page-section {
+  display: grid;
+  grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 2rem;
+  padding: 2.8rem;
+  box-shadow: 0 35px 80px rgba(15, 23, 42, 0.1);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  margin-bottom: 3rem;
+
+  &__media {
+    display: flex;
+    justify-content: center;
+
     img {
-        max-width: 200px;
-        border-radius: 10px;
-        box-shadow: 3px 3px 10px #00000077;
+      max-width: 240px;
+      border-radius: 1.6rem;
+      box-shadow: 0 25px 60px rgba(15, 23, 42, 0.18);
     }
+  }
+
+  &__content {
+    display: grid;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .page-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2.2rem;
+
+    &__content {
+      text-align: left;
+    }
+  }
 }

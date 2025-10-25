@@ -1,11 +1,13 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ page.title }}</title>
-    <!-- <link rel="stylesheet" href="https://use.typekit.net/dqq4mih.css"> -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
     <!-- generics -->
     <link rel="icon" href="/assets/favicons/charliemchapman-favicon-32.png" sizes="32x32">
@@ -14,7 +16,7 @@
     <link rel="icon" href="/assets/favicons/charliemchapman-favicon-228.png" sizes="228x228">
 
     <!-- Android -->
-    <link rel="shortcut icon" sizes="196x196" href=“/assets/favicons/charliemchapman-favicon-196.png">
+    <link rel="shortcut icon" sizes="196x196" href="/assets/favicons/charliemchapman-favicon-196.png">
 
     <!-- iOS -->
     <link rel="apple-touch-icon" href="/assets/favicons/charliemchapman-favicon-152.png" sizes="152x152">
@@ -25,7 +27,17 @@
     {% feed_meta %}
     {% seo %}
   </head>
-  <body>
+  <body class="site-body">
     {{ content }}
+    <script>
+      const menuToggle = document.querySelector('[data-menu-toggle]');
+      const navigation = document.querySelector('#primary-navigation');
+      if (menuToggle && navigation) {
+        menuToggle.addEventListener('click', () => {
+          const isOpen = navigation.classList.toggle('is-open');
+          menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+    </script>
   </body>
 </html>

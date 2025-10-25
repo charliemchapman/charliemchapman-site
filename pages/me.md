@@ -25,6 +25,9 @@ image: "/assets/images/charlie-profile-2023.jpg"
         <div class="me-image">
             <img src="/assets/images/charlie-profile-2023.jpg" />
         </div>
+        <div class="me-summary">
+            Developer advocate at <a href="https://revenuecat.com">RevenueCat</a>, indie iOS developer behind <a href="https://darknoise.app">Dark Noise</a>, and host of the <a href="https://launchedfm.com">Launched</a> podcast.
+        </div>
     </div>
 </div>
 

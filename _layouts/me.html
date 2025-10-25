@@ -4,7 +4,16 @@ title: Me
 image: "/assets/images/charlie-profile-2023.jpg"
 ---
 
-<div class="me-page">
-  {{ content }}
-</div>
+{% include navigation.html %}
+<main class="site-main">
+  <div class="site-container">
+    <div class="page-intro">
+      <h1 class="page-intro__title">About Charlie</h1>
+      <p class="page-intro__subtitle">The quick version of what I'm building, where I work, and how to get in touch.</p>
+    </div>
+    <div class="me-page">
+      {{ content }}
+    </div>
+  </div>
+</main>
 {% include footer.html %}

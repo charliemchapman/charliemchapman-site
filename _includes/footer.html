@@ -1,12 +1,27 @@
-<div class="footer">
-    <div class="links">
-        <a href="/feed.xml">RSS</a>
-        <span>|</span>
-        <a href="/contact">Contact</a>
-        <span>|</span>
-        <a href="/about">About</a>
-        <span>|</span>
-        <a href="/">Home</a>
+<footer class="site-footer">
+  <div class="site-container site-footer__inner">
+    <div class="site-footer__brand">
+      <a class="site-brand site-brand--footer" href="/">{{ site.title }}</a>
+      <p class="site-footer__description">Indie iOS developer, podcaster, and maker sharing notes from the journey.</p>
     </div>
-    <p class="signature">Made by Charlie Chapman in St. Louis, MO</p>
-</div>
+    <div class="site-footer__links">
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="/archive.html">Archive</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/feed.xml">RSS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Connect</h2>
+        <ul>
+          <li><a href="mailto:charliemchapman@gmail.com">Email</a></li>
+          <li><a href="https://twitter.com/_chuckyc">Twitter</a></li>
+          <li><a href="https://mastodon.social/@charliemchapman">Mastodon</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="site-footer__note">© {{ 'now' | date: '%Y' }} {{ site.title }}. Crafted in St. Louis, Missouri.</p>
+</footer>
