@@ -1,0 +1,127 @@
+.apps-page {
+  h1 {
+    margin-bottom: 4px;
+  }
+
+  .apps-intro {
+    color: #3c4035;
+    max-width: 900px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .apps-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .app-card {
+    background: #fafbf7;
+    border: 1px solid $light-green;
+    border-radius: 16px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
+    padding: 18px;
+  }
+
+  .app-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .app-card-title {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 14px;
+    align-items: flex-start;
+
+    .app-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      grid-row: 1 / 3;
+      object-fit: cover;
+      background-color: transparent;
+
+      &.app-icon--round {
+        border-radius: 50%;
+      }
+    }
+
+    h2 {
+      margin: 0 0 6px 0;
+      grid-column: 2;
+      color: $dark-green;
+    }
+
+    p {
+      margin: 0;
+      grid-column: 2;
+      color: #3c4035;
+    }
+  }
+
+  .app-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .app-link {
+    background-color: $dark-green;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .app-link.secondary {
+    background-color: white;
+    color: $dark-green;
+    border: 1px solid $dark-green;
+  }
+
+  .app-link:hover {
+    text-decoration: none;
+    background-color: darken($dark-green, 3%);
+  }
+
+  .app-link.secondary:hover {
+    background-color: #f4f7f0;
+  }
+
+  .app-iframe {
+    margin-top: 18px;
+
+    iframe {
+      width: 100%;
+      height: 780px;
+      border: 1px solid $light-green;
+      border-radius: 14px;
+      background-color: #f4f7f0;
+    }
+  }
+
+  .app-note {
+    margin-top: 14px;
+    margin-bottom: 0;
+    color: #4b5143;
+  }
+
+  @media (max-width: 800px) {
+    .app-card {
+      padding: 16px;
+    }
+
+    .app-iframe iframe {
+      height: 640px;
+    }
+  }
+}
