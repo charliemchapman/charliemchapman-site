@@ -1,10 +1,9 @@
 - name: Home
   link: /
+  key: home
 - name: Apps
-  link: /apps.html
+  link: /apps/
+  key: apps
 - name: About
-  link: /about.html
-- name: Archive
-  link: /archive.html
-- name: RSS
-  link: /feed.xml
+  link: /about/
+  key: about

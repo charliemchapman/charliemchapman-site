@@ -1,0 +1,173 @@
+{% assign entry = include.entry %}
+{% assign kind = entry.content_type | default: entry.collection | default: "posts" %}
+{% if kind == "posts" %}
+  {% assign kind = "post" %}
+{% endif %}
+{% if kind == "podcasts" %}
+  {% assign kind = "podcast" %}
+{% endif %}
+{% if kind == "videos" %}
+  {% assign kind = "video" %}
+{% endif %}
+{% if kind == "talks" %}
+  {% assign kind = "talk" %}
+{% endif %}
+
+{% assign icon = "article" %}
+{% assign label = "Blog Post" %}
+{% assign primary_label = "Read post" %}
+
+{% case kind %}
+  {% when "podcast" %}
+    {% assign icon = "mic" %}
+    {% assign label = "Podcast" %}
+    {% assign primary_label = "Listen to episode" %}
+  {% when "video" %}
+    {% assign icon = "smart_display" %}
+    {% assign label = "Video" %}
+    {% assign primary_label = "Watch video" %}
+  {% when "talk" %}
+    {% assign icon = "campaign" %}
+    {% assign label = "Talk" %}
+    {% assign primary_label = "Watch talk" %}
+{% endcase %}
+
+{% assign summary = nil %}
+{% assign summary_paragraphs = entry.content | split: "</p>" %}
+{% for paragraph in summary_paragraphs %}
+  {% assign paragraph_text = paragraph | strip_html | strip_newlines | replace: "  ", " " | strip %}
+  {% if paragraph_text != "" %}
+    {% assign summary = paragraph_text %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% if summary == nil or summary == "" %}
+  {% assign summary = entry.description | default: entry.excerpt | default: entry.content | strip_html | strip_newlines | replace: "  ", " " | strip %}
+{% endif %}
+{% assign media_youtube_id = entry.youtube_id %}
+{% if media_youtube_id == nil or media_youtube_id == "" %}
+  {% if entry.content contains "youtube.com/embed/" %}
+    {% assign youtube_split = entry.content | split: "youtube.com/embed/" %}
+    {% assign youtube_chunk = youtube_split | last %}
+    {% assign media_youtube_id = youtube_chunk | split: '"' | first | split: "?" | first | split: "&" | first %}
+  {% endif %}
+{% endif %}
+{% assign preview_image = entry.image %}
+{% if preview_image %}
+  {% assign preview_first = preview_image | slice: 0, 1 %}
+  {% unless preview_first == "/" or preview_image contains "://" %}
+    {% assign preview_image = "/" | append: preview_image %}
+  {% endunless %}
+{% endif %}
+{% if preview_image == nil or preview_image == "" %}
+  {% if media_youtube_id %}
+    {% assign preview_image = "https://img.youtube.com/vi/" | append: media_youtube_id | append: "/hqdefault.jpg" %}
+  {% endif %}
+{% endif %}
+{% assign primary_url = entry.external_url | default: entry.url %}
+{% assign has_external_primary = false %}
+{% if entry.external_url %}
+  {% assign has_external_primary = true %}
+{% endif %}
+{% assign show_embedded_video = false %}
+{% if media_youtube_id %}
+  {% if kind == "post" %}
+    {% if preview_image == nil or preview_image == "" %}
+      {% assign show_embedded_video = true %}
+    {% endif %}
+  {% else %}
+    {% assign show_embedded_video = true %}
+  {% endif %}
+{% endif %}
+
+<article class="timeline-item timeline-item--{{ kind }}">
+  <div class="timeline-item__marker">
+    <span class="material-symbols-outlined" aria-hidden="true">{{ icon }}</span>
+  </div>
+
+  <div class="timeline-item__body">
+    <div class="timeline-item__meta">
+      <span class="timeline-item__kind">{{ label }}</span>
+      <span class="timeline-item__dot" aria-hidden="true">&bull;</span>
+      <time datetime="{{ entry.date | date_to_xmlschema }}">{{ entry.date | date: "%B %-d, %Y" }}</time>
+      {% if kind == "podcast" and entry.appearance_type %}
+        <span class="timeline-item__chip">{{ entry.appearance_type }}</span>
+      {% endif %}
+      {% if kind == "podcast" and entry.podcast_name %}
+        <span class="timeline-item__chip">{{ entry.podcast_name }}</span>
+      {% endif %}
+      {% if kind == "talk" and entry.event_name %}
+        <span class="timeline-item__chip">{{ entry.event_name }}</span>
+      {% endif %}
+    </div>
+
+    <h2 class="timeline-item__title">
+      <a href="{{ entry.url }}">{{ entry.title }}</a>
+    </h2>
+
+    {% if summary != "" %}
+      <p class="timeline-item__summary">{{ summary | truncate: 300 }}</p>
+    {% endif %}
+
+    {% if kind == "podcast" %}
+      {% if show_embedded_video %}
+        <div class="media-preview media-preview--embed">
+          <iframe src="https://www.youtube.com/embed/{{ media_youtube_id }}" title="{{ entry.title }}" loading="lazy" allowfullscreen></iframe>
+        </div>
+      {% else %}
+        <div class="timeline-card timeline-card--podcast">
+          <a class="timeline-card__art{% unless preview_image %} timeline-card__art--placeholder{% endunless %}" href="{{ primary_url }}"{% if has_external_primary %} target="_blank" rel="noreferrer noopener"{% endif %}>
+            {% if preview_image %}
+              <img src="{{ preview_image }}" alt="">
+            {% else %}
+              <span class="material-symbols-outlined" aria-hidden="true">mic</span>
+            {% endif %}
+          </a>
+          <div class="timeline-card__content">
+            {% if entry.podcast_name %}
+              <p class="timeline-card__eyebrow">{{ entry.podcast_name }}</p>
+            {% endif %}
+            <div class="timeline-item__actions">
+              <a class="button button--secondary" href="{{ primary_url }}"{% if has_external_primary %} target="_blank" rel="noreferrer noopener"{% endif %}>{{ primary_label }}</a>
+              <a class="button button--ghost" href="{{ entry.url }}">Show notes</a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      {% if show_embedded_video %}
+        <div class="timeline-item__actions">
+          <a class="button button--secondary" href="{{ primary_url }}"{% if has_external_primary %} target="_blank" rel="noreferrer noopener"{% endif %}>{{ primary_label }}</a>
+          <a class="button button--ghost" href="{{ entry.url }}">Show notes</a>
+        </div>
+      {% endif %}
+    {% endif %}
+
+    {% if kind == "post" or kind == "video" or kind == "talk" %}
+      {% if show_embedded_video %}
+        <div class="media-preview media-preview--embed">
+          <iframe src="https://www.youtube.com/embed/{{ media_youtube_id }}" title="{{ entry.title }}" loading="lazy" allowfullscreen></iframe>
+        </div>
+      {% elsif preview_image %}
+        <a class="media-preview media-preview--{{ kind }}" href="{{ primary_url }}"{% if has_external_primary %} target="_blank" rel="noreferrer noopener"{% endif %}>
+          <img src="{{ preview_image }}" alt="">
+          {% unless kind == "post" %}
+            <span class="media-preview__play material-symbols-outlined" aria-hidden="true">play_arrow</span>
+          {% endunless %}
+        </a>
+      {% endif %}
+
+      <div class="timeline-item__actions">
+        {% if kind == "post" %}
+          <a class="button button--ghost" href="{{ entry.url }}">{{ primary_label }}</a>
+        {% else %}
+          <a class="button button--secondary" href="{{ primary_url }}"{% if has_external_primary %} target="_blank" rel="noreferrer noopener"{% endif %}>{{ primary_label }}</a>
+          <a class="button button--ghost" href="{{ entry.url }}">Read notes</a>
+        {% endif %}
+        {% if kind == "talk" and entry.slides_url %}
+          <a class="button button--ghost" href="{{ entry.slides_url }}" target="_blank" rel="noreferrer noopener">View slides</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</article>

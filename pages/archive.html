@@ -1,29 +1,30 @@
 ---
 layout: default
-title: "Charlie Chapman"
+title: Archive
+permalink: /archive/
+nav_key: home
 ---
+<section class="content-shell archive-list">
+  {% for post in site.posts %}
+    {% assign archive_image = post.image %}
+    {% if archive_image %}
+      {% assign archive_first = archive_image | slice: 0, 1 %}
+      {% unless archive_first == "/" or archive_image contains "://" %}
+        {% assign archive_image = "/" | append: archive_image %}
+      {% endunless %}
+    {% endif %}
 
-<!-- {% if paginator.page != 1 %}
-  <div class="spacer-vertical-40"></div>
-{% endif %} -->
+    <article class="archive-item">
+      <a class="archive-item__thumb" href="{{ post.url }}">
+        {% if archive_image %}
+          <img src="{{ archive_image }}" alt="">
+        {% endif %}
+      </a>
 
-{% for post in site.posts %}
-    <div class="post-summary">
-        <div class="post-summary-content">
-        <img src="{{ post.image }}"/>
-        <div>
-            <h3>
-            <a href="{{ post.url }}">
-                {{ post.title }}
-            </a>
-            </h3>
-            <p class="post-summary-meta">
-            {{ post.date | date: "%B %-d, %Y" }}
-            </p>
-            <!-- <p class="post-summary-description">
-            {{ post.content | strip_html | truncatewords: 25 }}
-            <p> -->
-        </div>
-        </div>
-    </div>
-{% endfor %}
+      <div>
+        <h2 class="archive-item__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="archive-item__meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+      </div>
+    </article>
+  {% endfor %}
+</section>

@@ -1,0 +1,56 @@
+brand_title: The Indie Dev
+brand_subtitle: Charlie Chapman
+name: Charlie Chapman
+short_role: iOS & Web Developer
+location: St. Louis, MO
+avatar: /assets/images/charlie-profile-2026.jpg
+avatar_alt: Portrait of Charlie Chapman
+sidebar_cta_label: Download on App Store
+sidebar_cta_url: https://apps.apple.com/us/app/dark-noise/id1465439395
+home_title: Charlie Chapman
+about_eyebrow: Developer, podcaster, and speaker
+about_title: I build tools for the curious.
+about_intro: Hi, I'm Charlie Chapman. I'm an app developer, podcaster, designer, and wannabe motion graphics artist.
+about_paragraphs:
+  - These days I'm a Developer Advocate at RevenueCat, building indie apps like Dark Noise and Framous, hosting the Launched podcast, and organizing STL Swift in St. Louis.
+  - This site is where I write about shipping software, collect the things I make, and keep a running record of the talks, videos, and podcast episodes that shape my work.
+setup_heading: The Setup
+setup_groups:
+  - title: Building
+    items:
+      - Swift and SwiftUI on Apple platforms
+      - Jekyll and Markdown for this site
+      - Artwork, motion, and launch experiments
+  - title: Sharing
+    items:
+      - The Launched podcast
+      - Conference talks and meetup appearances
+      - Writing, videos, and launch diaries
+social_links:
+  - name: Twitter
+    label: "@_chuckyc"
+    url: https://twitter.com/_chuckyc
+    icon: /assets/images/twitter-logo.png
+  - name: Bluesky
+    label: "@charliemchapman.com"
+    url: https://bsky.app/profile/charliemchapman.com
+    icon: /assets/images/bluesky-icon.svg
+  - name: Mastodon
+    label: "@charliemchapman@mastodon.social"
+    url: https://mastodon.social/@charliemchapman
+    icon: /assets/images/mastodon-icon.png
+  - name: Threads
+    label: "@charliemchapman"
+    url: https://www.threads.net/@charliemchapman
+    icon: /assets/images/threads-icon.png
+  - name: LinkedIn
+    label: "linkedin.com/in/charliemchapman"
+    url: https://www.linkedin.com/in/charliemchapman/
+    icon: /assets/images/linkedin-icon.svg
+footer_links:
+  - name: Twitter
+    url: https://twitter.com/_chuckyc
+  - name: Bluesky
+    url: https://bsky.app/profile/charliemchapman.com
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/charliemchapman/

@@ -2,6 +2,11 @@
 title: "Parallax Effect in UIKit - NSCoder Chicago"
 date: "2020-05-05"
 image: "assets/images/charlie-profile_1024.jpg"
+content_type: "talk"
+event_name: "NSCoder Chicago"
+youtube_id: "rORrX_piSKY"
+external_url: "https://www.youtube.com/watch?v=rORrX_piSKY"
+description: "A remote NSCoder Chicago talk about experimenting with UIInterpolatingMotionEffect to create parallax effects in UIKit."
 ---
 
 <div class="postYoutube">

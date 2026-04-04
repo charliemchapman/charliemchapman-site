@@ -1,0 +1,44 @@
+- name: Dark Noise
+  icon: /assets/apps/dark-noise-icon.png
+  description: Dark Noise is a simple yet powerful way to play ambient noise to help you sleep, focus, or relax.
+  short_description: Ambient sounds for focus, sleep, and relaxing.
+  badge: Actively shipping
+  featured: true
+  website_url: https://darknoise.app
+  app_store_url: https://apps.apple.com/us/app/dark-noise/id1465439395
+  metrics_url: https://verified.revenuecat.com/dark-noise
+  round: false
+- name: Framous
+  icon: /assets/apps/framous-icon.png
+  description: A photo framing and sharing app designed to make your favorite shots look great anywhere.
+  short_description: Framing and sharing for your favorite shots.
+  badge: Actively shipping
+  featured: true
+  website_url: https://framous.app
+  app_store_url: https://apps.apple.com/app/id6636520519
+  metrics_url: https://verified.revenuecat.com/framous
+  round: false
+- name: Spatial Noise
+  icon: /assets/apps/spatial-noise-icon.png
+  description: My attempt to bring Dark Noise to the Vision Pro. Right now it's closer to a demo than a full app, but it's fun to place sounds in 3D space and hear them emanate from there.
+  short_description: A spatial audio experiment for Vision Pro.
+  badge: Vision Pro
+  featured: true
+  app_store_url: https://apps.apple.com/us/app/spatial-noise-white-sounds/id6476818160
+  metrics_url: https://verified.revenuecat.com/spatial-noise
+  round: true
+- name: Overviewer
+  icon: /assets/apps/overviewer-icon.png
+  description: Turn your iOS device into a document camera for sharing on video conference apps.
+  short_description: Document camera for remote teaching and calls.
+  website_url: https://overviewer.app/
+  app_store_url: https://apps.apple.com/us/app/overviewer/id1511669191
+  note: This app is totally free, so RevenueCat metrics are not available.
+  round: false
+- name: Level Headed
+  icon: /assets/apps/level-headed-icon.png
+  description: A simple tool for making sure your head is level while taking screenshots on Apple Vision Pro.
+  short_description: Screenshot line tool for Vision Pro.
+  app_store_url: https://apps.apple.com/ca/app/level-headed-line-tool/id6477812300
+  note: This app is paid up front, so RevenueCat metrics are not available.
+  round: true

@@ -1,9 +1,86 @@
 ---
 layout: default
 ---
-<h1 class="post-title">{{ page.title }}</h1>
-<p class="post-meta">{{ page.date | date_to_string }}</p>
+{% assign kind = page.content_type | default: "post" %}
+{% if kind == "posts" %}
+  {% assign kind = "post" %}
+{% endif %}
+{% assign kind_label = "Blog Post" %}
+{% assign primary_label = nil %}
+{% case kind %}
+  {% when "podcast" %}
+    {% assign kind_label = "Podcast" %}
+    {% assign primary_label = "Listen to episode" %}
+  {% when "video" %}
+    {% assign kind_label = "Video" %}
+    {% assign primary_label = "Watch video" %}
+  {% when "talk" %}
+    {% assign kind_label = "Talk" %}
+    {% assign primary_label = "Watch talk" %}
+{% endcase %}
+{% assign hero_image = page.image %}
+{% if hero_image %}
+  {% assign hero_first = hero_image | slice: 0, 1 %}
+  {% unless hero_first == "/" or hero_image contains "://" %}
+    {% assign hero_image = "/" | append: hero_image %}
+  {% endunless %}
+{% endif %}
+{% if hero_image == nil or hero_image == "" %}
+  {% if page.youtube_id %}
+    {% assign hero_image = "https://img.youtube.com/vi/" | append: page.youtube_id | append: "/hqdefault.jpg" %}
+  {% endif %}
+{% endif %}
+{% assign show_media = false %}
+{% if page.collection != "posts" or page.content_type %}
+  {% assign show_media = true %}
+{% endif %}
 
-<div class="post-content">
-{{ content }}
-</div>
+<section class="content-shell content-shell--article">
+  <article class="article">
+    <div class="article__meta">
+      <span class="article__kind">{{ kind_label }}</span>
+      <span class="article__dot" aria-hidden="true">&bull;</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.podcast_name %}
+        <span class="article__chip">{{ page.podcast_name }}</span>
+      {% endif %}
+      {% if page.appearance_type %}
+        <span class="article__chip">{{ page.appearance_type }}</span>
+      {% endif %}
+      {% if page.event_name %}
+        <span class="article__chip">{{ page.event_name }}</span>
+      {% endif %}
+    </div>
+
+    <h1 class="article__title">{{ page.title }}</h1>
+
+    {% if page.description %}
+      <p class="article__summary">{{ page.description }}</p>
+    {% endif %}
+
+    {% if show_media and page.youtube_id %}
+      <div class="article__media article__media--video">
+        <iframe src="https://www.youtube.com/embed/{{ page.youtube_id }}" title="{{ page.title }}" loading="lazy" allowfullscreen></iframe>
+      </div>
+    {% elsif show_media and hero_image %}
+      <div class="article__media">
+        <img src="{{ hero_image }}" alt="">
+      </div>
+    {% endif %}
+
+    {% if page.external_url or page.slides_url %}
+      <div class="article__actions">
+        {% if page.external_url and primary_label %}
+          <a class="button button--primary" href="{{ page.external_url }}" target="_blank" rel="noreferrer noopener">{{ primary_label }}</a>
+        {% endif %}
+        {% if page.slides_url %}
+          <a class="button button--secondary" href="{{ page.slides_url }}" target="_blank" rel="noreferrer noopener">View slides</a>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="entry-prose">
+      {{ content }}
+    </div>
+  </article>
+</section>

@@ -1,12 +1,10 @@
-<div class="footer">
-    <div class="links">
-        <a href="/feed.xml">RSS</a>
-        <span>|</span>
-        <a href="/contact">Contact</a>
-        <span>|</span>
-        <a href="/about">About</a>
-        <span>|</span>
-        <a href="/">Home</a>
-    </div>
-    <p class="signature">Made by Charlie Chapman in St. Louis, MO</p>
-</div>
+{% assign profile = site.data.profile %}
+<footer class="site-footer">
+  <p class="site-footer__signature">&copy; {{ site.time | date: "%Y" }} {{ profile.brand_title }}. Built with intentionality.</p>
+  <div class="site-footer__links">
+    <a href="/feed.xml">RSS</a>
+    {% for item in profile.footer_links %}
+      <a href="{{ item.url }}" target="_blank" rel="noreferrer noopener">{{ item.name }}</a>
+    {% endfor %}
+  </div>
+</footer>

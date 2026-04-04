@@ -2,6 +2,10 @@
 title: "Tutorial: Creating Sketch Style App Icons with Procreate on iPad"
 date: "2020-05-01"
 image: "/assets/posts/2020/05/01/launched-icon-template-background.png"
+content_type: "video"
+youtube_id: "SE4IGY8wSrc"
+external_url: "https://www.youtube.com/watch?v=SE4IGY8wSrc"
+description: "A short tutorial walking through how I make the sketch-style icons I use for Launched artwork."
 ---
 
 <div class="postYoutube">

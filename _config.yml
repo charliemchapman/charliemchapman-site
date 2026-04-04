@@ -1,11 +1,9 @@
 url: "https://charliemchapman.com"
-paginate: 5
-paginate_path: "/:num/"
 
 title: "Charlie Chapman"
 description: "The personal blog of Charlie Chapman."
 
-logo: /assets/images/charlie-profile-2023.jpg
+logo: /assets/images/charlie-profile-2026.jpg
 
 twitter:
   username: _chuckyc
@@ -16,6 +14,17 @@ social:
   links:
     - https://twitter.com/_chuckyc
 
+collections:
+  podcasts:
+    output: true
+    permalink: /podcasts/:slug/
+  videos:
+    output: true
+    permalink: /videos/:slug/
+  talks:
+    output: true
+    permalink: /talks/:slug/
+
 defaults:
   - scope:
       path: ""
@@ -23,15 +32,35 @@ defaults:
     values:
       layout: "post"
       permalink: /posts/:year/:i_month/:i_day/:title
+      nav_key: "home"
+  - scope:
+      path: ""
+      type: "podcasts"
+    values:
+      layout: "entry"
+      nav_key: "home"
+  - scope:
+      path: ""
+      type: "videos"
+    values:
+      layout: "entry"
+      nav_key: "home"
+  - scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: "entry"
+      nav_key: "home"
   - scope:
       path: "pages"
     values:
-      permalink: /:basename:output_ext
+      permalink: /:basename/
   - scope:
       path: ""
     values:
       layout: "default"
-      image: /assets/images/charlie-profile-2023.jpg
+      nav_key: "home"
+      image: /assets/images/charlie-profile-2026.jpg
 
 plugins:
   - jekyll-feed

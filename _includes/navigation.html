@@ -1,39 +1,25 @@
-<nav>
-    <div class="main-nav">
-      <div class="main-nav-content">
-        <a class="logo" href="/">
-          <!-- <img src="/assets/images/charlie-profile-2023.jpg" height="140" width="140" /> -->
-          Charlie Chapman
+{% assign profile = site.data.profile %}
+<aside class="site-sidebar">
+  <div class="site-sidebar__top">
+    <a class="site-brand" href="/">
+      <span class="site-brand__title">{{ profile.brand_subtitle }}</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      {% for item in site.data.navigation %}
+        <a class="site-nav__link{% if page.nav_key == item.key %} is-current{% endif %}" href="{{ item.link }}">
+          <span class="site-nav__active" aria-hidden="true"></span>
+          <span class="site-nav__icon material-symbols-outlined" aria-hidden="true">
+            {% case item.key %}
+              {% when "home" %}home
+              {% when "apps" %}apps
+              {% when "about" %}person
+              {% else %}arrow_forward
+            {% endcase %}
+          </span>
+          <span>{{ item.name }}</span>
         </a>
-        <div class="links">
-          {% for item in site.data.navigation %}
-            <a href="{{ item.link }}" {% if page.url == item.link or (page.url == '/index.html' and item.link == '/') %}class="current"{% endif %}>{{ item.name }}</a>
-          {% endfor %}
-        </div>
-        <!-- <div class="expand-links-container">
-          <button class="expand-links" onclick="expandLinks()">
-            <img src="/assets/images/hamburger.png" height="12"/>
-          </button>
-        </div> -->
-      </div>
-    <!-- <div id="sub-nav" class="sub-nav closed">
-      <div class="links">
-        {% for item in site.data.navigation reversed %}
-            <a href="{{ item.link }}" {% if page.url == item.link or (page.url == '/index.html' and item.link == '/') %}class="current"{% endif %}>{{ item.name }}</a>
-        {% endfor %}
-      </div>
-    </div>
-    <script>
-      function expandLinks() {
-        var subNav = document.getElementById("sub-nav");
-        if (subNav.classList.contains('opened')) {
-          subNav.classList.remove("opened")
-          subNav.classList.add("closed")
-        } else {
-          subNav.classList.add("opened")
-          subNav.classList.remove("closed")
-        }
-      }
-    </script> -->
-  </div>  
-</nav>
+      {% endfor %}
+    </nav>
+  </div>
+</aside>

@@ -1,0 +1,25 @@
+{% assign variant = include.variant | default: "list-condensed" %}
+{% assign links = include.links | default: site.data.profile.social_links %}
+<div class="social-links social-links--{{ variant }}">
+  {% for item in links %}
+    <a class="social-link social-link--{{ variant }}" href="{{ item.url }}" target="_blank" rel="noreferrer noopener">
+      {% if item.icon %}
+        <span class="social-link__icon">
+          <img src="{{ item.icon }}" alt="">
+        </span>
+      {% endif %}
+
+      {% if variant == "list" %}
+        <span class="social-link__content">
+          <span class="social-link__name">{{ item.name }}</span>
+          <span class="social-link__meta">{{ item.label }}</span>
+        </span>
+      {% else %}
+        <span class="social-link__content">
+          <span class="social-link__name">{{ item.name }}</span>
+          <span class="social-link__meta">{{ item.label }}</span>
+        </span>
+      {% endif %}
+    </a>
+  {% endfor %}
+</div>

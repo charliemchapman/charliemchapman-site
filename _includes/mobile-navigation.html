@@ -1,0 +1,14 @@
+{% assign profile = site.data.profile %}
+<header class="mobile-nav">
+  <a class="mobile-nav__brand" href="/">
+    <span class="mobile-nav__title">{{ profile.brand_subtitle }}</span>
+  </a>
+
+  <nav class="mobile-nav__links" aria-label="Primary">
+    {% for item in site.data.navigation %}
+      <a class="mobile-nav__link{% if page.nav_key == item.key %} is-current{% endif %}" href="{{ item.link }}">
+        {{ item.name }}
+      </a>
+    {% endfor %}
+  </nav>
+</header>

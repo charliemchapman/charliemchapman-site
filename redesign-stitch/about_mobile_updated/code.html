@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About - Developer Name</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#fbf9f9",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "outline": "#6d7b6b",
+                        "on-primary-container": "#004d1a",
+                        "on-surface-variant": "#3d4a3c",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1b1c1c",
+                        "primary-fixed-dim": "#53e16f",
+                        "primary-container": "#34c759",
+                        "tertiary-fixed": "#eedcff",
+                        "background": "#fbf9f9",
+                        "secondary-fixed": "#ffdada",
+                        "surface-container-high": "#e9e8e7",
+                        "on-background": "#1b1c1c",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-bright": "#fbf9f9",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e3e2e2",
+                        "on-secondary-fixed-variant": "#920027",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#efeded",
+                        "surface-tint": "#006e28",
+                        "surface-container-low": "#f5f3f3",
+                        "tertiary-container": "#c69aff",
+                        "tertiary-fixed-dim": "#d9b9ff",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#006e28",
+                        "on-tertiary-fixed": "#2a0054",
+                        "secondary": "#ba0034",
+                        "tertiary": "#8300f2",
+                        "on-tertiary-fixed-variant": "#6300ba",
+                        "inverse-primary": "#53e16f",
+                        "on-tertiary-container": "#5d00ae",
+                        "primary-fixed": "#72fe88",
+                        "surface-dim": "#dbdad9",
+                        "secondary-container": "#e51245",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#ffb3b5",
+                        "inverse-surface": "#303031",
+                        "on-primary-fixed": "#002107",
+                        "surface-container-highest": "#e3e2e2",
+                        "on-secondary-fixed": "#40000c",
+                        "outline-variant": "#bccbb8",
+                        "on-secondary-container": "#fffbff",
+                        "on-primary-fixed-variant": "#00531c"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Desktop Side Navigation -->
+<aside class="fixed h-screen w-64 left-0 top-0 hidden md:flex flex-col bg-[#f5f3f3] dark:bg-slate-900 border-r-0 z-40">
+<div class="p-8">
+<div class="flex items-center gap-4 mb-10">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest">
+<img alt="Indie Developer Profile Picture" data-alt="Portrait of a smiling male software developer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy0WZ_tAA-H1z0ubbmm3yg4aEiaWqGILKcRFGJF8EUtrAuVsVCwQ5Dw6K_b5H0QaDlKU5vcvXCxi-iie1-u3XscqlPNLbMRU-RF-7n2VoOfGitwh8GTZByEvHCEtEAgZpR58kvStY4fy1B-ei4yhmDC7hY6PZPJ_kgPYe8YBgLw9DBxTAs3R3mcX4AlVjMnmRwcfy_IbgLPjoCt34O6i8WbynyeUn8KjB7xyZ3llRp8-TrGjwL2QRKV_z8coiOkGxGHnlMZ0MD3KpX"/>
+</div>
+<div>
+<h1 class="text-xl font-black tracking-tight text-slate-900 dark:text-white">Developer Name</h1>
+<p class="text-xs font-medium text-on-surface-variant opacity-70">iOS &amp; Web Developer</p>
+</div>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-sans antialiased title-md font-bold tracking-tight">Home</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="apps">apps</span>
+<span class="font-sans antialiased title-md font-bold tracking-tight">Apps</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-green-700 dark:text-green-400 border-l-4 border-green-500 bg-white/50 dark:bg-white/5 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-sans antialiased title-md font-bold tracking-tight">About</span>
+</a>
+</nav>
+</div>
+<div class="mt-auto p-8">
+<button class="w-full py-4 px-6 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-full font-bold text-sm shadow-md hover:scale-[0.98] transition-transform flex items-center justify-center gap-2">
+            Download on App Store
+        </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="md:ml-64 pb-20 md:pb-0 min-h-screen">
+<!-- Mobile Hero Header -->
+<div class="md:hidden relative w-full h-48 sm:h-64 overflow-hidden">
+<img alt="Hero Banner" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uiIziuPl5XUGiSLYQErSv5s-kMDkrBz3jtUwCGIautUk4eJH5cIEMiuWKy5cLj3sJaqSOZo_F2fDMIGGeYDi72RCpMZAyCJuVvNvGVQT44IeHypSKhk_vtK9ZOcz6AntZMmqfTU7gL24AdQqcNaq0WuCNzALllSOchvFCI4oOP1LJrSRqG40UghRl1LZO0e1UACMA5wlfNL7JHj26iKm9xYsIVg9nATAyOUJ3HTen4pdr2S--YsbnUHleXtfRqxom0any0qu83WasU"/>
+<div class="absolute top-0 left-0 p-4">
+<button class="w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-md rounded-full text-white shadow-sm">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Top Navigation Buttons -->
+<div class="md:hidden flex justify-end gap-6 px-6 py-4">
+<a class="text-sm font-bold uppercase tracking-widest text-on-surface hover:text-primary transition-colors" href="#">Apps</a>
+<a class="text-sm font-bold uppercase tracking-widest text-primary transition-colors" href="#">About</a>
+</div>
+<div class="max-w-4xl mx-auto px-6 md:px-8 py-10 md:py-16">
+<!-- Profile Section -->
+<section class="mb-12 md:mb-16">
+<div class="flex flex-col md:flex-row md:items-end gap-6 md:gap-8 mb-8 md:mb-12">
+<div class="w-full md:w-48 aspect-square md:h-48 rounded-3xl overflow-hidden bg-surface-container-high ring-4 ring-white shadow-xl rotate-[-2deg] md:rotate-[-2deg]">
+<img alt="Developer Profile Avatar" class="w-full h-full object-cover" data-alt="Close up profile picture of a developer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeTASHAMwPHHto67J8MY_mj9r4Ykjo74u-qfVM4_6bojJfb7Pa_ulYK2UQesHDYkVMOcmggRw98tBWkwRf2p5W5jOdkvo7Oj00FxU-QnYi-OTiVTg6_ByuU3Q7mQ3UIhvo5FgsGwzRd99oKxPYHbpFnaVj0lzog4FuaW1ZPw9HiqYN_ita44xXjip8-Mp2vafSgj7HgmI52Bp9oghip-mFMnohxFaVMAN_Vp2GTQwqP1HBx8ybHXBlRB9klkhOje8-VVzPD-t6QMRe"/>
+</div>
+<div class="flex-1 mt-4 md:mt-0">
+<span class="text-primary font-bold label-md tracking-widest uppercase mb-2 block">Available for Freelance</span>
+<h1 class="text-4xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-4 leading-tight">I build tools for the <span class="text-primary">curious</span>.</h1>
+</div>
+</div>
+</section>
+<!-- Bio Section -->
+<section class="mb-16 md:mb-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+<div class="md:col-span-8 space-y-6">
+<p class="text-lg md:text-2xl font-medium text-on-surface leading-relaxed">
+                        Based in Berlin, I spend my time crafting iOS experiences that feel like they belong. I believe software should be as intentional as a physical object.
+                    </p>
+<p class="text-base md:text-lg text-on-surface-variant leading-relaxed">
+                        My journey started with a fascination for typography and industrial design, which eventually led me to the world of Swift and Human Interface Guidelines. Today, I balance my time between independent app development and consulting for startups that value aesthetic precision.
+                    </p>
+<p class="text-base md:text-lg text-on-surface-variant leading-relaxed">
+                        When I'm not pushing pixels or writing typesafe code, you'll find me at a local espresso bar or hiking through the Black Forest with a film camera in hand.
+                    </p>
+</div>
+<div class="md:col-span-4 flex flex-col gap-4">
+<div class="p-6 bg-surface-container rounded-3xl">
+<h3 class="font-bold text-xs uppercase tracking-widest text-outline mb-4">On the web</h3>
+<ul class="space-y-4 md:space-y-3">
+<li><a class="flex items-center gap-3 font-bold hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg" data-icon="alternate_email">alternate_email</span> Twitter</a></li>
+<li><a class="flex items-center gap-3 font-bold hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg" data-icon="code">code</span> GitHub</a></li>
+<li><a class="flex items-center gap-3 font-bold hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg" data-icon="work">work</span> LinkedIn</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Podcast Carousel -->
+<section class="mb-16 md:mb-20">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6 md:mb-8">
+<h2 class="text-2xl font-extrabold tracking-tight">Recent Appearances</h2>
+<span class="label-sm uppercase tracking-widest text-secondary font-bold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 bg-secondary rounded-full inline-block"></span>
+                    Podcast Guest
+                </span>
+</div>
+<div class="flex gap-5 overflow-x-auto pb-6 hide-scrollbar snap-x -mx-6 px-6 md:mx-0 md:px-0">
+<div class="snap-start flex-shrink-0 w-44 md:w-48 group cursor-pointer">
+<div class="aspect-square bg-slate-200 rounded-3xl mb-4 overflow-hidden relative shadow-md ring-1 ring-black/5">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Podcast cover art showing vibrant abstract shapes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6RamBSqXmSjnxWNCur-K-7tyODRpyJQsm9FbMEVa8XND-SDs-uJKnKdxGevHrxKajNHDw-ul48rLdD49kYk29zuzfPLYLSgqE_BanktQBtRlSBORExD1MfsTyiK9fuiD26q83ss6ZS7tybxEOaxTRecA_s_NbZqYNXlywX7PL1jag0TJGi7oXAeZRCQjaH7_8C7bArO38pO7h4QSLuqzfpyo5jxI6-pxe79tAct8RjkkMKEuOWMEVSFyfprdfbXxdu0A9aHOTLusR"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<h4 class="font-bold text-on-surface leading-tight mb-1 text-sm md:text-base">Swift Unlocked</h4>
+<p class="text-xs text-on-surface-variant">Ep. 42 • Indie Dev Journey</p>
+</div>
+<div class="snap-start flex-shrink-0 w-44 md:w-48 group cursor-pointer">
+<div class="aspect-square bg-slate-200 rounded-3xl mb-4 overflow-hidden relative shadow-md ring-1 ring-black/5">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Podcast cover art with bold neon typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZLLm1xbUpgRxbUwWBs9S1CJvq3hDfjwa3UpkM_vXo_9v9ldNm65JkpQuGr7kzWq0LNBdXM7yomXuM4_tQfNmib4DaWYK5B7GuuNIzcPQdbWYTKPeYNArqhIa6EWuzi2c8qNTW-lZ4hjbgms7zKSJ9IrKxFMN7upMOgV80ROkoAGyTicPUptTI10miBxeY35xTtVv8aszNJIrCgA7moc44DED_Mg6rymM6beN-OLi8o4e3_dnUUWoPTDEHugNcXyxtLKwfLuO3i9gQ"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<h4 class="font-bold text-on-surface leading-tight mb-1 text-sm md:text-base">The Deep Work Show</h4>
+<p class="text-xs text-on-surface-variant">Ep. 108 • Intentional UI</p>
+</div>
+<div class="snap-start flex-shrink-0 w-44 md:w-48 group cursor-pointer">
+<div class="aspect-square bg-slate-200 rounded-3xl mb-4 overflow-hidden relative shadow-md ring-1 ring-black/5">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Microphone on a desk with warm studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiPouUcO3gRbIf0e4kKMFAAL8x1_iQ1BfZ0zg_7RnEAJg8pSt7lkdNMRJWH_Aqh7qugXw35V9bKlNXB1UdvLAwQ7eXquvyjiz0cnF_vIXuv4qN0e2ShUs-fTHvgqdqvF1RBbC6e0uXAsVnIy_Ja9tt1EwXoY2zQhHOaWFdnDvk1aSc2En18aT_x813b9xMyDqTdXwLrKAP-Mk3M6vnbimooNrwAU81mqa98LjXPmlYPZVFoa0fGE_LYX1Nx-bvMLDP0eatIzI4Sg4t"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<h4 class="font-bold text-on-surface leading-tight mb-1 text-sm md:text-base">Founders Journal</h4>
+<p class="text-xs text-on-surface-variant">Building solo apps</p>
+</div>
+<div class="snap-start flex-shrink-0 w-44 md:w-48 group cursor-pointer">
+<div class="aspect-square bg-slate-200 rounded-3xl mb-4 overflow-hidden relative shadow-md ring-1 ring-black/5">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Vintage audio equipment and records" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC55J8y_x8CeSJQFdIpvsWNu3v0YptKUocnS_xhYraImDq9xN29wAio_yl5N4ocz2NOYLLKoBHNaLk_WcMmvAqBx1p5UmzFhenwa2Vs_PmUFja37zshVWiT_UpVv_oMfpdh631zeClfI1hAJmt1mMkW6oF-9M9QpIvxRqesr29Vorlmz-egDPkJgfZGmHdXYpsLllTetD59PGxaZGlIQdFOLhS9qLi2qFiKuIByaSSvExJf-nlB6LOxZyjgR9mijYj1d4BgN5yMf2Cy"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<h4 class="font-bold text-on-surface leading-tight mb-1 text-sm md:text-base">Design Systems Daily</h4>
+<p class="text-xs text-on-surface-variant">The "No-Line" Rule</p>
+</div>
+</div>
+</section>
+<!-- Speaking Engagements -->
+<section class="mb-16 md:mb-20">
+<h2 class="text-2xl font-extrabold tracking-tight mb-6 md:mb-8">Speaking &amp; Workshops</h2>
+<div class="space-y-4">
+<div class="group flex flex-col sm:flex-row sm:items-center justify-between p-5 md:p-6 bg-surface-container-low rounded-3xl hover:bg-surface-container transition-colors cursor-pointer gap-4">
+<div class="flex gap-4 md:gap-6 items-center">
+<div class="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 flex items-center justify-center bg-white rounded-2xl text-primary shadow-sm">
+<span class="material-symbols-outlined text-xl md:text-2xl" data-icon="videocam">videocam</span>
+</div>
+<div>
+<h3 class="font-bold text-base md:text-lg">WWDC Community Talk</h3>
+<p class="text-sm md:text-base text-on-surface-variant">Architecting for SwiftData</p>
+</div>
+</div>
+<div class="sm:text-right">
+<span class="text-[10px] md:text-sm font-bold bg-secondary-container/10 text-secondary px-3 py-1 rounded-full uppercase tracking-wider">JUNE 2024</span>
+</div>
+</div>
+<div class="group flex flex-col sm:flex-row sm:items-center justify-between p-5 md:p-6 bg-surface-container-low rounded-3xl hover:bg-surface-container transition-colors cursor-pointer gap-4">
+<div class="flex gap-4 md:gap-6 items-center">
+<div class="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 flex items-center justify-center bg-white rounded-2xl text-tertiary shadow-sm">
+<span class="material-symbols-outlined text-xl md:text-2xl" data-icon="school">school</span>
+</div>
+<div>
+<h3 class="font-bold text-base md:text-lg">Hacking with Swift Live</h3>
+<p class="text-sm md:text-base text-on-surface-variant">Modern Layouts in SwiftUI</p>
+</div>
+</div>
+<div class="sm:text-right">
+<span class="text-[10px] md:text-sm font-bold bg-secondary-container/10 text-secondary px-3 py-1 rounded-full uppercase tracking-wider">OCT 2023</span>
+</div>
+</div>
+<div class="group flex flex-col sm:flex-row sm:items-center justify-between p-5 md:p-6 bg-surface-container-low rounded-3xl hover:bg-surface-container transition-colors cursor-pointer gap-4">
+<div class="flex gap-4 md:gap-6 items-center">
+<div class="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 flex items-center justify-center bg-white rounded-2xl text-primary shadow-sm">
+<span class="material-symbols-outlined text-xl md:text-2xl" data-icon="public">public</span>
+</div>
+<div>
+<h3 class="font-bold text-base md:text-lg">Pragma Conference</h3>
+<p class="text-sm md:text-base text-on-surface-variant">The Developer as a Designer</p>
+</div>
+</div>
+<div class="sm:text-right">
+<span class="text-[10px] md:text-sm font-bold bg-secondary-container/10 text-secondary px-3 py-1 rounded-full uppercase tracking-wider">SEPT 2023</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Gear Section -->
+<section class="mb-12 md:mb-20">
+<div class="p-8 md:p-10 bg-on-surface text-surface rounded-[2rem] relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-2xl md:text-3xl font-extrabold tracking-tight mb-8">The Setup</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-8">
+<div>
+<h4 class="text-primary-fixed-dim font-bold text-xs uppercase tracking-[0.2em] mb-4">Hardware</h4>
+<ul class="space-y-3 md:space-y-2 opacity-80 text-sm">
+<li class="flex items-start gap-2"><span class="w-1 h-1 rounded-full bg-primary mt-2"></span> MacBook Pro 14" (M3 Max, Space Black)</li>
+<li class="flex items-start gap-2"><span class="w-1 h-1 rounded-full bg-primary mt-2"></span> Studio Display (Nano-texture)</li>
+<li class="flex items-start gap-2"><span class="w-1 h-1 rounded-full bg-primary mt-2"></span> Keychron Q1 Pro (Custom)</li>
+<li class="flex items-start gap-2"><span class="w-1 h-1 rounded-full bg-primary mt-2"></span> Sony A7IV + 35mm f/1.4</li>
+</ul>
+</div>
+<div>
+<h4 class="text-primary-fixed-dim font-bold text-xs uppercase tracking-[0.2em] mb-4">Software</h4>
+<ul class="space-y-3 md:space-y-2 opacity-80 text-sm">
+<li class="flex items-start gap-2"><span class="w-1 h-1 rounded-full bg-primary mt-2"></span> Xcode (Theme: Midnight)</li>
+<li class="flex items-start gap-2"><span class="w-1 h-1 rounded-full bg-primary mt-2"></span> Nova (Web Dev)</li>
+<li class="flex items-start gap-2"><span class="w-1 h-1 rounded-full bg-primary mt-2"></span> Linear (Tasks)</li>
+<li class="flex items-start gap-2"><span class="w-1 h-1 rounded-full bg-primary mt-2"></span> Figma (Interface Design)</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary blur-[120px] opacity-20 translate-x-1/2 -translate-y-1/2"></div>
+</div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="w-full py-10 border-t border-slate-200/10 dark:border-slate-800/10">
+<div class="max-w-4xl mx-auto px-6 md:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+<p class="text-[10px] md:label-md uppercase tracking-widest text-slate-500">© 2024 Indie Developer. Built with intentionality.</p>
+<div class="flex gap-6 md:gap-8">
+<a class="text-[10px] md:label-md uppercase tracking-widest text-slate-500 hover:text-green-600 transition-colors" href="#">Twitter</a>
+<a class="text-[10px] md:label-md uppercase tracking-widest text-slate-500 hover:text-green-600 transition-colors" href="#">GitHub</a>
+<a class="text-[10px] md:label-md uppercase tracking-widest text-slate-500 hover:text-green-600 transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</main>
+</body></html>

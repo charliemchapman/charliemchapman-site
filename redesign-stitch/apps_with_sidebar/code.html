@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Apps - Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#fbf9f9",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "outline": "#6d7b6b",
+                        "on-primary-container": "#004d1a",
+                        "on-surface-variant": "#3d4a3c",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1b1c1c",
+                        "primary-fixed-dim": "#53e16f",
+                        "primary-container": "#34c759",
+                        "tertiary-fixed": "#eedcff",
+                        "background": "#fbf9f9",
+                        "secondary-fixed": "#ffdada",
+                        "surface-container-high": "#e9e8e7",
+                        "on-background": "#1b1c1c",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-bright": "#fbf9f9",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e3e2e2",
+                        "on-secondary-fixed-variant": "#920027",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#efeded",
+                        "surface-tint": "#006e28",
+                        "surface-container-low": "#f5f3f3",
+                        "tertiary-container": "#c69aff",
+                        "tertiary-fixed-dim": "#d9b9ff",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#006e28",
+                        "on-tertiary-fixed": "#2a0054",
+                        "secondary": "#ba0034",
+                        "tertiary": "#8300f2",
+                        "on-tertiary-fixed-variant": "#6300ba",
+                        "inverse-primary": "#53e16f",
+                        "on-tertiary-container": "#5d00ae",
+                        "primary-fixed": "#72fe88",
+                        "surface-dim": "#dbdad9",
+                        "secondary-container": "#e51245",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#ffb3b5",
+                        "inverse-surface": "#303031",
+                        "on-primary-fixed": "#002107",
+                        "surface-container-highest": "#e3e2e2",
+                        "on-secondary-fixed": "#40000c",
+                        "outline-variant": "#bccbb8",
+                        "on-secondary-container": "#fffbff",
+                        "on-primary-fixed-variant": "#00531c"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .ios-icon-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Mobile TopNavBar -->
+<header class="flex md:hidden fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/10 dark:border-slate-800/10 justify-between items-center px-6 h-16">
+<span class="text-xl font-black tracking-tight text-slate-900 dark:text-white">The Indie Dev</span>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-500">rss_feed</span>
+<span class="material-symbols-outlined text-slate-500">mail</span>
+</div>
+</header>
+<!-- SideNavBar (Desktop) - Updated to match Screen 7 -->
+<aside class="hidden md:flex flex-col fixed h-screen w-64 left-0 top-0 bg-[#f5f3f3] dark:bg-slate-900 z-40">
+<div class="p-8 flex flex-col h-full">
+<div class="mb-10">
+<h1 class="text-2xl font-black text-slate-900 dark:text-white tracking-tighter">The Indie Dev</h1>
+<p class="text-xs font-bold uppercase tracking-widest text-primary mt-1">Charlie Chapman</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<!-- Apps Active -->
+<a class="flex items-center gap-3 px-4 py-3 text-green-700 dark:text-green-400 border-l-4 border-green-500 bg-white/50 dark:bg-white/5 font-bold tracking-tight transition-transform active:scale-95" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">apps</span>
+<span>Apps</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span>About</span>
+</a>
+</nav>
+<div class="mt-auto pt-8">
+<div class="flex items-center gap-3 mb-6">
+<img alt="Indie Developer Profile Picture" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwX0HSBoW9a9TzBwWMt6qw4UoVYIP6XZu8HsBqU3BS-fJVh8ITag2JmsH6xL3D6jidaU3A-yNfAx4X5-hgwS9zO3NkpZG83a58SVJ_3ZkpGL6cM_6CzbTwu38xHjOmZSklSsiXldHUMqyVWUIqvmCxFsTjwFFQ0eFQrrYcCRrt0gasPa3reco_NGnUR6luHeesQhNGLGfMW0Dz-q3aYoXqG6eW4Vfcsa0sjV_124hSUJCHhn8Qt1Ob_qPydK92631_EtVXdTOa0LKO"/>
+<div>
+<p class="text-sm font-bold">Charlie Chapman</p>
+<p class="text-xs text-on-surface-variant">iOS &amp; Web Developer</p>
+</div>
+</div>
+<button class="w-full py-3 bg-primary text-on-primary rounded-full text-sm font-bold tracking-tight shadow-sm hover:opacity-90 transition-opacity">
+                Download on App Store
+            </button>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 min-h-screen">
+<!-- Profile Header Section -->
+<header class="relative">
+<div class="h-64 md:h-80 w-full overflow-hidden">
+<img alt="Header Banner" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHQnr5nJ-TAgjXa2NrPxaJNkaCUODsvPyAoVQP5dJmhkOndiLZ2KI0ZJz0QLC2n3QKIaecnOp_GZ7EvLZv4hnoLH7hLTwYHURnAQwDfXUptpj3HepE2CBeX4KTq5d4SBI7qOjSoHCh7ID9iLd6Et-an7b8QAuYTiDLeClCb7pHOnbFwy2Qo8Wr8sNQF7Mw1d0ASKnnDto_hxnIRgdQPEYbNlBjptHLeO-qQYE3iadOjrN0SHVV1LJXlRtcN-8sno0ecFk9AZPL2q92"/>
+</div>
+<div class="max-w-4xl mx-auto px-8 -mt-20 relative z-10">
+<div class="flex flex-col md:flex-row md:items-end gap-6">
+<div class="w-32 h-32 md:w-40 md:h-40 rounded-3xl overflow-hidden border-4 border-surface ios-icon-shadow">
+<img alt="Developer Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4GJz88mHeshXj9EVD9Zeq9G-tmCk21SoV3l4MMhrudA_v9Gd_eF21KdF90a_-gdN9Glls4Y1q9L8KRgxvPJkQ-tz-jBDUGk3wPi8CCaq4dnIw6jYyFNmX0LQx_ULr6oQI5Em16crRYptRXfbp8QPOV9WJHWWPPEa7cns0NehG-s7MDDFo3o-lvMZIXUFeF1HQBO2QkDWaU4yLGKyCbeWJexfLGaza6iVPKV8hxcNI9g9jVh8dWNjZP_cJjfSnVHV_J3du32kvn1ia"/>
+</div>
+<div class="pb-2">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-on-surface">Charlie Chapman</h2>
+<p class="text-lg text-on-surface-variant font-medium mt-1 max-w-lg leading-relaxed">Crafting intentional digital experiences. Focusing on Swift, performance, and the details that make software feel alive.</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Content Area: Apps Grid -->
+<section class="max-w-4xl mx-auto px-8 py-16">
+<div class="flex items-baseline justify-between mb-10">
+<h3 class="text-2xl font-bold tracking-tight text-on-surface">Featured Apps</h3>
+<span class="label-md uppercase tracking-widest text-slate-400 font-bold text-[10px]">LATEST RELEASES • 2024</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- App Widget: Dark Noise -->
+<div class="bg-surface-container-low rounded-3xl p-6 flex flex-col gap-6 hover:bg-surface-container transition-colors duration-300 group">
+<div class="flex items-center gap-5">
+<div class="w-20 h-20 rounded-2xl overflow-hidden ios-icon-shadow bg-on-surface shrink-0 border border-on-surface-variant/5">
+<img alt="Dark Noise App Icon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo5918IZiKcFQGyqTCMf4M_C0Ky5BUS_gN7yYspoD1MZy_cgKvPjFGJWqHI88pPDUgQRcodk6haLakqfFXy7wcGufZHROokKfbatkUDKLHdkvS0MxvWPe7aRoChiSG9ZlzEYR-kxqeFRKOyzyx-3dbqVxmV6cZzq8A0JqdgswmLtZH3L_RZe7frmg2EKN37Q-jgrWv1SDLfvvOV-dyrUyBI4NjpKVq3ofKqLseKjqlGwNqQ1KNKabYBOPgO3DFXjr8N6DqYst1CzDh"/>
+</div>
+<div class="flex-1">
+<h4 class="text-xl font-bold text-on-surface tracking-tight">Dark Noise</h4>
+<p class="text-on-surface-variant text-sm font-medium">Ambient sounds for focus.</p>
+<div class="flex items-center gap-3 mt-2">
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider">Editor's Choice</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/40 dark:bg-white/5 p-4 rounded-2xl border border-white/50">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-lg font-bold">4.9</span>
+</div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mt-1">Global Rating</p>
+</div>
+<div class="bg-white/40 dark:bg-white/5 p-4 rounded-2xl border border-white/50">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-lg">download</span>
+<span class="text-lg font-bold">100k+</span>
+</div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mt-1">Downloads</p>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    A simple yet powerful ambient noise machine designed to help you focus, sleep, or relax. Built with native Swift technologies for optimal performance.
+                </p>
+<button class="w-full mt-auto bg-primary py-3 rounded-full text-on-primary font-bold text-sm tracking-wide flex items-center justify-center gap-2 group-hover:scale-[1.02] transition-transform duration-300">
+                    View on App Store
+                </button>
+</div>
+<!-- App Widget: Launched -->
+<div class="bg-surface-container-low rounded-3xl p-6 flex flex-col gap-6 hover:bg-surface-container transition-colors duration-300 group">
+<div class="flex items-center gap-5">
+<div class="w-20 h-20 rounded-2xl overflow-hidden ios-icon-shadow bg-secondary shrink-0 border border-on-surface-variant/5">
+<img alt="Launched App Icon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBYrdOzgNIMj_0xYUuB3I-KNbVEqWCYAO8szDTwrQ7mbTurXcfy097FEjc3zlKWa_uHjtPr9DZDortqYwc9JFS-CVV2AcgzvEXgzmVjN8GGLVjJClH2n_CFb5cfatr7wxFqTMeGsBpcOfCKobWeaKE1JQG1W7H98GPZ_RDmqNjsF7bWeP1jGq_RJxeWstSOhFli-gAXL0GYtBerimT9Vp87RTvPQ63cxLiYH0oIa3okAvdfY4aunGo2zSjfk8YYlKG2MtZ2AhF6dQo"/>
+</div>
+<div class="flex-1">
+<h4 class="text-xl font-bold text-on-surface tracking-tight">Launched</h4>
+<p class="text-on-surface-variant text-sm font-medium">The podcast about apps.</p>
+<div class="flex items-center gap-3 mt-2">
+<span class="bg-secondary/10 text-secondary px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider">New Content</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/40 dark:bg-white/5 p-4 rounded-2xl border border-white/50">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-lg font-bold">4.8</span>
+</div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mt-1">Avg Rating</p>
+</div>
+<div class="bg-white/40 dark:bg-white/5 p-4 rounded-2xl border border-white/50">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-lg">headphones</span>
+<span class="text-lg font-bold">50k+</span>
+</div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mt-1">Listeners</p>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    An app to track and listen to the stories behind the world's most successful indie apps. Discover the creators and their journey to the top of the App Store.
+                </p>
+<button class="w-full mt-auto bg-primary py-3 rounded-full text-on-primary font-bold text-sm tracking-wide flex items-center justify-center gap-2 group-hover:scale-[1.02] transition-transform duration-300">
+                    View on App Store
+                </button>
+</div>
+</div>
+<!-- Side Projects -->
+<div class="mt-16">
+<h3 class="text-2xl font-bold tracking-tight text-on-surface mb-8">Side Projects</h3>
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-6 p-4 rounded-2xl border border-outline-variant/10 hover:bg-white/50 transition-colors">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container">code</span>
+</div>
+<div class="flex-1">
+<h5 class="font-bold text-on-surface">SwiftKit</h5>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Utility Library • open source</p>
+</div>
+<span class="text-primary material-symbols-outlined">arrow_forward_ios</span>
+</div>
+<div class="flex items-center gap-6 p-4 rounded-2xl border border-outline-variant/10 hover:bg-white/50 transition-colors">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container">palette</span>
+</div>
+<div class="flex-1">
+<h5 class="font-bold text-on-surface">Glassify</h5>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Design Tool • macos</p>
+</div>
+<span class="text-primary material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-slate-200/10 dark:border-slate-800/10 bg-[#fbf9f9] dark:bg-slate-950 mt-12">
+<div class="max-w-4xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="label-md uppercase tracking-widest text-slate-500 text-[10px] font-bold">© 2024 Indie Developer. Built with intentionality.</p>
+<div class="flex gap-8">
+<a class="label-md uppercase tracking-widest text-slate-500 font-bold text-[10px] hover:text-green-600 transition-colors" href="#">Twitter</a>
+<a class="label-md uppercase tracking-widest text-slate-500 font-bold text-[10px] hover:text-green-600 transition-colors" href="#">GitHub</a>
+<a class="label-md uppercase tracking-widest text-slate-500 font-bold text-[10px] hover:text-green-600 transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-xl border-t border-slate-100 flex justify-around items-center h-16 px-4 z-50">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">apps</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Apps</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">About</span>
+</a>
+</nav>
+</body></html>

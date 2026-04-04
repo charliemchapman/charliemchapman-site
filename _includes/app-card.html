@@ -1,0 +1,37 @@
+{% assign app = include.app %}
+<section class="app-card{% if app.metrics_url %} app-card--metrics{% endif %}">
+  <div class="app-card__header">
+    <img class="app-card__icon{% if app.round %} app-card__icon--round{% endif %}" src="{{ app.icon }}" alt="{{ app.name }} icon">
+    <div class="app-card__heading">
+      <div class="app-card__title-row">
+        <h3>{{ app.name }}</h3>
+        {% if app.badge %}
+          <span class="app-card__badge">{{ app.badge }}</span>
+        {% endif %}
+      </div>
+      <p>{{ app.short_description }}</p>
+    </div>
+  </div>
+
+  <p class="app-card__description">{{ app.description }}</p>
+
+  <div class="app-card__links">
+    {% if app.website_url %}
+      <a class="button button--ghost" href="{{ app.website_url }}" target="_blank" rel="noreferrer noopener">Website</a>
+    {% endif %}
+    {% if app.app_store_url %}
+      <a class="button button--primary" href="{{ app.app_store_url }}" target="_blank" rel="noreferrer noopener">View on App Store</a>
+    {% endif %}
+    {% if app.metrics_url %}
+      <a class="button button--secondary" href="{{ app.metrics_url }}" target="_blank" rel="noreferrer noopener">Open live metrics</a>
+    {% endif %}
+  </div>
+
+  {% if app.metrics_url %}
+    <div class="app-card__metrics">
+      <iframe src="{{ app.metrics_url }}" title="RevenueCat live metrics for {{ app.name }}" loading="lazy"></iframe>
+    </div>
+  {% elsif app.note %}
+    <p class="app-card__note">{{ app.note }}</p>
+  {% endif %}
+</section>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Charlie Chapman - Developer Advocate &amp; Indie Dev</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#fbf9f9",
+              "on-primary": "#ffffff",
+              "on-error": "#ffffff",
+              "outline": "#6d7b6b",
+              "on-primary-container": "#004d1a",
+              "on-surface-variant": "#3d4a3c",
+              "on-error-container": "#93000a",
+              "on-surface": "#1b1c1c",
+              "primary-fixed-dim": "#53e16f",
+              "primary-container": "#34c759",
+              "tertiary-fixed": "#eedcff",
+              "background": "#fbf9f9",
+              "secondary-fixed": "#ffdada",
+              "surface-container-high": "#e9e8e7",
+              "on-background": "#1b1c1c",
+              "inverse-on-surface": "#f2f0f0",
+              "surface-bright": "#fbf9f9",
+              "on-secondary": "#ffffff",
+              "surface-variant": "#e3e2e2",
+              "on-secondary-fixed-variant": "#920027",
+              "error-container": "#ffdad6",
+              "surface-container": "#efeded",
+              "surface-tint": "#006e28",
+              "surface-container-low": "#f5f3f3",
+              "tertiary-container": "#c69aff",
+              "tertiary-fixed-dim": "#d9b9ff",
+              "error": "#ba1a1a",
+              "on-tertiary": "#ffffff",
+              "primary": "#006e28",
+              "on-tertiary-fixed": "#2a0054",
+              "secondary": "#ba0034",
+              "tertiary": "#8300f2",
+              "on-tertiary-fixed-variant": "#6300ba",
+              "inverse-primary": "#53e16f",
+              "on-tertiary-container": "#5d00ae",
+              "primary-fixed": "#72fe88",
+              "surface-dim": "#dbdad9",
+              "secondary-container": "#e51245",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#ffb3b5",
+              "inverse-surface": "#303031",
+              "on-primary-fixed": "#002107",
+              "surface-container-highest": "#e3e2e2",
+              "on-secondary-fixed": "#40000c",
+              "outline-variant": "#bccbb8",
+              "on-secondary-container": "#fffbff",
+              "on-primary-fixed-variant": "#00531c"
+            },
+            fontFamily: {
+              "headline": ["Inter", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- SideNavBar (Desktop) -->
+<aside class="hidden md:flex flex-col fixed h-screen w-64 left-0 top-0 bg-[#f5f3f3] dark:bg-slate-900 z-40">
+<div class="p-8 flex flex-col h-full">
+<div class="mb-10">
+<h1 class="text-2xl font-black text-slate-900 dark:text-white tracking-tighter">The Indie Dev</h1>
+<p class="text-xs font-bold uppercase tracking-widest text-primary mt-1">Charlie Chapman</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-green-700 dark:text-green-400 border-l-4 border-green-500 bg-white/50 dark:bg-white/5 font-bold tracking-tight transition-transform active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span>Home</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="apps">apps</span>
+<span>Apps</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span>About</span>
+</a>
+</nav>
+<div class="mt-auto pt-8">
+<div class="flex items-center gap-3 mb-6">
+<img alt="Indie Developer Profile Picture" class="w-10 h-10 rounded-full object-cover" data-alt="Close-up headshot of developer smiling" src="https://lh3.googleusercontent.com/aida/ADBb0ujnKcr_3O0H5HX-NVc3D-B-umFL05dfqimT4ykdUfAXer5AU-7CxZLKOsiuF6H-OSwY2rT2ODckABoyjWS8wYynyC1ew0zow_8M_W5tEN_FNbo_Wk3-EkPhP4ERQh4AM_Zkf59RTe8R_a3kinHNjtWJ1RBxjphsRkEO23LKYqHc5HNej8_c5TtQEvWUQ61t58b9AT2d76VGcPFLbf55Rb3sbbUvBTtXkx0jQbpZsmT8uY3R8O9XBoyC4-zKpHFAoz1ptNgDvYsCcv8"/>
+<div>
+<p class="text-sm font-bold">Charlie Chapman</p>
+<p class="text-xs text-on-surface-variant">iOS &amp; Web Developer</p>
+</div>
+</div>
+<button class="w-full py-3 bg-primary text-on-primary rounded-full text-sm font-bold tracking-tight shadow-sm hover:opacity-90 transition-opacity">
+                    Download on App Store
+                </button>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 min-h-screen pb-20 md:pb-0">
+<!-- Profile Header -->
+<section class="relative">
+<!-- Mobile Navigation Overlay (Icon & Links) -->
+<div class="md:hidden absolute top-4 left-6 z-10">
+<button class="text-white drop-shadow-md">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+<div class="h-48 md:h-64 w-full bg-surface-container overflow-hidden">
+<img alt="Banner Image" class="w-full h-full object-cover" data-alt="Abstract colorful landscape background for profile banner" src="https://lh3.googleusercontent.com/aida/ADBb0uiIziuPl5XUGiSLYQErSv5s-kMDkrBz3jtUwCGIautUk4eJH5cIEMiuWKy5cLj3sJaqSOZo_F2fDMIGGeYDi72RCpMZAyCJuVvNvGVQT44IeHypSKhk_vtK9ZOcz6AntZMmqfTU7gL24AdQqcNaq0WuCNzALllSOchvFCI4oOP1LJrSRqG40UghRl1LZO0e1UACMA5wlfNL7JHj26iKm9xYsIVg9nATAyOUJ3HTen4pdr2S--YsbnUHleXtfRqxom0any0qu83WasU"/>
+</div>
+<div class="max-w-4xl mx-auto px-6 md:px-12 relative">
+<!-- Mobile Apps/About Links below banner -->
+<div class="md:hidden flex justify-end gap-6 pt-4">
+<a class="text-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary" href="#">Apps</a>
+<a class="text-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary" href="#">About</a>
+</div>
+<div class="flex flex-col md:flex-row md:items-end gap-6 items-start -mt-16 md:mt-0 md:-translate-y-16">
+<div class="relative">
+<img alt="Profile Picture" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-surface object-cover bg-surface shadow-sm" data-alt="Portrait of Charlie Chapman with a friendly expression" src="https://lh3.googleusercontent.com/aida/ADBb0ujnKcr_3O0H5HX-NVc3D-B-umFL05dfqimT4ykdUfAXer5AU-7CxZLKOsiuF6H-OSwY2rT2ODckABoyjWS8wYynyC1ew0zow_8M_W5tEN_FNbo_Wk3-EkPhP4ERQh4AM_Zkf59RTe8R_a3kinHNjtWJ1RBxjphsRkEO23LKYqHc5HNej8_c5TtQEvWUQ61t58b9AT2d76VGcPFLbf55Rb3sbbUvBTtXkx0jQbpZsmT8uY3R8O9XBoyC4-zKpHFAoz1ptNgDvYsCcv8"/>
+</div>
+</div>
+<div class="mt-6 md:-mt-10 space-y-4 max-w-2xl text-left">
+<div>
+<h2 class="text-4xl md:text-5xl font-black tracking-tighter text-on-surface">Charlie Chapman</h2>
+<p class="text-lg md:text-xl font-medium text-on-surface-variant mt-2 leading-relaxed">
+                            Dev Advocate @RevenueCat • indie creating @DarkNoiseApp • host of the @LaunchedFM podcast
+                        </p>
+</div>
+<div class="flex flex-wrap gap-y-2 gap-x-6">
+<div class="flex items-center gap-1.5 text-on-surface-variant text-sm font-medium">
+<span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span>
+<span>St. Louis, MO</span>
+</div>
+</div>
+<!-- Social Handles -->
+<div class="flex flex-wrap gap-3 pt-2">
+<a class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-high rounded-full hover:bg-surface-variant transition-colors text-sm font-semibold" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="alternate_email">alternate_email</span>
+<span>@_chuckyc</span>
+</a>
+<a class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-high rounded-full hover:bg-surface-variant transition-colors text-sm font-semibold" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="group">group</span>
+<span>charliechapman</span>
+</a>
+<a class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-high rounded-full hover:bg-surface-variant transition-colors text-sm font-semibold" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="hub">hub</span>
+<span>@_chuckyc</span>
+</a>
+<a class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-high rounded-full hover:bg-surface-variant transition-colors text-sm font-semibold" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="cloud">cloud</span>
+<span>@_chuckyc</span>
+</a>
+<a class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-high rounded-full hover:bg-surface-variant transition-colors text-sm font-semibold" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="waves">waves</span>
+<span>@_chuckyc</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Feed -->
+<section class="max-w-4xl mx-auto px-6 md:px-12 py-12 md:py-16">
+<div class="space-y-12 md:space-y-16">
+<!-- 1. Blog Post -->
+<article class="relative pl-8 md:pl-10 border-l border-outline-variant/20">
+<div class="absolute -left-3 top-0 bg-primary w-6 h-6 rounded-full flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="article">article</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary">BLOG POST</span>
+<span class="text-outline text-xs">•</span>
+<span class="text-outline text-xs font-medium">1d ago</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight">Designing with Intentionality: Beyond the Grid</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mt-2">
+                            The web has become overly obsessed with cards and shadows. We need to return to the fundamentals of editorial design—white space, strong typography, and hierarchy that guides the reader rather than boxing them in...
+                        </p>
+<div class="flex items-center mt-6">
+<button class="text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</div>
+</article>
+<!-- 2. Podcast Episode -->
+<article class="relative pl-8 md:pl-10 border-l border-outline-variant/20">
+<div class="absolute -left-3 top-0 bg-secondary w-6 h-6 rounded-full flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="mic">mic</span>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="text-[10px] uppercase tracking-widest font-bold text-secondary">PODCAST</span>
+<span class="text-outline text-xs">•</span>
+<span class="text-outline text-xs font-medium">4d ago</span>
+</div>
+<div class="flex flex-col md:flex-row gap-6 bg-surface-container-low/50 p-6 rounded-xl border border-outline-variant/10">
+<img alt="LaunchedFM Artwork" class="w-32 h-32 md:w-40 md:h-40 rounded-xl object-cover shadow-sm mx-auto md:mx-0" data-alt="LaunchedFM podcast cover art with microphone icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKUZ1Vy4MzX7qP-ENXDp8n9ggMZCwh_LZBBeaMNhWeeZk1rfemv_T0gQeiqXbffOX6WRmukullHslRcR0wxg8EbHGQ1ZBE4qDpx6jpXeqUQV9_AU1LaTRQFxfnvur6bowhdDGB8BCgyCVlL8Ueh4M1t4Y0GCMa0IunE0MXtxeKGRazTvWVQ7V9-Fz6pDGalTcJjyKyVQXtDs7oXIfFfQ-a_-kJTzQf10bnoRKVbvCB9s_Fnvd5wElS2OTCx_eXbOQGcZGw76Ye8WAC"/>
+<div class="flex flex-col justify-center text-center md:text-left">
+<h3 class="text-2xl font-bold tracking-tight mt-4 md:mt-0">LaunchedFM: Shipping Dark Noise 3.0</h3>
+<p class="text-on-surface-variant mt-2 leading-relaxed">
+                                    Talking through the technical hurdles and design decisions behind the latest major update to my ambient sound app.
+                                </p>
+<button class="mt-4 flex items-center justify-center md:justify-start gap-2 text-secondary font-bold text-sm">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+                                    LISTEN TO EPISODE
+                                </button>
+</div>
+</div>
+<div class="flex items-center">
+<button class="text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</div>
+</article>
+<!-- 3. YouTube Video -->
+<article class="relative pl-8 md:pl-10 border-l border-outline-variant/20">
+<div class="absolute -left-3 top-0 bg-tertiary w-6 h-6 rounded-full flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="smart_display">smart_display</span>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="text-[10px] uppercase tracking-widest font-bold text-tertiary">YOUTUBE</span>
+<span class="text-outline text-xs">•</span>
+<span class="text-outline text-xs font-medium">1w ago</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight">How I Setup My Desk for Max Productivity</h3>
+<div class="aspect-video w-full rounded-xl overflow-hidden bg-on-surface/5 border border-outline-variant/10 shadow-sm">
+<div class="w-full h-full flex items-center justify-center relative bg-slate-900">
+<img alt="Video Thumbnail" class="w-full h-full object-cover opacity-60" data-alt="Sleek modern desk setup with multiple monitors and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8vFA8yIRFAcnXT-J-iAKN0WPmYTSlpNNxbSsTPHKvb4k8GIJzfjI7ZFjP5ig5tHWXp7LBJ6Wr-1nzoJFU05Kv_V-JdLpRfATbueYzVfp0q4QatOaT5WeDNp4O76lE7tbmmH7AhUOoCgJvxAil5HoiSjQ7MgfQikyqgC2a_zhKdL0wFNhy6-EmkKo0olWEgOqCgKazxJtGkArhRYN5L5IiKC4wRGbayzqgdcImyAzFC4VSF-AAhfLDT7WjA_cJmezqDRBnTl553Ct0"/>
+<span class="material-symbols-outlined text-white text-6xl absolute" data-icon="play_arrow">play_arrow</span>
+</div>
+</div>
+<div class="flex items-center">
+<button class="text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</div>
+</article>
+<!-- 4. Conference Talk -->
+<article class="relative pl-8 md:pl-10 border-l border-outline-variant/20">
+<div class="absolute -left-3 top-0 bg-on-surface w-6 h-6 rounded-full flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="campaign">campaign</span>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="text-[10px] uppercase tracking-widest font-bold text-on-surface">CONFERENCE TALK</span>
+<span class="text-outline text-xs">•</span>
+<span class="text-outline text-xs font-medium">Oct 12</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight">The Future of Indie Development @ SwiftConf 2024</h3>
+<div class="aspect-video w-full rounded-xl overflow-hidden bg-on-surface/5 border border-outline-variant/10 shadow-sm">
+<div class="w-full h-full flex items-center justify-center relative bg-slate-950">
+<img alt="Talk Thumbnail" class="w-full h-full object-cover opacity-50" data-alt="Speaker on stage at a tech conference with large screen behind them" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCosWWS8nTAU74Aje_fEkgAH6GXXDOn6yNSv0OVyEZGYD5eMuzOKlBNc2N5OcVT0r44FqcqLuVzwoceouWUYyvyUTzCq9KkOvD8ahcKPuXX8JwcuaDAGoCL3FRG2O9oYOlW6SVCi3eGsGlEM2LeVKkMxNQMtcAbr0dt8Bq7CUcV62am8QWnx8FQkttc4gOIJd8EqlmnzGYb-HrWCevZsP5fEwvO-BlbuS7HT5TV7b3OXh-hmxcSlP_xArBVcR8bzMlYjPSHPYwgtQmE"/>
+<span class="material-symbols-outlined text-white text-6xl absolute" data-icon="play_arrow">play_arrow</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold uppercase tracking-tighter">Talk Notes</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant rounded-full text-xs font-bold uppercase tracking-tighter">iOS</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant rounded-full text-xs font-bold uppercase tracking-tighter">Business</span>
+</div>
+<div class="flex items-center">
+<button class="text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#fbf9f9] dark:bg-slate-950 border-t border-slate-200/10 dark:border-slate-800/10 py-12 md:pb-12">
+<div class="max-w-4xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="label-md uppercase tracking-widest text-slate-500 text-[10px] md:text-xs text-center md:text-left">© 2024 Indie Developer. Built with intentionality.</p>
+<div class="flex gap-6 md:gap-8">
+<a class="label-md uppercase tracking-widest text-slate-500 text-[10px] md:text-xs hover:text-green-600 dark:hover:text-green-400 transition-colors" href="#">Twitter</a>
+<a class="label-md uppercase tracking-widest text-slate-500 text-[10px] md:text-xs hover:text-green-600 dark:hover:text-green-400 transition-colors" href="#">GitHub</a>
+<a class="label-md uppercase tracking-widest text-slate-500 text-[10px] md:text-xs hover:text-green-600 dark:hover:text-green-400 transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</main>
+</body></html>

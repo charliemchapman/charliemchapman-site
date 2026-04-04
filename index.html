@@ -1,19 +1,42 @@
 ---
 layout: default
-title: "Charlie Chapman"
+title: Charlie Chapman
+page_id: home
+nav_key: home
 ---
+{% assign profile = site.data.profile %}
+{% assign timeline_items = site.posts | concat: site.podcasts | concat: site.videos | concat: site.talks | sort: "date" | reverse %}
 
-{% for post in paginator.posts %}
-<h1 class="post-title">
-  <a href="{{ post.url }}">
-    {{ post.title }}
-  </a>
-</h1>
-<p class="post-meta">{{ post.date | date_to_string }}</p>
+<section class="page-banner page-banner--home" aria-hidden="true">
+  <img class="page-banner__image" src="/assets/images/social-banner-1500x500.jpeg" alt="">
+</section>
 
-<div class="post-content">
-  {{ post.content }}
+<div class="home-content">
+  <section class="content-shell profile-hero">
+    <div class="profile-hero__grid">
+      <div class="profile-hero__avatar profile-hero__avatar--circle">
+        <img src="{{ profile.avatar }}" alt="{{ profile.avatar_alt }}">
+      </div>
+
+      <div class="profile-hero__content">
+        <h1>{{ profile.home_title }}</h1>
+        <p>Developer Advocate at <a href="https://revenuecat.com">RevenueCat</a>, indie iOS developer building <a href="https://darknoise.app">Dark Noise</a> and <a href="https://framous.app">Framous</a>, host of the <a href="https://launchedfm.com">Launched</a> podcast, and organizer of <a href="https://stlswift.com">STL Swift</a>.</p>
+
+        <div class="profile-hero__meta">
+          <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+          <span>{{ profile.location }}</span>
+        </div>
+
+        {% include social-links.html links=profile.social_links variant="list-condensed" %}
+      </div>
+    </div>
+  </section>
+
+  <section class="content-shell content-shell--timeline timeline">
+    <div class="timeline__list">
+      {% for entry in timeline_items %}
+        {% include timeline-item.html entry=entry %}
+      {% endfor %}
+    </div>
+  </section>
 </div>
-{% endfor %}
-
-{% include paginationLinks.html %}
