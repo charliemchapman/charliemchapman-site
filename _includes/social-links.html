@@ -2,24 +2,138 @@
 {% assign links = include.links | default: site.data.profile.social_links %}
 <div class="social-links social-links--{{ variant }}">
   {% for item in links %}
-    <a class="social-link social-link--{{ variant }}" href="{{ item.url }}" target="_blank" rel="noreferrer noopener">
-      {% if item.icon %}
-        <span class="social-link__icon">
-          <img src="{{ item.icon }}" alt="">
-        </span>
-      {% endif %}
+    {% if variant == "list" %}
+      <a class="social-link social-link--{{ variant }}" href="{{ item.url }}" target="_blank" rel="noreferrer noopener">
+        {% if item.icon %}
+          <span class="social-link__icon">
+            <img src="{{ item.icon }}" alt="">
+          </span>
+        {% endif %}
 
-      {% if variant == "list" %}
         <span class="social-link__content">
           <span class="social-link__name">{{ item.name }}</span>
           <span class="social-link__meta">{{ item.label }}</span>
         </span>
-      {% else %}
-        <span class="social-link__content">
-          <span class="social-link__name">{{ item.name }}</span>
-          <span class="social-link__meta">{{ item.label }}</span>
-        </span>
+      </a>
+    {% else %}
+      {% assign copies_entire_card = false %}
+      {% if item.url contains "mailto:" %}
+        {% assign copies_entire_card = true %}
       {% endif %}
-    </a>
+      <div class="social-link-card social-link-card--{{ variant }}{% if copies_entire_card %} social-link-card--copy-card{% endif %}" data-social-link-card>
+        {% if copies_entire_card %}
+          <button
+            class="social-link social-link--{{ variant }} social-link__action social-link__action--copy-card"
+            type="button"
+            data-copy-trigger
+            data-copy-value="{{ item.label | escape }}"
+            aria-label="Copy {{ item.name }}: {{ item.label }}">
+        {% else %}
+          <a
+            class="social-link social-link--{{ variant }} social-link__action"
+            href="{{ item.url }}"
+            target="_blank"
+            rel="noreferrer noopener">
+        {% endif %}
+          <span class="social-link__header">
+            {% if item.icon %}
+              <span class="social-link__icon">
+                <img src="{{ item.icon }}" alt="">
+              </span>
+            {% endif %}
+
+            <span class="social-link__details">
+              <span class="social-link__name">{{ item.name }}</span>
+              <span class="social-link__meta">{{ item.label }}</span>
+            </span>
+          </span>
+        {% if copies_entire_card %}
+          </button>
+          <span class="social-link__copy-indicator" data-copy-indicator aria-hidden="true">
+            <span class="social-link__copy-state social-link__copy-state--default">
+              <span class="material-symbols-outlined">content_copy</span>
+            </span>
+            <span class="social-link__copy-state social-link__copy-state--copied">Copied</span>
+          </span>
+        {% else %}
+          </a>
+          <button
+            class="social-link__copy-button"
+            type="button"
+            data-copy-trigger
+            data-copy-value="{{ item.label | escape }}"
+            aria-label="Copy {{ item.name }}">
+            <span class="social-link__copy-state social-link__copy-state--default" aria-hidden="true">
+              <span class="material-symbols-outlined">content_copy</span>
+            </span>
+            <span class="social-link__copy-state social-link__copy-state--copied" aria-hidden="true">
+              <span class="material-symbols-outlined">check</span>
+            </span>
+          </button>
+        {% endif %}
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
+
+<script>
+  (() => {
+    if (window.__socialLinksClipboardInitialized) {
+      return;
+    }
+
+    window.__socialLinksClipboardInitialized = true;
+
+    const cardResetTimers = new WeakMap();
+
+    async function copyText(value) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(value);
+        return;
+      }
+
+      const input = document.createElement("textarea");
+      input.value = value;
+      input.setAttribute("readonly", "");
+      input.style.position = "absolute";
+      input.style.left = "-9999px";
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand("copy");
+      input.remove();
+    }
+
+    document.addEventListener("click", async (event) => {
+      const trigger = event.target.closest("[data-copy-trigger]");
+
+      if (!trigger) {
+        return;
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+
+      try {
+        await copyText(trigger.dataset.copyValue || "");
+      } catch (error) {
+        return;
+      }
+
+      const card = trigger.closest("[data-social-link-card]");
+
+      if (card) {
+        card.classList.add("is-copied");
+
+        if (cardResetTimers.has(card)) {
+          clearTimeout(cardResetTimers.get(card));
+        }
+
+        const timeoutId = window.setTimeout(() => {
+          card.classList.remove("is-copied");
+        }, 2200);
+
+        cardResetTimers.set(card, timeoutId);
+      }
+    });
+  })();
+</script>

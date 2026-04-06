@@ -47,6 +47,10 @@ social_links:
     label: "linkedin.com/in/charliemchapman"
     url: https://www.linkedin.com/in/charliemchapman/
     icon: /assets/images/linkedin-icon.svg
+  - name: Email
+    label: "charliemchapman@gmail.com"
+    url: mailto:charliemchapman@gmail.com
+    icon: /assets/images/email-icon.svg
 footer_links:
   - name: Twitter
     url: https://twitter.com/_chuckyc
