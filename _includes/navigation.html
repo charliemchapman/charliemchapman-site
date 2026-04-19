@@ -1,39 +1,26 @@
-<nav>
-    <div class="main-nav">
-      <div class="main-nav-content">
-        <a class="logo" href="/">
-          <!-- <img src="/assets/images/charlie-profile-2023.jpg" height="140" width="140" /> -->
-          Charlie Chapman
-        </a>
-        <div class="links">
-          {% for item in site.data.navigation %}
-            <a href="{{ item.link }}" {% if page.url == item.link or (page.url == '/index.html' and item.link == '/') %}class="current"{% endif %}>{{ item.name }}</a>
-          {% endfor %}
-        </div>
-        <!-- <div class="expand-links-container">
-          <button class="expand-links" onclick="expandLinks()">
-            <img src="/assets/images/hamburger.png" height="12"/>
-          </button>
-        </div> -->
-      </div>
-    <!-- <div id="sub-nav" class="sub-nav closed">
-      <div class="links">
-        {% for item in site.data.navigation reversed %}
-            <a href="{{ item.link }}" {% if page.url == item.link or (page.url == '/index.html' and item.link == '/') %}class="current"{% endif %}>{{ item.name }}</a>
+<header class="site-header">
+  <div class="site-container site-header__inner">
+    <a class="site-brand" href="/">{{ site.title }}</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle>
+      <span class="menu-toggle__bar" aria-hidden="true"></span>
+      <span class="menu-toggle__bar" aria-hidden="true"></span>
+      <span class="menu-toggle__bar" aria-hidden="true"></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        {% for item in site.data.navigation %}
+        {% assign is_current = false %}
+        {% if page.url == item.link or page.permalink == item.link %}
+          {% assign is_current = true %}
+        {% elsif page.url == '/index.html' and item.link == '/' %}
+          {% assign is_current = true %}
+        {% endif %}
+        <li class="site-nav__item">
+          <a href="{{ item.link }}" class="site-nav__link{% if is_current %} is-active{% endif %}">{{ item.name }}</a>
+        </li>
         {% endfor %}
-      </div>
-    </div>
-    <script>
-      function expandLinks() {
-        var subNav = document.getElementById("sub-nav");
-        if (subNav.classList.contains('opened')) {
-          subNav.classList.remove("opened")
-          subNav.classList.add("closed")
-        } else {
-          subNav.classList.add("opened")
-          subNav.classList.remove("closed")
-        }
-      }
-    </script> -->
-  </div>  
-</nav>
+      </ul>
+    </nav>
+  </div>
+</header>

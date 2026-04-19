@@ -1,9 +1,22 @@
 ---
-layout: default
+layout: main
 ---
-<h1 class="post-title">{{ page.title }}</h1>
-<p class="post-meta">{{ page.date | date_to_string }}</p>
 
-<div class="post-content">
-{{ content }}
-</div>
+{% include navigation.html %}
+<main class="site-main">
+  <div class="site-container">
+    <article class="post-article">
+      <header class="post-article__header">
+        <p class="post-article__date">{{ page.date | date: "%B %-d, %Y" }}</p>
+        <h1 class="post-article__title">{{ page.title }}</h1>
+        {% if page.description %}
+        <p class="post-article__description">{{ page.description }}</p>
+        {% endif %}
+      </header>
+      <div class="post-article__content">
+        {{ content }}
+      </div>
+    </article>
+  </div>
+</main>
+{% include footer.html %}
