@@ -1,0 +1,340 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Charlie Chapman Personal Site Design System Reference</title>
+  <desc id="desc">A visual reference board for the personal site redesign, showing the profile shell, timeline components, colors, typography, logo direction, and interaction rules.</desc>
+  <defs>
+    <style>
+      :root {
+        --bg: #fbfcf9;
+        --surface: #ffffff;
+        --surface-hover: #f3faf1;
+        --text: #1c211d;
+        --muted: #566157;
+        --border: #dfe6dc;
+        --border-strong: #aebcab;
+        --green: #00843d;
+        --pink: #cf247c;
+        --focus: #00843d;
+        --blog: #e07900;
+        --podcast: #4d56ff;
+        --video: #e04b37;
+        --dark-bg: #20231f;
+        --dark-surface: #282d27;
+        --dark-border: #465044;
+        --dark-text: #f5f3ee;
+        --dark-muted: #c4beb6;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .font {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      .title {
+        font-size: 50px;
+        font-weight: 750;
+        fill: var(--text);
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        font-size: 22px;
+        fill: var(--muted);
+      }
+
+      .section-title {
+        font-size: 18px;
+        font-weight: 740;
+        fill: var(--text);
+      }
+
+      .label {
+        font-size: 13px;
+        font-weight: 700;
+        fill: var(--muted);
+        text-transform: uppercase;
+      }
+
+      .body {
+        font-size: 18px;
+        fill: var(--text);
+      }
+
+      .small {
+        font-size: 14px;
+        fill: var(--muted);
+      }
+
+      .tiny {
+        font-size: 12px;
+        fill: var(--muted);
+      }
+
+      .panel {
+        fill: var(--surface);
+        stroke: var(--border);
+        stroke-width: 1.5;
+      }
+
+      .soft-panel {
+        fill: var(--bg);
+        stroke: var(--border);
+        stroke-width: 1.5;
+      }
+
+      .rule {
+        stroke: var(--border);
+        stroke-width: 1.5;
+      }
+
+      .rule-strong {
+        stroke: var(--border-strong);
+        stroke-width: 1.5;
+      }
+
+      .shadow {
+        filter: drop-shadow(0 12px 24px rgba(31, 36, 31, 0.08));
+      }
+    </style>
+    <clipPath id="avatarClip">
+      <circle cx="0" cy="0" r="50" />
+    </clipPath>
+    <clipPath id="bannerClip">
+      <rect x="0" y="0" width="680" height="205" rx="0" />
+    </clipPath>
+  </defs>
+
+  <rect width="1600" height="1100" fill="#fbfcf9" />
+
+  <g class="font">
+    <text x="72" y="94" class="title">Personal Site Design System</text>
+    <text x="76" y="132" class="subtitle">Profile-first, feed-dense, personal, fast, and distinct from generic tech portfolios.</text>
+
+    <g transform="translate(1215 52)">
+      <rect x="0" y="0" width="290" height="96" rx="22" fill="#ffffff" stroke="#dfe6dc" stroke-width="1.5" />
+      <g transform="translate(24 21)">
+        <path d="M47 16C29 2 7 14 7 38s23 36 41 22" fill="none" stroke="#1c211d" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M78 16C60 2 38 14 38 38s23 36 41 22" fill="none" stroke="#00843d" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="88" cy="62" r="7" fill="#cf247c" />
+      </g>
+      <text x="128" y="41" class="section-title">playful CC mark</text>
+      <text x="128" y="65" class="small">rounded strokes + dot</text>
+    </g>
+
+    <g transform="translate(72 190)">
+      <rect x="0" y="0" width="975" height="820" rx="28" fill="#ffffff" stroke="#dfe6dc" stroke-width="1.5" class="shadow" />
+
+      <g transform="translate(28 28)">
+        <rect x="0" y="0" width="205" height="764" rx="24" fill="#fbfcf9" stroke="#dfe6dc" stroke-width="1.5" />
+        <g transform="translate(25 31)">
+          <path d="M28 8C16 -2 2 6 2 20s15 22 28 13" fill="none" stroke="#1c211d" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M51 8C39 -2 25 6 25 20s15 22 28 13" fill="none" stroke="#00843d" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="60" cy="34" r="5" fill="#cf247c" />
+        </g>
+
+        <g transform="translate(22 106)">
+          <rect x="0" y="0" width="161" height="50" rx="25" fill="#ffffff" stroke="#aebcab" />
+          <circle cx="28" cy="25" r="8" fill="#00843d" />
+          <text x="52" y="31" class="body" font-weight="700">Home</text>
+        </g>
+        <g transform="translate(22 166)">
+          <rect x="0" y="0" width="161" height="50" rx="25" fill="none" />
+          <rect x="20" y="15" width="16" height="20" rx="5" fill="none" stroke="#566157" stroke-width="2" />
+          <text x="52" y="31" class="body">Apps</text>
+        </g>
+        <g transform="translate(22 226)">
+          <rect x="0" y="0" width="161" height="50" rx="25" fill="none" />
+          <circle cx="28" cy="19" r="7" fill="none" stroke="#566157" stroke-width="2" />
+          <path d="M17 37c3-8 19-8 22 0" fill="none" stroke="#566157" stroke-width="2" stroke-linecap="round" />
+          <text x="52" y="31" class="body">About</text>
+        </g>
+
+        <g transform="translate(22 666)">
+          <circle cx="24" cy="24" r="24" fill="#dfe6dc" />
+          <circle cx="24" cy="24" r="19" fill="#f3faf1" />
+          <path d="M19 15c4-4 13-4 17 0" fill="none" stroke="#cf247c" stroke-width="3" stroke-linecap="round" />
+          <text x="58" y="22" class="small" font-weight="700" fill="#1c211d">Charlie</text>
+          <text x="58" y="43" class="tiny">@_chuckyc</text>
+        </g>
+      </g>
+
+      <g transform="translate(256 28)">
+        <rect x="0" y="0" width="680" height="764" rx="24" fill="#ffffff" stroke="#dfe6dc" stroke-width="1.5" />
+
+        <g clip-path="url(#bannerClip)">
+          <rect x="0" y="0" width="680" height="205" fill="#dfe6dc" />
+          <rect x="0" y="0" width="680" height="205" fill="#00843d" opacity="0.24" />
+          <circle cx="105" cy="70" r="95" fill="#cf247c" opacity="0.18" />
+          <circle cx="515" cy="105" r="140" fill="#00843d" opacity="0.18" />
+          <rect x="0" y="135" width="680" height="70" fill="#20231f" opacity="0.06" />
+          <text x="30" y="43" class="label" fill="#566157">Twitter/X banner photo</text>
+          <text x="30" y="74" class="small">natural image, not decorative brand art</text>
+        </g>
+
+        <g transform="translate(32 170)">
+          <circle cx="52" cy="52" r="58" fill="#ffffff" />
+          <circle cx="52" cy="52" r="50" fill="#dfe6dc" />
+          <circle cx="52" cy="48" r="20" fill="#f3faf1" />
+          <path d="M16 91c12-23 60-23 72 0" fill="#f3faf1" />
+          <circle cx="52" cy="52" r="50" fill="none" stroke="#ffffff" stroke-width="6" />
+        </g>
+
+        <g transform="translate(32 292)">
+          <text x="0" y="0" class="title" font-size="34">Charlie Chapman</text>
+          <text x="0" y="38" class="body">I make apps, host podcasts, and talk about building things on the internet.</text>
+          <g transform="translate(0 60)">
+            <path d="M7 2c-3 0-5 2-5 5 0 5 5 11 5 11s5-6 5-11c0-3-2-5-5-5Zm0 7.2A2.2 2.2 0 1 1 7 4.8a2.2 2.2 0 0 1 0 4.4Z" fill="#566157" />
+            <text x="22" y="15" class="small">St. Louis, MO, USA</text>
+          </g>
+        </g>
+
+        <g transform="translate(32 402)">
+          <g>
+            <rect x="0" y="0" width="122" height="38" rx="19" fill="#fbfcf9" stroke="#dfe6dc" />
+            <circle cx="20" cy="19" r="8" fill="#1c211d" />
+            <text x="36" y="24" class="small" fill="#1c211d">@_chuckyc</text>
+          </g>
+          <g transform="translate(132 0)">
+            <rect x="0" y="0" width="180" height="38" rx="19" fill="#fbfcf9" stroke="#dfe6dc" />
+            <rect x="14" y="11" width="16" height="16" rx="3" fill="#0a66c2" />
+            <text x="42" y="24" class="small" fill="#1c211d">charliemchapman</text>
+          </g>
+          <g transform="translate(322 0)">
+            <rect x="0" y="0" width="210" height="38" rx="19" fill="#fbfcf9" stroke="#dfe6dc" />
+            <circle cx="20" cy="19" r="8" fill="#6364ff" />
+            <text x="36" y="24" class="small" fill="#1c211d">@charlie@mastodon</text>
+          </g>
+          <g transform="translate(0 48)">
+            <rect x="0" y="0" width="196" height="38" rx="19" fill="#fbfcf9" stroke="#dfe6dc" />
+            <circle cx="20" cy="19" r="8" fill="#1185fe" />
+            <text x="36" y="24" class="small" fill="#1c211d">@charliemchapman.com</text>
+          </g>
+          <g transform="translate(206 48)">
+            <rect x="0" y="0" width="128" height="38" rx="19" fill="#fbfcf9" stroke="#dfe6dc" />
+            <circle cx="20" cy="19" r="8" fill="#1c211d" />
+            <text x="36" y="24" class="small" fill="#1c211d">GitHub</text>
+          </g>
+          <g transform="translate(344 48)">
+            <rect x="0" y="0" width="116" height="38" rx="19" fill="#fbfcf9" stroke="#dfe6dc" />
+            <rect x="13" y="13" width="16" height="12" rx="2" fill="none" stroke="#00843d" stroke-width="2" />
+            <text x="38" y="24" class="small" fill="#1c211d">Email</text>
+          </g>
+        </g>
+
+        <g transform="translate(0 514)">
+          <line x1="0" y1="0" x2="680" y2="0" class="rule" />
+          <g transform="translate(0 0)">
+            <rect x="0" y="0" width="170" height="58" fill="#ffffff" />
+            <text x="68" y="35" class="body" font-weight="700">All</text>
+            <rect x="48" y="54" width="74" height="4" rx="2" fill="#00843d" />
+          </g>
+          <g transform="translate(170 0)">
+            <rect x="0" y="0" width="170" height="58" fill="#ffffff" />
+            <text x="63" y="35" class="body">Blog</text>
+          </g>
+          <g transform="translate(340 0)">
+            <rect x="0" y="0" width="170" height="58" fill="#ffffff" />
+            <text x="51" y="35" class="body">Podcast</text>
+          </g>
+          <g transform="translate(510 0)">
+            <rect x="0" y="0" width="170" height="58" fill="#ffffff" />
+            <text x="57" y="35" class="body">Video</text>
+          </g>
+          <line x1="0" y1="58" x2="680" y2="58" class="rule" />
+        </g>
+
+        <g transform="translate(0 572)">
+          <rect x="0" y="0" width="680" height="192" fill="#ffffff" />
+          <g transform="translate(32 25)">
+            <circle cx="6" cy="7" r="5" fill="#e07900" />
+            <text x="20" y="12" class="small" font-weight="700">Blog</text>
+            <text x="63" y="12" class="small">May 2</text>
+            <text x="0" y="47" class="body" font-size="22" font-weight="740">Designing the site like a personal feed</text>
+            <text x="0" y="80" class="small" font-size="16">A short Markdown-aware excerpt goes here, compact enough to scan but useful enough</text>
+            <text x="0" y="105" class="small" font-size="16">to decide whether to keep reading the full post.</text>
+            <text x="0" y="143" class="small" font-weight="700" fill="#cf247c">Read more</text>
+          </g>
+          <line x1="0" y1="192" x2="680" y2="192" class="rule" />
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(1080 190)">
+      <rect x="0" y="0" width="448" height="236" rx="24" class="panel shadow" />
+      <text x="28" y="42" class="section-title">Light theme tokens</text>
+      <g transform="translate(28 72)">
+        <g>
+          <rect x="0" y="0" width="78" height="58" rx="14" fill="#fbfcf9" stroke="#dfe6dc" />
+          <text x="0" y="83" class="tiny">bg</text>
+          <text x="0" y="101" class="tiny">#fbfcf9</text>
+        </g>
+        <g transform="translate(96 0)">
+          <rect x="0" y="0" width="78" height="58" rx="14" fill="#ffffff" stroke="#dfe6dc" />
+          <text x="0" y="83" class="tiny">surface</text>
+          <text x="0" y="101" class="tiny">#ffffff</text>
+        </g>
+        <g transform="translate(192 0)">
+          <rect x="0" y="0" width="78" height="58" rx="14" fill="#1c211d" />
+          <text x="0" y="83" class="tiny">text</text>
+          <text x="0" y="101" class="tiny">#1c211d</text>
+        </g>
+        <g transform="translate(288 0)">
+          <rect x="0" y="0" width="78" height="58" rx="14" fill="#dfe6dc" stroke="#aebcab" />
+          <text x="0" y="83" class="tiny">border</text>
+          <text x="0" y="101" class="tiny">#dfe6dc</text>
+        </g>
+      </g>
+      <g transform="translate(28 190)">
+        <circle cx="8" cy="7" r="7" fill="#00843d" />
+        <text x="24" y="12" class="small">green UI accent</text>
+        <circle cx="176" cy="7" r="7" fill="#cf247c" />
+        <text x="192" y="12" class="small">pink link accent</text>
+      </g>
+    </g>
+
+    <g transform="translate(1080 450)">
+      <rect x="0" y="0" width="448" height="215" rx="24" fill="#20231f" stroke="#465044" stroke-width="1.5" class="shadow" />
+      <text x="28" y="42" class="section-title" fill="#f5f3ee">Dark theme rule</text>
+      <text x="28" y="75" class="small" fill="#c4beb6">No pure black. Use softened text and restrained accents.</text>
+      <g transform="translate(28 104)">
+        <rect x="0" y="0" width="82" height="58" rx="14" fill="#20231f" stroke="#465044" />
+        <rect x="100" y="0" width="82" height="58" rx="14" fill="#282d27" stroke="#465044" />
+        <rect x="200" y="0" width="82" height="58" rx="14" fill="#6dde88" />
+        <rect x="300" y="0" width="82" height="58" rx="14" fill="#ff78b8" />
+      </g>
+      <text x="28" y="191" class="tiny" fill="#c4beb6">#20231f / #282d27 / #6dde88 / #ff78b8</text>
+    </g>
+
+    <g transform="translate(1080 690)">
+      <rect x="0" y="0" width="448" height="320" rx="24" class="panel shadow" />
+      <text x="28" y="42" class="section-title">System details</text>
+      <g transform="translate(28 74)">
+        <text x="0" y="0" class="label">Content labels</text>
+        <g transform="translate(0 24)">
+          <circle cx="6" cy="7" r="5" fill="#e07900" />
+          <text x="20" y="12" class="small">Blog</text>
+          <circle cx="112" cy="7" r="5" fill="#4d56ff" />
+          <text x="126" y="12" class="small">Podcast</text>
+          <circle cx="252" cy="7" r="5" fill="#e04b37" />
+          <text x="266" y="12" class="small">Video</text>
+        </g>
+      </g>
+      <g transform="translate(28 142)">
+        <text x="0" y="0" class="label">Typography</text>
+        <text x="0" y="34" class="body" font-weight="740">Sans throughout</text>
+        <text x="0" y="62" class="small">compact app UI scale, readable article pages</text>
+      </g>
+      <g transform="translate(28 226)">
+        <text x="0" y="0" class="label">Motion</text>
+        <text x="0" y="34" class="body" font-weight="740">Fast and snappy</text>
+        <text x="0" y="62" class="small">120-180ms, subtle hover details, no big reveals</text>
+      </g>
+    </g>
+
+    <g transform="translate(72 1042)">
+      <text x="0" y="0" class="small">Core reference: Twitter-like profile and timeline, near-white shell, saturated green/pink identity accents, separate Blog/Podcast/Video type colors, WCAG AA contrast.</text>
+    </g>
+  </g>
+</svg>
