@@ -61,7 +61,7 @@
   }
 
   function removeFeedOnlyMedia(excerpt) {
-    var media = excerpt.querySelectorAll("img, picture, figure, iframe, video, audio, canvas, script, style, .postYoutube, .postVideoContainer, .postCaption");
+    var media = excerpt.querySelectorAll("img, picture, figure, iframe, video, audio, canvas, script, style, .youtube-embed, .postYoutube, .postVideoContainer, .postCaption");
 
     media.forEach(function (node) {
       node.remove();

@@ -72,13 +72,29 @@ body_class: "home-page"
 
 <section class="timeline" aria-label="Latest timeline items">
   {% assign current_year = site.time | date: "%Y" %}
-  {% for post in paginator.posts %}
+  {% assign timeline_items = site.posts | concat: site.podcasts | sort: "date" | reverse %}
+  {% for post in timeline_items %}
     {% assign content_type = post.content_type | default: "blog" %}
+    {% if post.collection == "podcasts" %}
+      {% assign content_type = "podcast" %}
+    {% endif %}
     {% assign content_label = content_type | capitalize %}
+    {% if content_type == "blog" %}
+      {% assign content_label = "Blog Post" %}
+    {% endif %}
     {% assign post_year = post.date | date: "%Y" %}
     {% assign feed_image = post.image %}
     {% assign feed_image_src = "" %}
     {% assign has_feed_image = false %}
+    {% assign post_content = post.content | strip %}
+    {% assign has_content = true %}
+    {% if post_content == "" %}
+      {% assign has_content = false %}
+    {% endif %}
+    {% assign item_url = post.url %}
+    {% if post.youtube and has_content == false %}
+      {% assign item_url = post.youtube %}
+    {% endif %}
     {% if feed_image and feed_image != site.logo %}
       {% assign has_feed_image = true %}
       {% assign feed_image_start = feed_image | slice: 0 %}
@@ -91,7 +107,24 @@ body_class: "home-page"
     <article class="timeline-item timeline-item--{{ content_type }}" data-content-type="{{ content_type }}" data-date="{{ post.date | date: "%Y-%m-%d" }}">
       <div class="timeline-item__meta">
         <span class="type-label type-label--{{ content_type }}">
-          <span class="type-label__dot"></span>
+          <span class="type-label__icon" aria-hidden="true">
+            {% if content_type == "podcast" %}
+              <svg viewBox="0 0 24 24">
+                <path d="M12 4.8a3.2 3.2 0 0 0-3.2 3.2v4a3.2 3.2 0 1 0 6.4 0V8A3.2 3.2 0 0 0 12 4.8Z" fill="none" stroke="currentColor" stroke-width="2" />
+                <path d="M6.5 11.8a5.5 5.5 0 0 0 11 0M12 17.3v2.2M9.2 19.5h5.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            {% elsif content_type == "video" %}
+              <svg viewBox="0 0 24 24">
+                <path d="M9 7.8v8.4l7-4.2-7-4.2Z" fill="currentColor" />
+                <rect x="4" y="5" width="16" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2" />
+              </svg>
+            {% else %}
+              <svg viewBox="0 0 24 24">
+                <rect x="6" y="5" width="12" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+                <path d="M9 9h6M9 12h6M9 15h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            {% endif %}
+          </span>
           <span>{{ content_label }}</span>
         </span>
         <time datetime="{{ post.date | date_to_xmlschema }}">
@@ -104,28 +137,34 @@ body_class: "home-page"
       </div>
 
       <h2 class="timeline-item__title">
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ item_url }}">{{ post.title }}</a>
       </h2>
 
-      <div class="timeline-item__excerpt" data-feed-excerpt data-limit="300">
-        {{ post.content }}
-      </div>
+      {% if has_content %}
+        <div class="timeline-item__excerpt" data-feed-excerpt data-limit="300">
+          {{ post.content }}
+        </div>
+      {% endif %}
 
-      {% if post.embed %}
+      {% if post.youtube %}
+        <div class="timeline-item__embed">
+          {% include youtube-embed.html youtube=post.youtube title=post.title %}
+        </div>
+      {% elsif post.embed %}
         <div class="timeline-item__embed">
           {{ post.embed }}
         </div>
       {% elsif has_feed_image %}
-        <a class="timeline-item__media" href="{{ post.url }}">
+        <a class="timeline-item__media" href="{{ item_url }}">
           <img src="{{ feed_image_src }}" alt="">
         </a>
       {% endif %}
 
-      <a class="read-more timeline-item__fallback-read-more" href="{{ post.url }}" data-feed-read-more>Read more</a>
+      {% if has_content %}
+        <a class="read-more timeline-item__fallback-read-more" href="{{ item_url }}" data-feed-read-more>Read more</a>
+      {% endif %}
     </article>
   {% endfor %}
 
   <p class="timeline-empty" hidden>No items match this filter yet.</p>
 </section>
-
-{% include paginationLinks.html %}

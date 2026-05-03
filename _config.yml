@@ -24,6 +24,13 @@ defaults:
       layout: "post"
       permalink: /posts/:year/:i_month/:i_day/:title
   - scope:
+      path: ""
+      type: "podcasts"
+    values:
+      layout: "post"
+      permalink: /podcasts/:year/:i_month/:i_day/:title
+      content_type: "podcast"
+  - scope:
       path: "pages"
     values:
       permalink: /:basename:output_ext
@@ -37,3 +44,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+collections:
+  podcasts:
+    output: true

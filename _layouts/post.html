@@ -16,7 +16,11 @@ layout: default
     <h1>{{ page.title }}</h1>
   </header>
 
-  {% if page.embed %}
+  {% if page.youtube %}
+    <div class="article-embed">
+      {% include youtube-embed.html youtube=page.youtube title=page.title %}
+    </div>
+  {% elsif page.embed %}
     <div class="article-embed">
       {{ page.embed }}
     </div>

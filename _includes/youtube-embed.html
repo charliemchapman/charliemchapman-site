@@ -1,0 +1,15 @@
+{% assign youtube_url = include.youtube %}
+{% assign youtube_id = youtube_url | split: "v=" | last | split: "&" | first %}
+{% if youtube_url contains "youtu.be/" %}
+  {% assign youtube_id = youtube_url | split: "youtu.be/" | last | split: "?" | first %}
+{% elsif youtube_url contains "/embed/" %}
+  {% assign youtube_id = youtube_url | split: "/embed/" | last | split: "?" | first %}
+{% endif %}
+
+<div class="youtube-embed">
+  <iframe
+    src="https://www.youtube.com/embed/{{ youtube_id }}"
+    title="{{ include.title | default: "YouTube video" | escape }}"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+</div>
