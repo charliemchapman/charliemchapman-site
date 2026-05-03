@@ -1,7 +1,7 @@
 ---
 title: "On Vision Pro"
 date: "2023-12-07"
-image: "/assets/images/charlie-profile-2023.jpg"
+image: "/assets/posts/2023/12/07/vision-pro-photo.jpg"
 ---
 
 _Note: This post was hastily written on my iPhone while traveling so please forgive the typos._

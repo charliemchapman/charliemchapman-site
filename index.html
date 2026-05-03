@@ -76,9 +76,11 @@ body_class: "home-page"
     {% assign content_type = post.content_type | default: "blog" %}
     {% assign content_label = content_type | capitalize %}
     {% assign post_year = post.date | date: "%Y" %}
-    {% assign feed_image = post.image | default: post.feed_image %}
+    {% assign feed_image = post.image %}
     {% assign feed_image_src = "" %}
-    {% if feed_image %}
+    {% assign has_feed_image = false %}
+    {% if feed_image and feed_image != site.logo %}
+      {% assign has_feed_image = true %}
       {% assign feed_image_start = feed_image | slice: 0 %}
       {% if feed_image_start == "/" %}
         {% assign feed_image_src = feed_image %}
@@ -113,7 +115,7 @@ body_class: "home-page"
         <div class="timeline-item__embed">
           {{ post.embed }}
         </div>
-      {% elsif feed_image %}
+      {% elsif has_feed_image %}
         <a class="timeline-item__media" href="{{ post.url }}">
           <img src="{{ feed_image_src }}" alt="">
         </a>

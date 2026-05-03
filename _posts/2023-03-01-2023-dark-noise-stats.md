@@ -1,7 +1,7 @@
 ---
 title: "Dark Noise Analytics: March 2023"
 date: "2023-03-01"
-image: "/assets/images/dark-noise-app-icon-cropped.png"
+image: "/assets/apps/dark-noise-16x9.jpg"
 ---
 
 I recently added some analytics into [Dark Noise](https://darknoise.app/) using the new(ish) privacy-focused analytics tool [TelemetryDeck](https://telemetrydeck.com/) in preparation for my big update that will be adding a free tier. I want to get an understanding of how many users I might be dealing with going forward and some of my future plans lead me to want to understand what features, and sounds users are using most within the app.

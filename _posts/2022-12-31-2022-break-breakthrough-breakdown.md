@@ -1,7 +1,6 @@
 ---
 title: "2022: A Break, a Breakthrough, and a Breakdown?"
 date: "2022-12-31"
-image: "assets/images/charlie-profile_1024.jpg"
 ---
 
 2022 was a bit of a weird year for me that I think kinda breaks down into 3 distinct parts.

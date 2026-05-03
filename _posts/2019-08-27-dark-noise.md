@@ -1,7 +1,7 @@
 ---
 title: "Dark Noise is in the App Store 🥳"
 date: "2019-08-27"
-image: "/assets/images/dark-noise-app-icon-cropped.png"
+image: "/assets/apps/dark-noise-16x9.jpg"
 ---
 
 Today I released my first app to the App Store, [Dark Noise](https://apps.apple.com/us/app/dark-noise/id1465439395).  It's a simple yet powerful way to play ambient noise to help you sleep, focus, or relax.
