@@ -1,39 +1,57 @@
-<nav>
-    <div class="main-nav">
-      <div class="main-nav-content">
-        <a class="logo" href="/">
-          <!-- <img src="/assets/images/charlie-profile-2023.jpg" height="140" width="140" /> -->
-          Charlie Chapman
-        </a>
-        <div class="links">
-          {% for item in site.data.navigation %}
-            <a href="{{ item.link }}" {% if page.url == item.link or (page.url == '/index.html' and item.link == '/') %}class="current"{% endif %}>{{ item.name }}</a>
-          {% endfor %}
-        </div>
-        <!-- <div class="expand-links-container">
-          <button class="expand-links" onclick="expandLinks()">
-            <img src="/assets/images/hamburger.png" height="12"/>
-          </button>
-        </div> -->
-      </div>
-    <!-- <div id="sub-nav" class="sub-nav closed">
-      <div class="links">
-        {% for item in site.data.navigation reversed %}
-            <a href="{{ item.link }}" {% if page.url == item.link or (page.url == '/index.html' and item.link == '/') %}class="current"{% endif %}>{{ item.name }}</a>
-        {% endfor %}
-      </div>
-    </div>
-    <script>
-      function expandLinks() {
-        var subNav = document.getElementById("sub-nav");
-        if (subNav.classList.contains('opened')) {
-          subNav.classList.remove("opened")
-          subNav.classList.add("closed")
-        } else {
-          subNav.classList.add("opened")
-          subNav.classList.remove("closed")
-        }
-      }
-    </script> -->
-  </div>  
+<nav class="desktop-sidebar" aria-label="Primary">
+  <a class="sidebar-mark" href="/" aria-label="Charlie Chapman home">
+    {% include site-mark.html %}
+  </a>
+
+  <div class="sidebar-links">
+    {% for item in site.data.navigation %}
+      {% assign is_current = false %}
+      {% assign item_index_url = item.link | append: "index.html" %}
+      {% if page.url == item.link or page.url == item_index_url or (page.url == "/index.html" and item.link == "/") %}
+        {% assign is_current = true %}
+      {% endif %}
+      <a class="sidebar-link{% if is_current %} is-current{% endif %}" href="{{ item.link }}">
+        {% include nav-icon.html name=item.name %}
+        <span>{{ item.name }}</span>
+      </a>
+    {% endfor %}
+  </div>
+
 </nav>
+
+<header class="mobile-header">
+  <div class="mobile-header-inner">
+    <a class="mobile-mark" href="/" aria-label="Charlie Chapman home">
+      {% include site-mark.html %}
+    </a>
+    <nav class="mobile-inline-links" aria-label="Primary">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      {% endfor %}
+      <a href="/feed.xml">RSS</a>
+    </nav>
+    <details class="mobile-menu">
+      <summary aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </summary>
+      <nav class="mobile-menu-panel" aria-label="Primary mobile">
+        {% for item in site.data.navigation %}
+          <a href="{{ item.link }}">
+            {% include nav-icon.html name=item.name %}
+            <span>{{ item.name }}</span>
+          </a>
+        {% endfor %}
+        <a href="/feed.xml">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="nav-icon">
+            <path d="M5 5a14 14 0 0 1 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M5 11a8 8 0 0 1 8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <circle cx="6.5" cy="17.5" r="1.5" fill="currentColor" />
+          </svg>
+          <span>RSS</span>
+        </a>
+      </nav>
+    </details>
+  </div>
+</header>

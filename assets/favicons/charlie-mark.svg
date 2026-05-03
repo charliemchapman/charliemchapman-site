@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Charlie Chapman mark">
+  <rect width="512" height="512" rx="112" fill="#fbfcf9"/>
+  <g transform="translate(30 126) scale(3.55)" fill="none" stroke-width="11" stroke-linejoin="round">
+    <path d="M119 25C101 8 78 11 67 31C64 36 58 36 55 31C44 11 17 12 10 34C2 59 30 72 51 53" stroke="#1c211d" stroke-linecap="butt"/>
+    <path d="M117 47C104 68 79 65 76 48" stroke="#1c211d" stroke-linecap="butt"/>
+    <path d="M51 53L55 32L64 47L73 32L76 48" stroke="#00843d" stroke-linecap="round"/>
+  </g>
+</svg>

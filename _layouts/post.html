@@ -1,9 +1,30 @@
 ---
 layout: default
 ---
-<h1 class="post-title">{{ page.title }}</h1>
-<p class="post-meta">{{ page.date | date_to_string }}</p>
+{% assign content_type = page.content_type | default: "blog" %}
+{% assign content_label = content_type | capitalize %}
 
-<div class="post-content">
-{{ content }}
-</div>
+<article class="article-page article-page--{{ content_type }}">
+  <header class="article-header">
+    <div class="article-kicker">
+      <span class="type-label type-label--{{ content_type }}">
+        <span class="type-label__dot"></span>
+        <span>{{ content_label }}</span>
+      </span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+    </div>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  {% if page.embed %}
+    <div class="article-embed">
+      {{ page.embed }}
+    </div>
+  {% elsif page.feed_image %}
+    <img class="article-hero-image" src="{{ page.feed_image }}" alt="">
+  {% endif %}
+
+  <div class="post-content article-content">
+    {{ content }}
+  </div>
+</article>

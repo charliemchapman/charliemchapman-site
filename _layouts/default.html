@@ -3,9 +3,11 @@ layout: main
 ---
 
 {% include navigation.html %}
-  <div class="content">
-    <div class="content-centered">
+<div class="site-frame">
+  <main id="main-content" class="site-main" tabindex="-1">
+    <div class="site-column{% if page.shell_class %} {{ page.shell_class }}{% endif %}">
       {{ content }}
     </div>
-  </div>
+  </main>
+</div>
 {% include footer.html %}

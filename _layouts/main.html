@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     <!-- generics -->
-    <link rel="icon" href="/assets/favicons/charliemchapman-favicon-32.png" sizes="32x32">
-    <link rel="icon" href="/assets/favicons/charliemchapman-favicon-128.png" sizes="128x128">
-    <link rel="icon" href="/assets/favicons/charliemchapman-favicon-192.png" sizes="192x192">
-    <link rel="icon" href="/assets/favicons/charliemchapman-favicon-228.png" sizes="228x228">
+    <link rel="icon" href="/assets/favicons/charlie-mark-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicons/charlie-mark-128.png" sizes="128x128" type="image/png">
+    <link rel="icon" href="/assets/favicons/charlie-mark-192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="/assets/favicons/charlie-mark-512.png" sizes="512x512" type="image/png">
 
     <!-- Android -->
-    <link rel="shortcut icon" sizes="196x196" href=“/assets/favicons/charliemchapman-favicon-196.png">
+    <link rel="shortcut icon" sizes="196x196" href="/assets/favicons/charlie-mark-196.png">
 
     <!-- iOS -->
-    <link rel="apple-touch-icon" href="/assets/favicons/charliemchapman-favicon-152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="/assets/favicons/charliemchapman-favicon-180.png" sizes="180x180">
+    <link rel="apple-touch-icon" href="/assets/favicons/charlie-mark-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/assets/favicons/charlie-mark-180.png" sizes="180x180">
 
     <link rel="me" href="https://mastodon.social/@charliemchapman" />
 
     {% feed_meta %}
     {% seo %}
   </head>
-  <body>
+  <body class="page-{{ page.layout | default: 'default' }}{% if page.body_class %} {{ page.body_class }}{% endif %}">
     {{ content }}
+    <script src="/assets/js/site.js" defer></script>
   </body>
 </html>

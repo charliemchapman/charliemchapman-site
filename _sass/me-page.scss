@@ -1,131 +1,103 @@
-body {
-    background-color: #fff;
-}
-
 .me-page {
+  width: calc(100vw - 32px);
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
 
-    .me-header {
-        background-color: #4a6c32;
-        padding-left: 16px;
-        padding-right: 16px;
-        margin-bottom: 50px;
+  .me-header {
+    min-height: 180px;
+    background:
+      linear-gradient(rgba(28, 33, 29, 0.02), rgba(28, 33, 29, 0.02)),
+      url("/assets/images/charlie-profile-banner-x.jpg") center / cover;
+    border-bottom: 1px solid var(--color-border);
+  }
 
-        .me-header-content {
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 600px;
-        }
+  .me-header-content {
+    position: relative;
+    min-height: 180px;
+  }
+
+  .me-image {
+    position: absolute;
+    bottom: -54px;
+    left: 24px;
+
+    img {
+      width: 108px;
+      height: 108px;
+      object-fit: cover;
+      border: 5px solid var(--color-surface);
+      border-radius: 50%;
+    }
+  }
+
+  .me-content {
+    padding: 72px 24px 32px;
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: clamp(2rem, 6vw, 2.55rem);
     }
 
-    .me-image {
-        text-align: left;
+    h2 {
+      margin-top: 34px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .me-bio {
+      color: var(--color-text-muted);
+    }
+
+    .me-link {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--color-border);
+
+      h3,
+      p {
+        margin: 0;
+      }
+
+      p {
+        color: var(--color-text-muted);
+        font-size: 0.95rem;
+      }
+
+      .me-link-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 4px;
+
         img {
-            max-width: 100px;
-            border-radius: 15px;
-            border: #fff solid 4px;
-            margin-bottom: -54px;
-            margin-top: 40px;
+          width: 20px;
+          height: 20px;
+          object-fit: contain;
         }
-    }
-
-    .me-content {
-        padding-left: 16px;
-        padding-right: 16px;
-        margin-top: 60px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-
-        h1 {
-            margin-bottom: 0px;
-        }
-
-        h2 {
-            margin-top: 44px;
-            margin-bottom: 12px;
-            border-bottom: #b9d5a6 solid 1px;
-        }
-
-        .me-bio {
-            margin-top: 7px;
-            color: #333333;
-        }
-
-        .me-link {
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            h1, h2, h3, h4, h5, h6 {
-                margin: 0;
-                margin-right: 16px;
-            }
-
-            p {
-                margin: 0;
-                font-size: 0.9rem;
-            }
-
-            a {
-                text-decoration: underline;
-            }
-
-            .me-link-header {
-                display: flex;
-                align-items: center;
-
-                img {
-                    height: 18px;
-                    margin-right: 12px;
-                }
-            }
-        }
-
-        button {
-            display: inline;
-            font-size: 0.7rem;
-            padding: 0.3rem 0.4rem;
-            border-radius: 0.3rem;
-            min-width: 50px;
-            margin-left: 6px;
-        }
-
-        .bottom-spacer {
-            height: 24px;
-        }
+      }
     }
 
     button {
-        display: inline-block;
-        border: none;
-        padding: 1rem 2rem;
-        margin: 0;
-        text-decoration: none;
-        background: #ececec;
-        color: #606060;
-        font-family: sans-serif;
-        font-size: 1rem;
-        cursor: pointer;
-        text-align: center;
-        transition: background 250ms ease-in-out, 
-                    transform 150ms ease;
-        -webkit-appearance: none;
-        -moz-appearance: none;
+      min-height: 28px;
+      margin-left: 6px;
+      padding: 0 10px;
+      color: var(--color-text);
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-round);
     }
-    
-    button:hover,
-    button:focus {
-        background: #cecece;
-        color: #323232;
-    }
-    
-    button:focus {
-        outline: 1px solid #606060;
-        outline-offset: -1px;
-    }
-    
-    button:active {
-        transform: scale(0.99);
-    }
+  }
+}
+
+@media (max-width: 640px) {
+  .me-page {
+    width: 100%;
+    border-right: 0;
+    border-left: 0;
+  }
 }

@@ -1,59 +1,67 @@
-.post-summary-content {
-    max-width: $content-max-width;
-    margin-left: 20px;
-    margin-right: 20px;
+.archive-page {
+  width: calc(100vw - 32px);
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 38px clamp(18px, 4vw, 36px) 44px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
 
-    img {
-        border-radius: 3px;
-    }
+  h1 {
+    margin-bottom: 22px;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+  }
 }
 
 .post-summary {
+  border-top: 1px solid var(--color-border);
+
+  .post-summary-content {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
 
-    .post-summary-content {
-        flex-grow: 1;
-        display: flex;
-        border-bottom: 1px solid #ddd;
-        margin-top: 5px;
-        padding-top: 5px;
-        padding-bottom: 10px;
-        align-items: center;
+  img {
+    width: 54px;
+    height: 54px;
+    flex: 0 0 auto;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+  }
 
-        h3 {
-            margin-bottom: 0;
-            margin-top: 0;
-        }
+  h3 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
 
-        img {
-            margin-right: 20px;
-            width: 60px;
-            height: 60px;
-            max-width: 100%;
-            object-fit: contain;
-        }
+  h3 a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
 
-        a {
-            color: $dark-green;
-            font-size: 1.3rem;
-        }
+  h3 a:hover {
+    color: var(--color-accent-pink);
+    text-decoration: underline;
+  }
 
-        p {
-            color: #000000cc;
-            margin: 0;
-        }
+  p {
+    margin: 0;
+  }
 
-        .post-summary-meta {
-            color: #0d2340;
-            font-size: .8em;
-            margin-top: 0;
-            margin-bottom: 5px;
-            color: #777;
-        }
-    }
+  .post-summary-meta {
+    color: var(--color-text-muted);
+    font-size: 0.86rem;
+  }
+}
 
-    .post-summary-content:first-of-type {
-        // margin-top: 20px;
-    }
+@media (max-width: 640px) {
+  .archive-page {
+    width: 100%;
+    border-right: 0;
+    border-left: 0;
+  }
 }
