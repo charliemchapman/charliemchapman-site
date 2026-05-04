@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Designing Dark Noise</title>
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/dqq4mih.css"> -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- generics -->
+    <link rel="icon" href="/assets/favicons/charlie-mark-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicons/charlie-mark-128.png" sizes="128x128" type="image/png">
+    <link rel="icon" href="/assets/favicons/charlie-mark-192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="/assets/favicons/charlie-mark-512.png" sizes="512x512" type="image/png">
+
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="196x196" href="/assets/favicons/charlie-mark-196.png">
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="/assets/favicons/charlie-mark-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/assets/favicons/charlie-mark-180.png" sizes="180x180">
+
+    <link rel="me" href="https://mastodon.social/@charliemchapman" />
+
+    <link type="application/atom+xml" rel="alternate" href="https://charliemchapman.com/feed.xml" title="Charlie Chapman" />
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Designing Dark Noise | Charlie Chapman</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Designing Dark Noise" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Today I want to talk about the process I used for designing my new app Dark Noise. It’s an app for playing different ambient noises to help with sleep or focus. I’m not a designer by trade, and this is the first app I’ve made for iOS, so this is more of a brain dump of everything I did and less of a proposal on how design should be done." />
+<meta property="og:description" content="Today I want to talk about the process I used for designing my new app Dark Noise. It’s an app for playing different ambient noises to help with sleep or focus. I’m not a designer by trade, and this is the first app I’ve made for iOS, so this is more of a brain dump of everything I did and less of a proposal on how design should be done." />
+<link rel="canonical" href="https://charliemchapman.com/posts/2019/9/2/designing-dark-noise/" />
+<meta property="og:url" content="https://charliemchapman.com/posts/2019/9/2/designing-dark-noise/" />
+<meta property="og:site_name" content="Charlie Chapman" />
+<meta property="og:image" content="https://charliemchapman.com/assets/images/charlie-profile-x.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-02T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://charliemchapman.com/assets/images/charlie-profile-x.jpg" />
+<meta property="twitter:title" content="Designing Dark Noise" />
+<meta name="twitter:site" content="@_chuckyc" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://charliemchapman.com/posts/2019/9/2/designing-dark-noise/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://charliemchapman.com/assets/images/charlie-profile-x.jpg"}},"@type":"BlogPosting","url":"https://charliemchapman.com/posts/2019/9/2/designing-dark-noise/","image":"https://charliemchapman.com/assets/images/charlie-profile-x.jpg","description":"Today I want to talk about the process I used for designing my new app Dark Noise. It’s an app for playing different ambient noises to help with sleep or focus. I’m not a designer by trade, and this is the first app I’ve made for iOS, so this is more of a brain dump of everything I did and less of a proposal on how design should be done.","headline":"Designing Dark Noise","dateModified":"2019-09-02T00:00:00-05:00","datePublished":"2019-09-02T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body class="page-post">
+    <nav class="desktop-sidebar" aria-label="Primary">
+  <a class="sidebar-mark" href="/" aria-label="Charlie Chapman home">
+    <picture class="site-mark">
+  <source srcset="/assets/images/charlie-logo-imagegen-dark.png" media="(prefers-color-scheme: dark)">
+  <img src="/assets/images/charlie-logo-imagegen.png" alt="" width="1024" height="595">
+</picture>
+
+  </a>
+
+  <div class="sidebar-links">
+    
+      
+      
+      
+      <a class="sidebar-link" href="/">
+        
+
+<svg aria-hidden="true" viewBox="0 0 24 24" class="nav-icon">
+  <path d="M4.5 11.2 12 4.6l7.5 6.6v8.2a1.6 1.6 0 0 1-1.6 1.6h-3.2v-6.2H9.3V21H6.1a1.6 1.6 0 0 1-1.6-1.6v-8.2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+</svg>
+
+
+        <span>Home</span>
+      </a>
+    
+      
+      
+      
+      <a class="sidebar-link" href="/apps.html">
+        
+
+<svg aria-hidden="true" viewBox="0 0 24 24" class="nav-icon">
+  <rect x="4" y="4" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+  <rect x="13" y="4" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+  <rect x="4" y="13" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+  <rect x="13" y="13" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+</svg>
+
+
+        <span>Apps</span>
+      </a>
+    
+      
+      
+      
+      <a class="sidebar-link" href="/about.html">
+        
+
+<svg aria-hidden="true" viewBox="0 0 24 24" class="nav-icon">
+  <circle cx="12" cy="7.5" r="3.5" fill="none" stroke="currentColor" stroke-width="2" />
+  <path d="M5.5 20c1.2-4 11.8-4 13 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+</svg>
+
+
+        <span>About</span>
+      </a>
+    
+  </div>
+
+</nav>
+
+<header class="mobile-header">
+  <div class="mobile-header-inner">
+    <a class="mobile-mark" href="/" aria-label="Charlie Chapman home">
+      <picture class="site-mark">
+  <source srcset="/assets/images/charlie-logo-imagegen-dark.png" media="(prefers-color-scheme: dark)">
+  <img src="/assets/images/charlie-logo-imagegen.png" alt="" width="1024" height="595">
+</picture>
+
+    </a>
+    <nav class="mobile-inline-links" aria-label="Primary">
+      
+        <a href="/">Home</a>
+      
+        <a href="/apps.html">Apps</a>
+      
+        <a href="/about.html">About</a>
+      
+      <a href="/feed.xml">RSS</a>
+    </nav>
+    <details class="mobile-menu">
+      <summary aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </summary>
+      <nav class="mobile-menu-panel" aria-label="Primary mobile">
+        
+          <a href="/">
+            
+
+<svg aria-hidden="true" viewBox="0 0 24 24" class="nav-icon">
+  <path d="M4.5 11.2 12 4.6l7.5 6.6v8.2a1.6 1.6 0 0 1-1.6 1.6h-3.2v-6.2H9.3V21H6.1a1.6 1.6 0 0 1-1.6-1.6v-8.2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+</svg>
+
+
+            <span>Home</span>
+          </a>
+        
+          <a href="/apps.html">
+            
+
+<svg aria-hidden="true" viewBox="0 0 24 24" class="nav-icon">
+  <rect x="4" y="4" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+  <rect x="13" y="4" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+  <rect x="4" y="13" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+  <rect x="13" y="13" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+</svg>
+
+
+            <span>Apps</span>
+          </a>
+        
+          <a href="/about.html">
+            
+
+<svg aria-hidden="true" viewBox="0 0 24 24" class="nav-icon">
+  <circle cx="12" cy="7.5" r="3.5" fill="none" stroke="currentColor" stroke-width="2" />
+  <path d="M5.5 20c1.2-4 11.8-4 13 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+</svg>
+
+
+            <span>About</span>
+          </a>
+        
+        <a href="/feed.xml">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="nav-icon">
+            <path d="M5 5a14 14 0 0 1 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M5 11a8 8 0 0 1 8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <circle cx="6.5" cy="17.5" r="1.5" fill="currentColor" />
+          </svg>
+          <span>RSS</span>
+        </a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<div class="site-frame">
+  <main id="main-content" class="site-main" tabindex="-1">
+    <div class="site-column">
+      
+
+
+
+
+<article class="article-page article-page--blog">
+  <header class="article-header">
+    <div class="article-kicker">
+      <span class="type-label type-label--blog">
+        <span class="type-label__dot"></span>
+        <span>Blog Post</span>
+      </span>
+      <time datetime="2019-09-02T00:00:00-05:00">September 2, 2019</time>
+    </div>
+    <h1>Designing Dark Noise</h1>
+  </header>
+
+  
+
+  <div class="post-content article-content">
+    <p>Today I want to talk about the process I used for designing my new app <a href="https://apps.apple.com/us/app/dark-noise/id1465439395">Dark Noise</a>.  It’s an app for playing different ambient noises to help with sleep or focus.  I’m not a designer by trade, and this is the first app I’ve made for iOS, so this is more of a brain dump of everything I did and less of a proposal on how design should be done.</p>
+
+<p>Before I placed a pixel in any design tool, I first figured out what the guiding principles for the app were, and what features I wanted to include.  I detailed this step in a <a href="/posts/2019/8/23/principles-of-dark-noise">separate post</a>, but the end result was:</p>
+
+<ul>
+  <li><strong>Configurability</strong>
+    <ul>
+      <li>Targeting pro users who want as many options and hooks to work the app into their workflow as possible</li>
+    </ul>
+  </li>
+  <li><strong>Speed</strong>
+    <ul>
+      <li>Opening app to playing sound should be as fast as possible with no compromise since this is the 99% use case</li>
+    </ul>
+  </li>
+  <li><strong>Keep it dark</strong> (expect fat fingers)
+    <ul>
+      <li>Most users will probably be using this in a dark environment, possibly without their glasses on or half asleep.  Keep that in mind.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>I have a little bit of experience playing around with <a href="https://www.adobe.com/products/xd.html">Adobe XD</a>, so I decided to use that to build out my mockups.  I ended up loving XD so I’d highly recommend it.  It’s even free! <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<h1 id="round-1">Round 1</h1>
+
+<p>The first thing I built was a player page based on the 3rd principle: <strong>Keep it dark</strong> (expect fat fingers)</p>
+
+<p><img src="/assets/posts/2019/09/02/dark-noise-design-v01.jpg" alt="Dark Noise design version 01" /></p>
+<p class="postCaption">In case you doubted my lack of design pedigree, this was full design, not a wireframe 😅</p>
+
+<p>Once you get passed the blandness, you can pretty much see the bones of the app from the beginning.  An easy to hit play button, a name, and a way to get to the other sounds.</p>
+
+<p>The “Create Noise” page was based on my original idea of generating the different color noises on the fly, and building a little color picker style control to let you mix your own noise.  For technical/scope reasons I ended up not going this direction at all, but I do anticipate implementing a “Create Noise” feature at some point in the future.</p>
+
+<p>I also had the main swiping gesture for minimizing the player there from the beginning.  One cool thing about Adobe XD is that you can quickly setup prototypes with swiping gestures for animations, and then demo them interactively on the phone.  So I could quickly play around with different ideas and get a sense of how they <em>felt</em>.</p>
+
+<p><img src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-design-prototyping.gif" alt="Dark Noise design version 01" /></p>
+<p class="postCaption">Recorded on my iPhone previewing the XD prototype. I toyed around with having the player minimize to the top, but the rapid prototyping with XD quickly showed me that didn't feel right</p>
+
+<p>The “Charcoal Dreams” name has an interesting back story.  From the beginning I knew I wanted to add some sort of fun whimsical feel to the app.  I thought it might be fun to give each noise an obnoxiously whimsical name, and if you 3D touched the name you’d get a silly description along the lines of “earthy notes with a hint of cinnamon” or something.</p>
+
+<p>Since I switched strategies to using audio recordings, this didn’t make as much sense, but I didn’t give up on that goal of having something fun.</p>
+
+<div class="postVideoContainer">
+    <video class="postVideo" controls="" loop="">
+    <source src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-1st-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
+</div>
+<p class="postCaption">First video I could find of a working version of the app.  This was in May, so about 4-5 months in.</p>
+
+<p>This first design wasn’t pretty, but the structural bones were pretty good.  It gave me a direction to go on as I built out the first version of the app.</p>
+
+<h1 id="round-2">Round 2</h1>
+
+<p>At this stage I actually had a functional app that had a lot of the features I wanted, but it just looked… bleh.  I am not a designer by trade, so I didn’t really know what to do to make this look better.  A designer friend at work pointed me to <a href="https://mobbin.design">Mobbin</a>.  It’s a simple website that allows you to view screenshots of hundreds of different well designed apps, with a pretty good search functionality.</p>
+
+<p><img src="/assets/posts/2019/09/02/mobbin-screenshot.jpg" alt="Mobbin" /></p>
+<p class="postCaption">Here I'm searching for "Audio Playback" patterns in apps under the "Music" category on <a href="https://mobbin.design">Mobbin</a></p>
+
+<p>Mobbin helped point me at what elements make up a good looking mobile app, and after iterating on a couple ideas in XD, I landed on a design that will start to look familiar if you’ve used the app.</p>
+
+<p><img src="/assets/posts/2019/09/02/dark-noise-design-v02.jpg" alt="Dark Noise design version 02" /></p>
+<p class="postCaption">This should look familiar.</p>
+
+<p>There are two interesting design details I’d like to call out.</p>
+
+<h4 id="select-noise-arrow">Select Noise Arrow</h4>
+
+<p>I really liked the idea of the initial view you see of the app being a super simple page with a big play button, but that meant I had to hide the other sound options behind the second screen.  I ended up with a slightly unusual design that treated the first page you see as a maximized player that you have to swipe down to reveal the rest of the app.</p>
+
+<p>I was worried it wouldn’t be immediately clear <em>how</em> you’re supposed to proceed from that page if you wanted to change your noise, so I borrowed a design element from my first MacBook Pro and gave the down arrow a little “breathing” animation.  I’m hoping the gentle bounce and opacity change will draw a new users eye enough to guide them through the app, but also not be an annoying distraction in the future.</p>
+
+<h4 id="icon-animations">Icon Animations</h4>
+
+<p>One thing I really like about some other audio apps is when it’s visually clear when audio is playing so if your speakers are muted you have an indication that sound <em>should</em> be coming out.  For example, in <a href="https://overcast.fm">Overcast</a>, a darker tint color bounces on the pause button along with the audio that’s playing to let you know that there is sound being played.</p>
+
+<p>I came up with a few ideas in After Effects, but I either couldn’t figure out how to implement it properly, or it just didn’t feel right once I implemented it into the app.</p>
+
+<div class="postVideoContainer">
+    <video class="postVideo" controls="" loop="">
+    <source src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-play-pause-ideas.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
+</div>
+<p class="postCaption">A couple play / pause ideas I tried out.</p>
+
+<p>One idea I had pretty early on was to make a looping animation for each of the static noise icons I was already building.  This sounded fun for me, but I was afraid it would take a long time and not really be worth the time it would take me.</p>
+
+<p>At one point I finally decided to try it out and see how it felt.  I made the animation for the White Noise icon and added it to the app, and it just felt awesome.</p>
+
+<div class="postVideoContainer">
+    <video class="postVideo" controls="" loop="">
+    <source src="https://s3.us-east-2.amazonaws.com/media.charliemchapman.com/blog/dark-noise-icons-sample.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
+</div>
+<p class="postCaption">Some of the icons I created for Dark Noise</p>
+
+<p>This solved my “playing indicator” problem, but even more importantly I found the <em>fun</em> I was looking for that I could use to stamp the app with my personality.</p>
+
+<h1 id="last-thoughts">Last Thoughts</h1>
+
+<p>There are other small touches throughout the app, but I think this touches on the biggest ones.  Like I said, I’m not a designer by trade, this is just to outline my thought process while I still remember it.  Hopefully this is helpful to somebody out there.</p>
+
+<p>If you have any other questions about my process or design choices, definitely reach out to me <a href="https://twitter.com/_chuckyc">on Twitter</a> I love talking about this stuff.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I actually do have a Creative Cloud subscription, but I believe all that gets you with XD is more storage space and access to their fonts. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+</article>
+
+    </div>
+  </main>
+</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="signature">Made by Charlie Chapman in St. Louis, MO</p>
+    <div class="links">
+      <a href="/feed.xml">RSS</a>
+      <a href="/archive.html">Archive</a>
+      <a href="/about.html">About</a>
+      <a href="/">Home</a>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/assets/js/site.js?v=1777863634" defer></script>
+  </body>
+</html>
