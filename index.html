@@ -89,9 +89,14 @@ body_class: "home-page"
     {% assign feed_image_src = "" %}
     {% assign has_feed_image = false %}
     {% assign post_content = post.content | strip %}
+    {% assign feed_plain_text = post.content | strip_html | normalize_whitespace | strip %}
     {% assign has_content = true %}
+    {% assign has_more_content = false %}
     {% if post_content == "" %}
       {% assign has_content = false %}
+    {% endif %}
+    {% if feed_plain_text.size > 300 %}
+      {% assign has_more_content = true %}
     {% endif %}
     {% assign item_url = post.url %}
     {% if feed_image and feed_image != site.logo %}
@@ -103,7 +108,7 @@ body_class: "home-page"
         {% assign feed_image_src = "/" | append: feed_image %}
       {% endif %}
     {% endif %}
-    <article class="timeline-item timeline-item--{{ content_type }}" data-content-type="{{ content_type }}" data-date="{{ post.date | date: "%Y-%m-%d" }}">
+    <article class="timeline-item timeline-item--{{ content_type }}" data-content-type="{{ content_type }}" data-date="{{ post.date | date: "%Y-%m-%d" }}" data-item-url="{{ item_url }}">
       <div class="timeline-item__meta">
         <span class="type-label type-label--{{ content_type }}">
           <span class="type-label__icon" aria-hidden="true">
@@ -159,7 +164,7 @@ body_class: "home-page"
         </a>
       {% endif %}
 
-      {% if has_content %}
+      {% if has_more_content %}
         <a class="read-more timeline-item__fallback-read-more" href="{{ item_url }}" data-feed-read-more>Read more</a>
       {% endif %}
     </article>

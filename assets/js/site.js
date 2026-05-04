@@ -179,7 +179,7 @@
     document.querySelectorAll("[data-feed-excerpt]").forEach(function (excerpt) {
       var article = excerpt.closest(".timeline-item");
       var readMore = article ? article.querySelector("[data-feed-read-more]") : null;
-      var href = readMore ? readMore.getAttribute("href") : "#";
+      var href = readMore ? readMore.getAttribute("href") : article ? article.getAttribute("data-item-url") : "";
       var limit = parseInt(excerpt.getAttribute("data-limit") || "300", 10);
 
       var removedMedia = removeFeedOnlyMedia(excerpt);
@@ -193,7 +193,7 @@
         readMore.remove();
       }
 
-      if (truncated || removedMedia) {
+      if (href && (truncated || removedMedia)) {
         appendInlineReadMore(excerpt, href, truncated);
       }
     });
