@@ -1,14 +1,45 @@
 {% assign youtube_url = include.youtube %}
 {% assign youtube_id = youtube_url | split: "v=" | last | split: "&" | first %}
+{% assign youtube_start = "" %}
 {% if youtube_url contains "youtu.be/" %}
   {% assign youtube_id = youtube_url | split: "youtu.be/" | last | split: "?" | first %}
 {% elsif youtube_url contains "/embed/" %}
   {% assign youtube_id = youtube_url | split: "/embed/" | last | split: "?" | first %}
+{% elsif youtube_url contains "/live/" %}
+  {% assign youtube_id = youtube_url | split: "/live/" | last | split: "?" | first %}
+{% endif %}
+
+{% if youtube_url contains "start=" %}
+  {% assign youtube_timestamp = youtube_url | split: "start=" | last | split: "&" | first | split: "#" | first %}
+{% elsif youtube_url contains "t=" %}
+  {% assign youtube_timestamp = youtube_url | split: "t=" | last | split: "&" | first | split: "#" | first %}
+{% else %}
+  {% assign youtube_timestamp = "" %}
+{% endif %}
+
+{% if youtube_timestamp != "" %}
+  {% assign timestamp_remainder = youtube_timestamp %}
+  {% assign timestamp_seconds = 0 %}
+  {% if timestamp_remainder contains "h" %}
+    {% assign timestamp_hours = timestamp_remainder | split: "h" | first | plus: 0 %}
+    {% assign timestamp_hour_seconds = timestamp_hours | times: 3600 %}
+    {% assign timestamp_seconds = timestamp_seconds | plus: timestamp_hour_seconds %}
+    {% assign timestamp_remainder = timestamp_remainder | split: "h" | last %}
+  {% endif %}
+  {% if timestamp_remainder contains "m" %}
+    {% assign timestamp_minutes = timestamp_remainder | split: "m" | first | plus: 0 %}
+    {% assign timestamp_minute_seconds = timestamp_minutes | times: 60 %}
+    {% assign timestamp_seconds = timestamp_seconds | plus: timestamp_minute_seconds %}
+    {% assign timestamp_remainder = timestamp_remainder | split: "m" | last %}
+  {% endif %}
+  {% assign timestamp_remaining_seconds = timestamp_remainder | remove: "s" | plus: 0 %}
+  {% assign timestamp_seconds = timestamp_seconds | plus: timestamp_remaining_seconds %}
+  {% assign youtube_start = "?start=" | append: timestamp_seconds %}
 {% endif %}
 
 <div class="youtube-embed">
   <iframe
-    src="https://www.youtube.com/embed/{{ youtube_id }}"
+    src="https://www.youtube.com/embed/{{ youtube_id }}{{ youtube_start }}"
     title="{{ include.title | default: "YouTube video" | escape }}"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen></iframe>
