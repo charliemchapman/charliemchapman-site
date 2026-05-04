@@ -66,17 +66,19 @@ body_class: "home-page"
 <nav class="timeline-tabs" aria-label="Timeline filters">
   <a class="timeline-tab" href="/" data-filter-tab="all">All</a>
   <a class="timeline-tab" href="/?type=blog" data-filter-tab="blog">Blog</a>
-  <a class="timeline-tab" href="/?type=podcast" data-filter-tab="podcast">Podcast</a>
-  <a class="timeline-tab" href="/?type=video" data-filter-tab="video">Video</a>
+  <a class="timeline-tab" href="/?type=appearance" data-filter-tab="appearance">Appearances</a>
+  <a class="timeline-tab" href="/?type=talk" data-filter-tab="talk">Talks</a>
 </nav>
 
 <section class="timeline" aria-label="Latest timeline items">
   {% assign current_year = site.time | date: "%Y" %}
-  {% assign timeline_items = site.posts | concat: site.podcasts | sort: "date" | reverse %}
+  {% assign timeline_items = site.posts | concat: site.appearances | concat: site.talks | sort: "date" | reverse %}
   {% for post in timeline_items %}
     {% assign content_type = post.content_type | default: "blog" %}
-    {% if post.collection == "podcasts" %}
-      {% assign content_type = "podcast" %}
+    {% if post.collection == "appearances" %}
+      {% assign content_type = "appearance" %}
+    {% elsif post.collection == "talks" %}
+      {% assign content_type = "talk" %}
     {% endif %}
     {% assign content_label = content_type | capitalize %}
     {% if content_type == "blog" %}
@@ -92,9 +94,6 @@ body_class: "home-page"
       {% assign has_content = false %}
     {% endif %}
     {% assign item_url = post.url %}
-    {% if post.youtube and has_content == false %}
-      {% assign item_url = post.youtube %}
-    {% endif %}
     {% if feed_image and feed_image != site.logo %}
       {% assign has_feed_image = true %}
       {% assign feed_image_start = feed_image | slice: 0 %}
@@ -108,12 +107,12 @@ body_class: "home-page"
       <div class="timeline-item__meta">
         <span class="type-label type-label--{{ content_type }}">
           <span class="type-label__icon" aria-hidden="true">
-            {% if content_type == "podcast" %}
+            {% if content_type == "appearance" %}
               <svg viewBox="0 0 24 24">
                 <path d="M12 4.8a3.2 3.2 0 0 0-3.2 3.2v4a3.2 3.2 0 1 0 6.4 0V8A3.2 3.2 0 0 0 12 4.8Z" fill="none" stroke="currentColor" stroke-width="2" />
                 <path d="M6.5 11.8a5.5 5.5 0 0 0 11 0M12 17.3v2.2M9.2 19.5h5.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
               </svg>
-            {% elsif content_type == "video" %}
+            {% elsif content_type == "talk" %}
               <svg viewBox="0 0 24 24">
                 <path d="M9 7.8v8.4l7-4.2-7-4.2Z" fill="currentColor" />
                 <rect x="4" y="5" width="16" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2" />

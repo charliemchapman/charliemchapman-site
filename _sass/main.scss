@@ -18,8 +18,8 @@ $sidebar-gap: 24px;
   --color-focus: #00843d;
 
   --type-blog: #e07900;
-  --type-podcast: #1683ff;
-  --type-video: #e04b37;
+  --type-appearance: #1683ff;
+  --type-talk: #e04b37;
 
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -47,8 +47,8 @@ $sidebar-gap: 24px;
     --color-focus: #86e99f;
 
     --type-blog: #ffb347;
-    --type-podcast: #75b8ff;
-    --type-video: #ff897a;
+    --type-appearance: #75b8ff;
+    --type-talk: #ff897a;
 
     --shadow-soft: 0 18px 48px rgba(0, 0, 0, 0.22);
   }
@@ -529,12 +529,12 @@ summary {
   background: var(--type-blog);
 }
 
-.type-label--podcast .type-label__dot {
-  background: var(--type-podcast);
+.type-label--appearance .type-label__dot {
+  background: var(--type-appearance);
 }
 
-.type-label--video .type-label__dot {
-  background: var(--type-video);
+.type-label--talk .type-label__dot {
+  background: var(--type-talk);
 }
 
 .timeline-item .type-label {
@@ -545,12 +545,12 @@ summary {
   text-transform: uppercase;
 }
 
-.timeline-item .type-label--podcast {
-  color: var(--type-podcast);
+.timeline-item .type-label--appearance {
+  color: var(--type-appearance);
 }
 
-.timeline-item .type-label--video {
-  color: var(--type-video);
+.timeline-item .type-label--talk {
+  color: var(--type-talk);
 }
 
 .type-label__icon {
@@ -573,12 +573,12 @@ summary {
   height: 16px;
 }
 
-.type-label--podcast .type-label__icon {
-  background: var(--type-podcast);
+.type-label--appearance .type-label__icon {
+  background: var(--type-appearance);
 }
 
-.type-label--video .type-label__icon {
-  background: var(--type-video);
+.type-label--talk .type-label__icon {
+  background: var(--type-talk);
 }
 
 .timeline-item__title {

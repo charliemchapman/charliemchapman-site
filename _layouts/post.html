@@ -3,6 +3,10 @@ layout: default
 ---
 {% assign content_type = page.content_type | default: "blog" %}
 {% assign content_label = content_type | capitalize %}
+{% if content_type == "blog" %}
+  {% assign content_label = "Blog Post" %}
+{% endif %}
+{% assign article_image = page.feed_image | default: page.image %}
 
 <article class="article-page article-page--{{ content_type }}">
   <header class="article-header">
@@ -24,8 +28,8 @@ layout: default
     <div class="article-embed">
       {{ page.embed }}
     </div>
-  {% elsif page.feed_image %}
-    <img class="article-hero-image" src="{{ page.feed_image }}" alt="">
+  {% elsif article_image and article_image != site.logo %}
+    <img class="article-hero-image" src="{{ article_image }}" alt="">
   {% endif %}
 
   <div class="post-content article-content">

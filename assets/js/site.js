@@ -2,7 +2,13 @@
   function currentTimelineFilter() {
     var params = new URLSearchParams(window.location.search);
     var type = (params.get("type") || "all").toLowerCase();
-    return ["all", "blog", "podcast", "video"].indexOf(type) === -1 ? "all" : type;
+    if (type === "podcast") {
+      return "appearance";
+    }
+    if (type === "video") {
+      return "talk";
+    }
+    return ["all", "blog", "appearance", "talk"].indexOf(type) === -1 ? "all" : type;
   }
 
   function applyTimelineFilter() {
@@ -62,10 +68,13 @@
 
   function removeFeedOnlyMedia(excerpt) {
     var media = excerpt.querySelectorAll("img, picture, figure, iframe, video, audio, canvas, script, style, .youtube-embed, .postYoutube, .postVideoContainer, .postCaption");
+    var removedMedia = media.length > 0;
 
     media.forEach(function (node) {
       node.remove();
     });
+
+    return removedMedia;
   }
 
   function removeEmptyFeedElements(excerpt) {
@@ -173,7 +182,7 @@
       var href = readMore ? readMore.getAttribute("href") : "#";
       var limit = parseInt(excerpt.getAttribute("data-limit") || "300", 10);
 
-      removeFeedOnlyMedia(excerpt);
+      var removedMedia = removeFeedOnlyMedia(excerpt);
       removeEmptyFeedElements(excerpt);
 
       var truncated = truncateExcerpt(excerpt, limit);
@@ -184,7 +193,9 @@
         readMore.remove();
       }
 
-      appendInlineReadMore(excerpt, href, truncated);
+      if (truncated || removedMedia) {
+        appendInlineReadMore(excerpt, href, truncated);
+      }
     });
   }
 

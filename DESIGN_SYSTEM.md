@@ -33,7 +33,7 @@ The site should feel like a polished personal home on the internet.
 - Direct, profile-like copy.
 - No startup SaaS polish.
 - No generic portfolio tropes.
-- Let the profile, links, apps, talks, posts, podcasts, and videos create the identity.
+- Let the profile, links, apps, posts, appearances, and talks create the identity.
 
 ### Custom Social UI
 
@@ -91,14 +91,14 @@ Apps:
 About:
 
 - Longer version of the profile bio.
-- Projects, speaking, podcasts, apps, and other identity context can live here.
+- Projects, speaking, appearances, apps, and other identity context can live here.
 - Should share the same shell and visual tokens, but can use a more readable page layout.
 
 Detail pages:
 
 - Internal detail page for every timeline item.
-- Blog, podcast, and video items share the same core content model.
-- Podcast and video detail pages should support embedded media near the top.
+- Blog, appearance, and talk items share the same core content model.
+- Appearance and talk detail pages should support embedded media near the top.
 - Detail pages can be cleaner and more article-like than the feed, while remaining visually consistent with the site.
 
 ## Color System
@@ -164,18 +164,18 @@ Recommended light/dark pairs:
 $type-blog: #e07900;
 $type-blog-dark: #ffb347;
 
-$type-podcast: #4d56ff;
-$type-podcast-dark: #aeb3ff;
+$type-appearance: #4d56ff;
+$type-appearance-dark: #aeb3ff;
 
-$type-video: #e04b37;
-$type-video-dark: #ff897a;
+$type-talk: #e04b37;
+$type-talk-dark: #ff897a;
 ```
 
 Usage:
 
 - `Blog`: amber.
-- `Podcast`: indigo.
-- `Video`: coral/red.
+- `Appearance`: indigo.
+- `Talk`: coral/red.
 
 The label text should use normal muted text. The colored dot carries the type color.
 
@@ -315,14 +315,14 @@ Tabs:
 
 - `All`
 - `Blog`
-- `Podcast`
-- `Video`
+- `Appearances`
+- `Talks`
 
 Behavior:
 
 - Filter the unified timeline.
 - Shareable filter state.
-- Recommended URL format: `/?type=podcast`.
+- Recommended URL format: `/?type=appearance`.
 - Active tab should use the site accent system, not the content type color system.
 
 ### Feed Item
@@ -349,7 +349,7 @@ Interaction:
 
 - Title opens the internal detail page.
 - `Read more` opens the internal detail page.
-- Podcast/video can include full playable embeds in the feed when available.
+- Appearance/talk items can include full playable embeds in the feed when available.
 - Items stay compact when no media exists.
 
 ### Media And Embeds
@@ -455,8 +455,8 @@ The homepage timeline is one unified content stream.
 Supported initial types:
 
 - `Blog`
-- `Podcast`
-- `Video`
+- `Appearance`
+- `Talk`
 
 Each timeline item should support:
 
@@ -478,7 +478,7 @@ Sorting:
 
 Filtering:
 
-- `All`, `Blog`, `Podcast`, and `Video`.
+- `All`, `Blog`, `Appearances`, and `Talks`.
 - Shareable filter state via query string.
 
 ## Voice
@@ -495,7 +495,7 @@ The visual system does not need strict copy rules, but the voice should be consi
 
 1. Build the shell: sidebar, mobile drawer, main timeline column.
 2. Rebuild the homepage as profile header + tabs + unified feed.
-3. Add content type support for `Blog`, `Podcast`, and `Video`.
+3. Add content type support for `Blog`, `Appearance`, and `Talk`.
 4. Add internal detail pages for every item type.
 5. Re-theme existing blog posts into the new article layout.
 6. Bring `Apps` and `About` into the same shell and token system.

@@ -15,8 +15,8 @@
         --pink: #cf247c;
         --focus: #00843d;
         --blog: #e07900;
-        --podcast: #4d56ff;
-        --video: #e04b37;
+        --appearance: #4d56ff;
+        --talk: #e04b37;
         --dark-bg: #20231f;
         --dark-surface: #282d27;
         --dark-border: #465044;
@@ -183,7 +183,7 @@
 
         <g transform="translate(32 292)">
           <text x="0" y="0" class="title" font-size="34">Charlie Chapman</text>
-          <text x="0" y="38" class="body">I make apps, host podcasts, and talk about building things on the internet.</text>
+          <text x="0" y="38" class="body">I make apps, host Launched, and talk about building things on the internet.</text>
           <g transform="translate(0 60)">
             <path d="M7 2c-3 0-5 2-5 5 0 5 5 11 5 11s5-6 5-11c0-3-2-5-5-5Zm0 7.2A2.2 2.2 0 1 1 7 4.8a2.2 2.2 0 0 1 0 4.4Z" fill="#566157" />
             <text x="22" y="15" class="small">St. Louis, MO, USA</text>
@@ -236,11 +236,11 @@
           </g>
           <g transform="translate(340 0)">
             <rect x="0" y="0" width="170" height="58" fill="#ffffff" />
-            <text x="51" y="35" class="body">Podcast</text>
+            <text x="36" y="35" class="body">Appearances</text>
           </g>
           <g transform="translate(510 0)">
             <rect x="0" y="0" width="170" height="58" fill="#ffffff" />
-            <text x="57" y="35" class="body">Video</text>
+            <text x="55" y="35" class="body">Talks</text>
           </g>
           <line x1="0" y1="58" x2="680" y2="58" class="rule" />
         </g>
@@ -316,9 +316,9 @@
           <circle cx="6" cy="7" r="5" fill="#e07900" />
           <text x="20" y="12" class="small">Blog</text>
           <circle cx="112" cy="7" r="5" fill="#4d56ff" />
-          <text x="126" y="12" class="small">Podcast</text>
+          <text x="126" y="12" class="small">Appearance</text>
           <circle cx="252" cy="7" r="5" fill="#e04b37" />
-          <text x="266" y="12" class="small">Video</text>
+          <text x="266" y="12" class="small">Talk</text>
         </g>
       </g>
       <g transform="translate(28 142)">
@@ -334,7 +334,7 @@
     </g>
 
     <g transform="translate(72 1042)">
-      <text x="0" y="0" class="small">Core reference: Twitter-like profile and timeline, near-white shell, saturated green/pink identity accents, separate Blog/Podcast/Video type colors, WCAG AA contrast.</text>
+      <text x="0" y="0" class="small">Core reference: Twitter-like profile and timeline, near-white shell, saturated green/pink identity accents, separate Blog/Appearance/Talk type colors, WCAG AA contrast.</text>
     </g>
   </g>
 </svg>

@@ -22,14 +22,21 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: /posts/:year/:i_month/:i_day/:title
+      permalink: /posts/:year/:i_month/:i_day/:title/
   - scope:
       path: ""
-      type: "podcasts"
+      type: "appearances"
     values:
       layout: "post"
-      permalink: /podcasts/:year/:i_month/:i_day/:title
-      content_type: "podcast"
+      permalink: /appearances/:year/:i_month/:i_day/:title/
+      content_type: "appearance"
+  - scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: "post"
+      permalink: /talks/:year/:i_month/:i_day/:title/
+      content_type: "talk"
   - scope:
       path: "pages"
     values:
@@ -46,5 +53,7 @@ plugins:
   - jekyll-seo-tag
 
 collections:
-  podcasts:
+  appearances:
+    output: true
+  talks:
     output: true
