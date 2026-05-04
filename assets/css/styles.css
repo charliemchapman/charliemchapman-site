@@ -136,6 +136,10 @@ button, summary { cursor: pointer; }
 
 .timeline-item .type-label { color: var(--type-blog); font-size: 0.76rem; font-weight: 820; letter-spacing: 0.12em; text-transform: uppercase; }
 
+.timeline-item .type-label__source { display: inline-flex; align-items: center; gap: 7px; min-width: 0; max-width: 100%; color: var(--color-text-muted); font-weight: 680; letter-spacing: 0; text-transform: none; }
+
+.timeline-item .type-label__source::before { content: ""; width: 3px; height: 3px; flex: 0 0 auto; border-radius: 50%; background: currentColor; opacity: 0.75; }
+
 .timeline-item .type-label--appearance { color: var(--type-appearance); }
 
 .timeline-item .type-label--talk { color: var(--type-talk); }
