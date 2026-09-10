@@ -33,7 +33,7 @@ The site should feel like a polished personal home on the internet.
 - Direct, profile-like copy.
 - No startup SaaS polish.
 - No generic portfolio tropes.
-- Let the profile, links, apps, posts, appearances, and talks create the identity.
+- Let the profile, links, apps, posts, appearances, and events create the identity.
 
 ### Custom Social UI
 
@@ -97,8 +97,8 @@ About:
 Detail pages:
 
 - Internal detail page for every timeline item.
-- Blog, appearance, and talk items share the same core content model.
-- Appearance and talk detail pages should support embedded media near the top.
+- Blog, appearance, and event items share the same core content model.
+- Appearance and event detail pages should support embedded media near the top.
 - Detail pages can be cleaner and more article-like than the feed, while remaining visually consistent with the site.
 
 ## Color System
@@ -167,15 +167,15 @@ $type-blog-dark: #ffb347;
 $type-appearance: #4d56ff;
 $type-appearance-dark: #aeb3ff;
 
-$type-talk: #e04b37;
-$type-talk-dark: #ff897a;
+$type-event: #e04b37;
+$type-event-dark: #ff897a;
 ```
 
 Usage:
 
 - `Blog`: amber.
 - `Appearance`: indigo.
-- `Talk`: coral/red.
+- `Event`: coral/red.
 
 The label text should use normal muted text. The colored dot carries the type color.
 
@@ -316,7 +316,7 @@ Tabs:
 - `All`
 - `Blog`
 - `Appearances`
-- `Talks`
+- `Events`
 
 Behavior:
 
@@ -349,7 +349,7 @@ Interaction:
 
 - Title opens the internal detail page.
 - `Read more` opens the internal detail page.
-- Appearance/talk items can include full playable embeds in the feed when available.
+- Appearance/event items can include full playable embeds in the feed when available.
 - Items stay compact when no media exists.
 
 ### Media And Embeds
@@ -456,7 +456,7 @@ Supported initial types:
 
 - `Blog`
 - `Appearance`
-- `Talk`
+- `Event`
 
 Each timeline item should support:
 
@@ -478,7 +478,7 @@ Sorting:
 
 Filtering:
 
-- `All`, `Blog`, `Appearances`, and `Talks`.
+- `All`, `Blog`, `Appearances`, and `Events`.
 - Shareable filter state via query string.
 
 ## Voice
@@ -495,7 +495,7 @@ The visual system does not need strict copy rules, but the voice should be consi
 
 1. Build the shell: sidebar, mobile drawer, main timeline column.
 2. Rebuild the homepage as profile header + tabs + unified feed.
-3. Add content type support for `Blog`, `Appearance`, and `Talk`.
+3. Add content type support for `Blog`, `Appearance`, and `Event`.
 4. Add internal detail pages for every item type.
 5. Re-theme existing blog posts into the new article layout.
 6. Bring `Apps` and `About` into the same shell and token system.

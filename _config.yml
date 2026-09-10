@@ -32,11 +32,11 @@ defaults:
       content_type: "appearance"
   - scope:
       path: ""
-      type: "talks"
+      type: "events"
     values:
       layout: "post"
-      permalink: /talks/:year/:i_month/:i_day/:title/
-      content_type: "talk"
+      permalink: /events/:year/:i_month/:i_day/:title/
+      content_type: "event"
   - scope:
       path: "pages"
     values:
@@ -55,5 +55,5 @@ plugins:
 collections:
   appearances:
     output: true
-  talks:
+  events:
     output: true
