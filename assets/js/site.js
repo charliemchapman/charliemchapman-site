@@ -5,10 +5,10 @@
     if (type === "podcast") {
       return "appearance";
     }
-    if (type === "video") {
-      return "talk";
+    if (type === "video" || type === "talk") {
+      return "event";
     }
-    return ["all", "blog", "appearance", "talk"].indexOf(type) === -1 ? "all" : type;
+    return ["all", "blog", "appearance", "event"].indexOf(type) === -1 ? "all" : type;
   }
 
   function applyTimelineFilter() {
