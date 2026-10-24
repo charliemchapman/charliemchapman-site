@@ -1,13 +1,14 @@
 ---
 title: "On iPhone Duo"
 date: "2026-09-10"
+image: "/assets/posts/2026/09/10/iphone-duo-folded-and-open.jpg"
 ---
 
 The last blog post I wrote was in [December of 2023](/posts/2023/12/7/on-vision-pro/), after Vision Pro was announced but before I got to try it. I was skeptical. It was an odd device. Heavy. A little cumbersome looking. Very expensive. A wonderful blend of hardware and software innovation. And I couldn't really understand enough use cases to overcome those hurdles for it to ever be a successful mass market product.
 
 Yesterday, Apple unveiled the [iPhone Duo](https://www.apple.com/iphone-duo/). It's an odd device. Heavy. A little cumbersome looking. Very expensive. A wonderful blend of hardware and software innovation.  **But... I think the balance here might be right.**
 
-Vision Pro was a new hardware medium that had to justify its existence in your day-to-day life. The Duo is a smartphone. Arguably the most compelling single device ever conceived, and already deeply integrated into the lives of a whole lot of people (often to their own chagrin).
+Vision Pro was a new hardware medium that had to justify its existence in your day-to-day life. The Duo is a smartphone, arguably the most compelling single device ever conceived, and already deeply integrated into the lives of a whole lot of people (often to their own chagrin).
 
 If you buy this device, you're going to use it.
 
@@ -39,11 +40,14 @@ To start, it's basically an iPad!
 
 For watching movies or shows while out and about, this looks fantastic. You get a big screen that folds down smaller than any iPad, on a device you're already carrying. I can very easily imagine pulling this out on a plane and being perfectly happy leaving my iPad at home.
 
+![Netflix on the iPhone Duo's unfolded inner display in landscape orientation.](/assets/posts/2026/09/10/iphone-duo-netflix.jpg)
+<p class="postCaption">Netflix on the larger inner display. Image: <a href="https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/">Apple</a>.</p>
+
 Browsing the web on that screen should be wonderful. And with OLED, ProMotion, and the included nano-texture finish on the inside screen, it looks like a waaay nicer display than the current [iPad mini](https://www.apple.com/ipad-mini/specs/).
 
 Reading books on this thing should be awesome as well. I'm curious whether holding it partially folded with a page on each side will feel natural, like a little book. But even just using it flat like an iPad sounds great.
 
-And editing photos on a bigger screen, on the device that actually took them so they're already all there? I'm really looking forward to that.
+And editing photos on a bigger screen, on the device that actually took them so they're already all there? I'm already looking forward to it.
 
 Apple also says [USB-C Apple Pencil support is coming later this year](https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/), which opens up note-taking, marking up documents, and potentially drawing. The app story is the big question for me there. I want to see whether we get something like the iPad versions of Procreate or Photoshop, adapted for this device.
 
@@ -54,6 +58,9 @@ In addition to being able to transform into a better iPad mini, there are some i
 This will be the best selfie camera Apple's ever shipped since you can use the 48MP main camera and still frame yourself with the outside screen.
 
 And it has a build-in stand. You can prop it up in a little tent or fold it into something that looks like a tiny laptop. I often grab my MagSafe wallet with a kickstand just to watch a video while eating lunch, or FaceTime while doing laundry or whatever. Having that built into the phone would be great. The nightstand/alarm clock use case also seems compelling for a lot of folks.
+
+![An iPhone Duo folded into a tent, standing on its edges during a FaceTime call.](/assets/posts/2026/09/10/iphone-duo-stand.jpg)
+<p class="postCaption">FaceTime with the phone standing on its own. Image: <a href="https://www.apple.com/iphone-duo/">Apple</a>.</p>
 
 These are all things I already do. Watch a show. Read a book. Edit some photos. Prop my phone up while my hands are busy. I don't have to imagine a new routine to understand where this thing fits into my life and makes it a *little bit* better.
 
